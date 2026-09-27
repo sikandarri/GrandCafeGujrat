@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { animate, stagger } from 'framer-motion';
+import { animate } from 'framer-motion';
 
 const cardSelector = [
   '.menu-card',
@@ -39,21 +39,23 @@ export default function MotionEnhancer() {
     const reveal = (elements, delay = 0) => {
       const list = Array.from(elements || []).filter(Boolean).filter(el => !animated.has(el));
       if (!list.length) return;
-      list.forEach(el => animated.add(el));
-      animate(
-        list,
-        {
-          opacity: [0, 1],
-          y: [18, 0],
-          scale: [0.988, 1],
-          filter: ['blur(6px)', 'blur(0px)']
-        },
-        {
-          duration: 0.5,
-          delay: stagger(0.045, { startDelay: delay }),
-          ease: [0.22, 1, 0.36, 1]
-        }
-      );
+      list.forEach((el, index) => {
+        animated.add(el);
+        animate(
+          el,
+          {
+            opacity: [0, 1],
+            y: [18, 0],
+            scale: [0.988, 1],
+            filter: ['blur(6px)', 'blur(0px)']
+          },
+          {
+            duration: 0.5,
+            delay: delay + Math.min(index, 10) * 0.045,
+            ease: [0.22, 1, 0.36, 1]
+          }
+        );
+      });
     };
 
     const enhanceCard = card => {
