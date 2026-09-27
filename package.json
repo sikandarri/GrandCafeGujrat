@@ -1,0 +1,38 @@
+{
+  "name": "grand-cafe-premium",
+  "version": "6.7.0",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20 <23",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "concurrently -k \"node --watch server.js\" \"wait-on http://127.0.0.1:5000/api/health && vite --host 0.0.0.0\"",
+    "build": "vite build",
+    "start": "node server.js",
+    "postinstall": "node scripts/generate-deployment-id.js && npm run build",
+    "deployment:new": "node scripts/generate-deployment-id.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "bcryptjs": "^3.0.2",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "framer-motion": "^12.23.12",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.544.0",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "vite": "^7.1.7",
+    "wait-on": "^8.0.4"
+  }
+}
