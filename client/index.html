@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070809" />
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem('gc_theme') === 'light' ? 'light' : 'dark';
+      } catch (_) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    </script>
+    <link rel="icon" type="image/png" href="/assets/grand-cafe-logo.png" />
+    <link rel="apple-touch-icon" href="/assets/grand-cafe-logo.png" />
+    <meta name="description" content="Grand Café Gujrat — pizza, burgers, shakes, coffee and more. Explore the menu, order online and reserve a table." />
+    <title>Grand Café Gujrat | Hungry? Go Grand.</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
