@@ -1,0 +1,40 @@
+name: Repair Grand Cafe missing source
+
+on:
+  push:
+    paths:
+      - 'repair-bundle/READY'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore missing source files
+        shell: bash
+        run: |
+          cat repair-bundle/repair.zip.b64.part* > /tmp/grand-cafe-repair.b64
+          base64 --decode /tmp/grand-cafe-repair.b64 > /tmp/grand-cafe-repair.zip
+          unzip -o /tmp/grand-cafe-repair.zip -d .
+          rm -rf repair-bundle
+
+      - name: Commit repaired source
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No repair changes to commit."
+          else
+            git commit -m "Restore missing Grand Cafe source files"
+            git push
+          fi
