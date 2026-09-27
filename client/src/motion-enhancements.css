@@ -1,0 +1,134 @@
+/* Grand Café v6.8.8 — Motion + 21st.dev-inspired interaction polish */
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+
+.gc-motion-ready .site-header,
+.gc-motion-ready .menu-card,
+.gc-motion-ready .deal-card,
+.gc-motion-ready .hero-card,
+.gc-motion-ready .experience-card,
+.gc-motion-ready .review-card,
+.gc-motion-ready .visit-card,
+.gc-motion-ready .reservation-card,
+.gc-motion-ready button,
+.gc-motion-ready a{
+  backface-visibility:hidden;
+  transform:translateZ(0);
+}
+
+.gc-motion-card{
+  position:relative;
+  will-change:transform;
+  transform-origin:center center;
+}
+
+.gc-spotlight{
+  isolation:isolate;
+  overflow:hidden;
+}
+.gc-spotlight::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:5;
+  pointer-events:none;
+  border-radius:inherit;
+  opacity:0;
+  background:radial-gradient(
+    260px circle at var(--spot-x,50%) var(--spot-y,50%),
+    rgba(255,183,0,.13),
+    rgba(255,183,0,.045) 34%,
+    transparent 68%
+  );
+  transition:opacity .28s ease;
+}
+.gc-spotlight:hover::after{opacity:1}
+
+html[data-theme="light"] .gc-spotlight::after{
+  background:radial-gradient(
+    260px circle at var(--spot-x,50%) var(--spot-y,50%),
+    rgba(116,72,46,.10),
+    rgba(181,125,79,.045) 36%,
+    transparent 70%
+  );
+}
+
+.gc-motion-ready .menu-card,
+.gc-motion-ready .deal-card,
+.gc-motion-ready .hero-card{
+  transition:border-color .25s ease,box-shadow .28s ease,background-color .28s ease;
+}
+
+.gc-motion-ready .menu-card:hover,
+.gc-motion-ready .deal-card:hover,
+.gc-motion-ready .hero-card:hover{
+  box-shadow:0 18px 44px rgba(0,0,0,.18);
+}
+html[data-theme="light"] .gc-motion-ready .menu-card:hover,
+html[data-theme="light"] .gc-motion-ready .deal-card:hover,
+html[data-theme="light"] .gc-motion-ready .hero-card:hover{
+  box-shadow:0 18px 38px rgba(74,48,31,.13);
+}
+
+.gc-motion-ready button,
+.gc-motion-ready .primary,
+.gc-motion-ready .secondary,
+.gc-motion-ready .account-nav-btn,
+.gc-motion-ready .cart-btn,
+.gc-motion-ready .theme-toggle{
+  will-change:transform;
+  transform-origin:center;
+}
+
+.gc-motion-ready .product-modal-backdrop{
+  backdrop-filter:blur(14px) saturate(110%);
+  -webkit-backdrop-filter:blur(14px) saturate(110%);
+}
+.gc-motion-ready .product-modal{
+  will-change:transform,opacity;
+  box-shadow:0 30px 90px rgba(0,0,0,.38);
+}
+html[data-theme="light"] .gc-motion-ready .product-modal{
+  box-shadow:0 30px 80px rgba(57,36,24,.18);
+}
+
+.gc-motion-ready .product-modal img,
+.gc-motion-ready .menu-card img,
+.gc-motion-ready .deal-card img{
+  transition:transform .55s cubic-bezier(.22,1,.36,1),filter .35s ease;
+}
+.gc-motion-ready .menu-card:hover img,
+.gc-motion-ready .deal-card:hover img{
+  transform:scale(1.025);
+}
+
+.gc-motion-ready .modal-variants button,
+.gc-motion-ready .addon-grid button,
+.gc-motion-ready .subcategory-row button,
+.gc-motion-ready .menu-group-tabs button{
+  transition:border-color .22s ease,background .22s ease,color .22s ease,box-shadow .22s ease;
+}
+
+.gc-motion-ready .hero-photo{
+  transform:scale(1.015);
+  transition:transform 8s cubic-bezier(.22,1,.36,1);
+}
+.gc-motion-ready .hero:hover .hero-photo{transform:scale(1.035)}
+
+@media (hover:none){
+  .gc-spotlight::after{display:none}
+  .gc-motion-ready .menu-card:hover img,
+  .gc-motion-ready .deal-card:hover img{transform:none}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .gc-motion-ready *,
+  .gc-motion-ready *::before,
+  .gc-motion-ready *::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+}
