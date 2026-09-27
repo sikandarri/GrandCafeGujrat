@@ -1,7 +1,5 @@
 export default [
   {
-    "id": 1,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "Pakistani Chicken Tikka Pizza",
     "prices": {
@@ -15,8 +13,6 @@ export default [
     "image_url": "/assets/pizzas/pakistani-chicken-tikka.webp"
   },
   {
-    "id": 2,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "Bonfire Pizza",
     "prices": {
@@ -30,8 +26,6 @@ export default [
     "image_url": "/assets/pizzas/bonfire.webp"
   },
   {
-    "id": 3,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "Fajita Sicilian Pizza",
     "prices": {
@@ -45,8 +39,6 @@ export default [
     "image_url": "/assets/pizzas/fajita-sicilian.webp"
   },
   {
-    "id": 4,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "Chicken Supreme Pizza",
     "prices": {
@@ -60,8 +52,6 @@ export default [
     "image_url": "/assets/pizzas/chicken-supreme.webp"
   },
   {
-    "id": 5,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "Cheese Max Pizza",
     "prices": {
@@ -75,8 +65,6 @@ export default [
     "image_url": "/assets/pizzas/cheese-max.webp"
   },
   {
-    "id": 6,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "Vegetarian Pizza",
     "prices": {
@@ -90,8 +78,6 @@ export default [
     "image_url": "/assets/pizzas/vegetarian.webp"
   },
   {
-    "id": 7,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "BBQ Pizza",
     "prices": {
@@ -105,8 +91,6 @@ export default [
     "image_url": "/assets/pizzas/bbq.webp"
   },
   {
-    "id": 8,
-    "available": true,
     "category": "Pizza · Regular",
     "name": "Cheese & Pepperoni Pizza",
     "prices": {
@@ -120,8 +104,6 @@ export default [
     "image_url": "/assets/pizzas/cheese-pepperoni.webp"
   },
   {
-    "id": 9,
-    "available": true,
     "category": "Pizza · Global",
     "name": "Grand Café Special Pizza",
     "prices": {
@@ -134,8 +116,6 @@ export default [
     "image_url": "/assets/pizzas/grand-cafe-special.webp"
   },
   {
-    "id": 10,
-    "available": true,
     "category": "Pizza · Global",
     "name": "Special Achari Pizza",
     "prices": {
@@ -148,8 +128,6 @@ export default [
     "image_url": "/assets/pizzas/special-achari.webp"
   },
   {
-    "id": 11,
-    "available": true,
     "category": "Pizza · Global",
     "name": "Why Not Half & Half",
     "prices": {
@@ -162,8 +140,6 @@ export default [
     "image_url": "/assets/pizzas/why-not-half-half.webp"
   },
   {
-    "id": 12,
-    "available": true,
     "category": "Pizza · Global",
     "name": "American Pepperoni Pizza",
     "prices": {
@@ -176,8 +152,6 @@ export default [
     "image_url": "/assets/pizzas/american-pepperoni.webp"
   },
   {
-    "id": 13,
-    "available": true,
     "category": "Pizza · Global",
     "name": "Creamy Melt Pizza",
     "prices": {
@@ -190,8 +164,6 @@ export default [
     "image_url": "/assets/pizzas/creamy-melt.webp"
   },
   {
-    "id": 14,
-    "available": true,
     "category": "Pizza · Global",
     "name": "Behari Super Kebab Pizza",
     "prices": {
@@ -204,8 +176,6 @@ export default [
     "image_url": "/assets/pizzas/behari-super-kebab.webp"
   },
   {
-    "id": 15,
-    "available": true,
     "category": "Pizza · Global",
     "name": "Chicken Crispy Pizza",
     "prices": {
@@ -218,8 +188,6 @@ export default [
     "image_url": "/assets/pizzas/chicken-crispy.webp"
   },
   {
-    "id": 16,
-    "available": true,
     "category": "Pizza · Premium",
     "name": "New York Stuffed Crust Pizza",
     "prices": {
@@ -232,8 +200,6 @@ export default [
     "image_url": "/assets/pizzas/new-york-stuffed-crust.webp"
   },
   {
-    "id": 17,
-    "available": true,
     "category": "Pizza · Premium",
     "name": "Crown Crust Pizza",
     "prices": {
@@ -246,8 +212,6 @@ export default [
     "image_url": "/assets/pizzas/crown-crust.webp"
   },
   {
-    "id": 18,
-    "available": true,
     "category": "Pizza · Premium",
     "name": "Arabic Ranch Crust Pizza",
     "prices": {
@@ -260,8 +224,6 @@ export default [
     "image_url": "/assets/pizzas/arabic-ranch-crust.webp"
   },
   {
-    "id": 19,
-    "available": true,
     "category": "Pizza · Premium",
     "name": "Italian Cheese Crust Pizza",
     "prices": {
@@ -274,8 +236,6 @@ export default [
     "image_url": "/assets/pizzas/italian-cheese-crust.webp"
   },
   {
-    "id": 20,
-    "available": true,
     "category": "Pizza · Premium",
     "name": "Kebab Tonight Crust Pizza",
     "prices": {
@@ -288,8 +248,6 @@ export default [
     "image_url": "/assets/pizzas/kebab-tonight-crust.webp"
   },
   {
-    "id": 21,
-    "available": true,
     "category": "Pizza · Premium",
     "name": "Donut Pizza (New With Fries)",
     "prices": {
@@ -302,8 +260,6 @@ export default [
     "image_url": "/assets/pizzas/donut-pizza.webp"
   },
   {
-    "id": 22,
-    "available": true,
     "category": "Pizza · Platinum",
     "name": "Kebab Crown Crust Pizza",
     "prices": {
@@ -316,8 +272,6 @@ export default [
     "image_url": "/assets/pizzas/kebab-crown-crust.webp"
   },
   {
-    "id": 23,
-    "available": true,
     "category": "Pizza · Platinum",
     "name": "Toronto Pizza (NEW)",
     "prices": {
@@ -330,8 +284,6 @@ export default [
     "image_url": "/assets/pizzas/toronto.webp"
   },
   {
-    "id": 24,
-    "available": true,
     "category": "Pizza · Platinum",
     "name": "Kebab Twister Pizza",
     "prices": {
@@ -344,8 +296,6 @@ export default [
     "image_url": "/assets/pizzas/kebab-twister.webp"
   },
   {
-    "id": 25,
-    "available": true,
     "category": "Burgers",
     "name": "Special Supreme Burger",
     "prices": {
@@ -356,8 +306,6 @@ export default [
     "image_url": "/assets/products/burgers/special-supreme-burger.webp"
   },
   {
-    "id": 26,
-    "available": true,
     "category": "Burgers",
     "name": "Signature Grilled Burger (With Fries)",
     "prices": {
@@ -368,8 +316,6 @@ export default [
     "image_url": "/assets/products/burgers/signature-grilled-burger-with-fries.webp"
   },
   {
-    "id": 27,
-    "available": true,
     "category": "Burgers",
     "name": "Mighty Double Xtreme",
     "prices": {
@@ -380,8 +326,6 @@ export default [
     "image_url": "/assets/products/burgers/mighty-double-xtreme.webp"
   },
   {
-    "id": 28,
-    "available": true,
     "category": "Burgers",
     "name": "Zinger with Cheese",
     "prices": {
@@ -392,8 +336,6 @@ export default [
     "image_url": "/assets/products/burgers/zinger-with-cheese.webp"
   },
   {
-    "id": 29,
-    "available": true,
     "category": "Burgers",
     "name": "Zinger Burger",
     "prices": {
@@ -404,8 +346,6 @@ export default [
     "image_url": "/assets/products/burgers/zinger-burger.webp"
   },
   {
-    "id": 30,
-    "available": true,
     "category": "Burgers",
     "name": "Patty Value Burger",
     "prices": {
@@ -416,8 +356,6 @@ export default [
     "image_url": "/assets/products/burgers/patty-value-burger.webp"
   },
   {
-    "id": 31,
-    "available": true,
     "category": "Burgers",
     "name": "Chapli Burger",
     "prices": {
@@ -428,8 +366,6 @@ export default [
     "image_url": "/assets/products/burgers/chapli-burger.webp"
   },
   {
-    "id": 32,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Oven Baked Wings",
     "prices": {
@@ -441,8 +377,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/oven-baked-wings.webp"
   },
   {
-    "id": 33,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Crispy Hot Wings",
     "prices": {
@@ -454,8 +388,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/crispy-hot-wings.webp"
   },
   {
-    "id": 34,
-    "available": true,
     "category": "Roll & Wings",
     "name": "BBQ Wings",
     "prices": {
@@ -467,8 +399,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/bbq-wings.webp"
   },
   {
-    "id": 35,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Stuffer Spring Roll (4 Pcs)",
     "prices": {
@@ -479,8 +409,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/stuffer-spring-roll.webp"
   },
   {
-    "id": 36,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Chicken Kebab Roll (4 Pcs)",
     "prices": {
@@ -491,8 +419,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/chicken-kebab-roll.webp"
   },
   {
-    "id": 37,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Chicken Crispy Roll (4 Pcs)",
     "prices": {
@@ -503,8 +429,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/chicken-crispy-roll.webp"
   },
   {
-    "id": 38,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Tortilla Roll (4 Pcs)",
     "prices": {
@@ -515,8 +439,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/tortilla-roll.webp"
   },
   {
-    "id": 39,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Grand Café Special Platter",
     "prices": {
@@ -527,8 +449,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/grand-cafe-special-platter.webp"
   },
   {
-    "id": 40,
-    "available": true,
     "category": "Roll & Wings",
     "name": "Tortilla Special Platter",
     "prices": {
@@ -539,8 +459,6 @@ export default [
     "image_url": "/assets/products/wings-rolls/tortilla-special-platter.webp"
   },
   {
-    "id": 41,
-    "available": true,
     "category": "Pasta",
     "name": "Creamy Pasta",
     "prices": {
@@ -552,8 +470,6 @@ export default [
     "image_url": "/assets/products/pasta/creamy-pasta.webp"
   },
   {
-    "id": 42,
-    "available": true,
     "category": "Pasta",
     "name": "Crispy Pasta",
     "prices": {
@@ -565,8 +481,6 @@ export default [
     "image_url": "/assets/products/pasta/crispy-pasta.webp"
   },
   {
-    "id": 43,
-    "available": true,
     "category": "Sandwich",
     "name": "Grand Café Sp Sandwich",
     "prices": {
@@ -577,8 +491,6 @@ export default [
     "image_url": "/assets/products/sandwiches/grand-cafe-sp-sandwich.webp"
   },
   {
-    "id": 44,
-    "available": true,
     "category": "Sandwich",
     "name": "Chicken Kebab Sandwich",
     "prices": {
@@ -589,8 +501,6 @@ export default [
     "image_url": "/assets/products/sandwiches/chicken-kebab-sandwich.webp"
   },
   {
-    "id": 45,
-    "available": true,
     "category": "Sandwich",
     "name": "Chicken Crispy Sandwich",
     "prices": {
@@ -601,8 +511,6 @@ export default [
     "image_url": "/assets/products/sandwiches/chicken-crispy-sandwich.webp"
   },
   {
-    "id": 46,
-    "available": true,
     "category": "Sandwich",
     "name": "Grilled Steak Sandwich",
     "prices": {
@@ -613,8 +521,6 @@ export default [
     "image_url": "/assets/products/sandwiches/grilled-steak-sandwich.webp"
   },
   {
-    "id": 47,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Baked Potato Veggies",
     "prices": {
@@ -625,8 +531,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/baked-potato-veggies.webp"
   },
   {
-    "id": 48,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Curly Fries",
     "prices": {
@@ -637,8 +541,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/curly-fries.webp"
   },
   {
-    "id": 49,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Waffle Fries",
     "prices": {
@@ -649,8 +551,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/waffle-fries.webp"
   },
   {
-    "id": 50,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Plain Fries",
     "prices": {
@@ -661,8 +561,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/plain-fries.webp"
   },
   {
-    "id": 51,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Masala Fries",
     "prices": {
@@ -673,8 +571,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/masala-fries.webp"
   },
   {
-    "id": 52,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Mayo Fries",
     "prices": {
@@ -685,8 +581,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/mayo-fries.webp"
   },
   {
-    "id": 53,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Pizza Fries",
     "prices": {
@@ -698,8 +592,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/pizza-fries.webp"
   },
   {
-    "id": 54,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Loaded Fries",
     "prices": {
@@ -711,8 +603,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/loaded-fries.webp"
   },
   {
-    "id": 55,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Nuggets",
     "prices": {
@@ -724,8 +614,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/nuggets.webp"
   },
   {
-    "id": 56,
-    "available": true,
     "category": "Chicken & Fries",
     "name": "Crispy Poppers",
     "prices": {
@@ -737,8 +625,6 @@ export default [
     "image_url": "/assets/products/chicken-fries/crispy-poppers.webp"
   },
   {
-    "id": 57,
-    "available": true,
     "category": "Wraps & Pocket",
     "name": "Mexican Wrap",
     "prices": {
@@ -749,8 +635,6 @@ export default [
     "image_url": "/assets/products/wraps-pocket/mexican-wrap.webp"
   },
   {
-    "id": 58,
-    "available": true,
     "category": "Wraps & Pocket",
     "name": "Trio Wrap",
     "prices": {
@@ -761,8 +645,6 @@ export default [
     "image_url": "/assets/products/wraps-pocket/trio-wrap.webp"
   },
   {
-    "id": 59,
-    "available": true,
     "category": "Wraps & Pocket",
     "name": "Chicken Crispy Wrap",
     "prices": {
@@ -773,8 +655,6 @@ export default [
     "image_url": "/assets/products/wraps-pocket/chicken-crispy-wrap.webp"
   },
   {
-    "id": 60,
-    "available": true,
     "category": "Wraps & Pocket",
     "name": "Chicken Grilled Wrap",
     "prices": {
@@ -785,8 +665,6 @@ export default [
     "image_url": "/assets/products/wraps-pocket/chicken-grilled-wrap.webp"
   },
   {
-    "id": 61,
-    "available": true,
     "category": "Wraps & Pocket",
     "name": "Cheesy Pocket",
     "prices": {
@@ -797,8 +675,6 @@ export default [
     "image_url": "/assets/products/wraps-pocket/cheesy-pocket.webp"
   },
   {
-    "id": 62,
-    "available": true,
     "category": "Wraps & Pocket",
     "name": "Crispy Pocket",
     "prices": {
@@ -809,8 +685,6 @@ export default [
     "image_url": "/assets/products/wraps-pocket/crispy-pocket.webp"
   },
   {
-    "id": 63,
-    "available": true,
     "category": "Wraps & Pocket",
     "name": "Pizza Pocket",
     "prices": {
@@ -821,8 +695,6 @@ export default [
     "image_url": "/assets/products/wraps-pocket/pizza-pocket.webp"
   },
   {
-    "id": 64,
-    "available": true,
     "category": "Hot Deals",
     "name": "Student Deal 1",
     "prices": {
@@ -833,8 +705,6 @@ export default [
     "image_url": "/assets/products/hot-deals/student-deal-1.webp"
   },
   {
-    "id": 65,
-    "available": true,
     "category": "Hot Deals",
     "name": "Student Deal 2",
     "prices": {
@@ -845,8 +715,6 @@ export default [
     "image_url": "/assets/products/hot-deals/student-deal-2.webp"
   },
   {
-    "id": 66,
-    "available": true,
     "category": "Hot Deals",
     "name": "Student Deal 3",
     "prices": {
@@ -857,8 +725,6 @@ export default [
     "image_url": "/assets/products/hot-deals/student-deal-3.webp"
   },
   {
-    "id": 67,
-    "available": true,
     "category": "Hot Deals",
     "name": "Two Times The Fun",
     "prices": {
@@ -869,8 +735,6 @@ export default [
     "image_url": "/assets/products/hot-deals/two-times-the-fun.webp"
   },
   {
-    "id": 68,
-    "available": true,
     "category": "Hot Deals",
     "name": "Family Special",
     "prices": {
@@ -881,8 +745,6 @@ export default [
     "image_url": "/assets/products/hot-deals/family-special.webp"
   },
   {
-    "id": 69,
-    "available": true,
     "category": "Hot Deals",
     "name": "Birthday Special",
     "prices": {
@@ -893,8 +755,6 @@ export default [
     "image_url": "/assets/products/hot-deals/birthday-special.webp"
   },
   {
-    "id": 70,
-    "available": true,
     "category": "Coffee",
     "name": "Café Latte",
     "prices": {
@@ -905,8 +765,6 @@ export default [
     "image_url": "/assets/products/coffee/cafe-latte.webp"
   },
   {
-    "id": 71,
-    "available": true,
     "category": "Coffee",
     "name": "Cappuccino",
     "prices": {
@@ -917,8 +775,6 @@ export default [
     "image_url": "/assets/products/coffee/cappuccino.webp"
   },
   {
-    "id": 72,
-    "available": true,
     "category": "Coffee",
     "name": "Vanilla Latte",
     "prices": {
@@ -929,8 +785,6 @@ export default [
     "image_url": "/assets/products/coffee/vanilla-latte.webp"
   },
   {
-    "id": 73,
-    "available": true,
     "category": "Coffee",
     "name": "Caramel Latte",
     "prices": {
@@ -941,8 +795,6 @@ export default [
     "image_url": "/assets/products/coffee/caramel-latte.webp"
   },
   {
-    "id": 74,
-    "available": true,
     "category": "Coffee",
     "name": "Espresso (Single Shot)",
     "prices": {
@@ -953,8 +805,6 @@ export default [
     "image_url": "/assets/products/coffee/espresso-single-shot.webp"
   },
   {
-    "id": 75,
-    "available": true,
     "category": "Coffee",
     "name": "Espresso (Double Shot)",
     "prices": {
@@ -965,8 +815,6 @@ export default [
     "image_url": "/assets/products/coffee/espresso-double-shot.webp"
   },
   {
-    "id": 76,
-    "available": true,
     "category": "Coffee",
     "name": "Americano",
     "prices": {
@@ -977,8 +825,6 @@ export default [
     "image_url": "/assets/products/coffee/americano.webp"
   },
   {
-    "id": 77,
-    "available": true,
     "category": "Coffee",
     "name": "Iced Coffee",
     "prices": {
@@ -989,8 +835,6 @@ export default [
     "image_url": "/assets/products/coffee/iced-coffee.webp"
   },
   {
-    "id": 78,
-    "available": true,
     "category": "Coffee",
     "name": "Hot Chocolate",
     "prices": {
@@ -1001,8 +845,6 @@ export default [
     "image_url": "/assets/products/coffee/hot-chocolate.webp"
   },
   {
-    "id": 79,
-    "available": true,
     "category": "Cold Coffee",
     "name": "Caramel Cold Coffee",
     "prices": {
@@ -1013,8 +855,6 @@ export default [
     "image_url": "/assets/products/cold-coffee/caramel-cold-coffee.webp"
   },
   {
-    "id": 80,
-    "available": true,
     "category": "Cold Coffee",
     "name": "Vanilla Cold Coffee",
     "prices": {
@@ -1025,8 +865,6 @@ export default [
     "image_url": "/assets/products/cold-coffee/vanilla-cold-coffee.webp"
   },
   {
-    "id": 81,
-    "available": true,
     "category": "Cold Coffee",
     "name": "Oreo Cold Coffee",
     "prices": {
@@ -1037,8 +875,6 @@ export default [
     "image_url": "/assets/products/cold-coffee/oreo-cold-coffee.webp"
   },
   {
-    "id": 82,
-    "available": true,
     "category": "Cold Coffee",
     "name": "Chocolate Cold Coffee",
     "prices": {
@@ -1049,8 +885,6 @@ export default [
     "image_url": "/assets/products/cold-coffee/chocolate-cold-coffee.webp"
   },
   {
-    "id": 83,
-    "available": true,
     "category": "Tea",
     "name": "Karak Tea",
     "prices": {
@@ -1061,8 +895,6 @@ export default [
     "image_url": "/assets/products/tea/karak-tea.webp"
   },
   {
-    "id": 84,
-    "available": true,
     "category": "Tea",
     "name": "Kashmiri Tea",
     "prices": {
@@ -1073,8 +905,6 @@ export default [
     "image_url": "/assets/products/tea/kashmiri-tea.webp"
   },
   {
-    "id": 85,
-    "available": true,
     "category": "Ice Cream Shake",
     "name": "Chocolate Shake",
     "prices": {
@@ -1085,8 +915,6 @@ export default [
     "image_url": "/assets/products/ice-cream-shakes/chocolate-shake.webp"
   },
   {
-    "id": 86,
-    "available": true,
     "category": "Ice Cream Shake",
     "name": "Mango Shake",
     "prices": {
@@ -1097,8 +925,6 @@ export default [
     "image_url": "/assets/products/ice-cream-shakes/mango-shake.webp"
   },
   {
-    "id": 87,
-    "available": true,
     "category": "Ice Cream Shake",
     "name": "Strawberry Shake",
     "prices": {
@@ -1109,8 +935,6 @@ export default [
     "image_url": "/assets/products/ice-cream-shakes/strawberry-shake.webp"
   },
   {
-    "id": 88,
-    "available": true,
     "category": "Ice Cream Shake",
     "name": "Date & Kulfa Shake",
     "prices": {
@@ -1121,8 +945,6 @@ export default [
     "image_url": "/assets/products/ice-cream-shakes/date-and-kulfa-shake.webp"
   },
   {
-    "id": 89,
-    "available": true,
     "category": "Ice Cream Shake",
     "name": "Oreo Shake",
     "prices": {
@@ -1133,8 +955,6 @@ export default [
     "image_url": "/assets/products/ice-cream-shakes/oreo-shake.webp"
   },
   {
-    "id": 90,
-    "available": true,
     "category": "Ice Cream Shake",
     "name": "Vanilla Shake",
     "prices": {
@@ -1145,8 +965,6 @@ export default [
     "image_url": "/assets/products/ice-cream-shakes/vanilla-shake.webp"
   },
   {
-    "id": 91,
-    "available": true,
     "category": "Ice Cream Shake",
     "name": "Caramel Shake",
     "prices": {
@@ -1157,8 +975,6 @@ export default [
     "image_url": "/assets/products/ice-cream-shakes/caramel-shake.webp"
   },
   {
-    "id": 92,
-    "available": true,
     "category": "Margarita",
     "name": "Mint Margarita",
     "prices": {
@@ -1169,8 +985,6 @@ export default [
     "image_url": "/assets/products/margaritas/mint-margarita.webp"
   },
   {
-    "id": 93,
-    "available": true,
     "category": "Margarita",
     "name": "Blue Berry Margarita",
     "prices": {
@@ -1181,8 +995,6 @@ export default [
     "image_url": "/assets/products/margaritas/blue-berry-margarita.webp"
   },
   {
-    "id": 94,
-    "available": true,
     "category": "Margarita",
     "name": "Strawberry Margarita",
     "prices": {
@@ -1193,8 +1005,6 @@ export default [
     "image_url": "/assets/products/margaritas/strawberry-margarita.webp"
   },
   {
-    "id": 95,
-    "available": true,
     "category": "Margarita",
     "name": "Double Berry Margarita",
     "prices": {
@@ -1205,8 +1015,6 @@ export default [
     "image_url": "/assets/products/margaritas/double-berry-margarita.webp"
   },
   {
-    "id": 96,
-    "available": true,
     "category": "Margarita",
     "name": "Peach Margarita",
     "prices": {
@@ -1217,8 +1025,6 @@ export default [
     "image_url": "/assets/products/margaritas/peach-margarita.webp"
   },
   {
-    "id": 97,
-    "available": true,
     "category": "Mocktail",
     "name": "Electric Shock",
     "prices": {
@@ -1229,8 +1035,6 @@ export default [
     "image_url": "/assets/products/mocktails/electric-shock.webp"
   },
   {
-    "id": 98,
-    "available": true,
     "category": "Mocktail",
     "name": "Strawberry Refresher",
     "prices": {
@@ -1241,8 +1045,6 @@ export default [
     "image_url": "/assets/products/mocktails/strawberry-refresher.webp"
   },
   {
-    "id": 99,
-    "available": true,
     "category": "Mocktail",
     "name": "Bubble Mint",
     "prices": {
@@ -1253,8 +1055,6 @@ export default [
     "image_url": "/assets/products/mocktails/bubble-mint.webp"
   },
   {
-    "id": 100,
-    "available": true,
     "category": "Mocktail",
     "name": "Fresh Lime",
     "prices": {
@@ -1265,8 +1065,6 @@ export default [
     "image_url": "/assets/products/mocktails/fresh-lime.webp"
   },
   {
-    "id": 101,
-    "available": true,
     "category": "Mocktail",
     "name": "Citrus Apple",
     "prices": {
@@ -1277,8 +1075,6 @@ export default [
     "image_url": "/assets/products/mocktails/citrus-apple.webp"
   },
   {
-    "id": 102,
-    "available": true,
     "category": "Mocktail",
     "name": "My Passion",
     "prices": {
@@ -1289,8 +1085,6 @@ export default [
     "image_url": "/assets/products/mocktails/my-passion.webp"
   },
   {
-    "id": 103,
-    "available": true,
     "category": "Special Shake",
     "name": "Lotus Shake",
     "prices": {
@@ -1301,8 +1095,6 @@ export default [
     "image_url": "/assets/products/special-shakes/lotus-shake.webp"
   },
   {
-    "id": 104,
-    "available": true,
     "category": "Special Shake",
     "name": "Bounty Shake",
     "prices": {
@@ -1313,8 +1105,6 @@ export default [
     "image_url": "/assets/products/special-shakes/bounty-shake.webp"
   },
   {
-    "id": 105,
-    "available": true,
     "category": "Special Shake",
     "name": "Nutella Shake",
     "prices": {
@@ -1325,8 +1115,6 @@ export default [
     "image_url": "/assets/products/special-shakes/nutella-shake.webp"
   },
   {
-    "id": 106,
-    "available": true,
     "category": "Special Shake",
     "name": "Kit Kat Shake",
     "prices": {
@@ -1337,8 +1125,6 @@ export default [
     "image_url": "/assets/products/special-shakes/kit-kat-shake.webp"
   },
   {
-    "id": 107,
-    "available": true,
     "category": "Special Shake",
     "name": "Double Chocolate Shake",
     "prices": {
@@ -1349,8 +1135,6 @@ export default [
     "image_url": "/assets/products/special-shakes/double-chocolate-shake.webp"
   },
   {
-    "id": 108,
-    "available": true,
     "category": "Special Shake",
     "name": "Heaven Shake",
     "prices": {
@@ -1361,8 +1145,6 @@ export default [
     "image_url": "/assets/products/special-shakes/heaven-shake.webp"
   },
   {
-    "id": 109,
-    "available": true,
     "category": "Drinks",
     "name": "500 ML Drink",
     "prices": {
@@ -1373,8 +1155,6 @@ export default [
     "image_url": "/assets/products/soft-drinks/500-ml-drink.webp"
   },
   {
-    "id": 110,
-    "available": true,
     "category": "Drinks",
     "name": "Can",
     "prices": {
@@ -1385,8 +1165,6 @@ export default [
     "image_url": "/assets/products/soft-drinks/can.webp"
   },
   {
-    "id": 111,
-    "available": true,
     "category": "Drinks",
     "name": "1 Litre Drink",
     "prices": {
@@ -1397,8 +1175,6 @@ export default [
     "image_url": "/assets/products/soft-drinks/1-litre-drink.webp"
   },
   {
-    "id": 112,
-    "available": true,
     "category": "Drinks",
     "name": "1.5 Litres Drink",
     "prices": {
@@ -1409,8 +1185,6 @@ export default [
     "image_url": "/assets/products/soft-drinks/1-5-litres-drink.webp"
   },
   {
-    "id": 113,
-    "available": true,
     "category": "Drinks",
     "name": "Small Water Bottle",
     "prices": {
@@ -1421,8 +1195,6 @@ export default [
     "image_url": "/assets/products/water/small-water-bottle.webp"
   },
   {
-    "id": 114,
-    "available": true,
     "category": "Drinks",
     "name": "Large Water Bottle",
     "prices": {
@@ -1433,8 +1205,6 @@ export default [
     "image_url": "/assets/products/water/large-water-bottle.webp"
   },
   {
-    "id": 115,
-    "available": true,
     "category": "Desserts",
     "name": "Chocolate Icecream",
     "prices": {
@@ -1447,8 +1217,6 @@ export default [
     "image_url": "/assets/products/desserts/chocolate-icecream.webp"
   },
   {
-    "id": 116,
-    "available": true,
     "category": "Desserts",
     "name": "Strawberry Icecream",
     "prices": {
@@ -1461,8 +1229,6 @@ export default [
     "image_url": "/assets/products/desserts/strawberry-icecream.webp"
   },
   {
-    "id": 117,
-    "available": true,
     "category": "Desserts",
     "name": "Kulfa Icecream",
     "prices": {
@@ -1475,8 +1241,6 @@ export default [
     "image_url": "/assets/products/desserts/kulfa-icecream.webp"
   },
   {
-    "id": 118,
-    "available": true,
     "category": "Desserts",
     "name": "Tutti Frutti Icecream",
     "prices": {
@@ -1489,8 +1253,6 @@ export default [
     "image_url": "/assets/products/desserts/tutti-frutti-icecream.webp"
   },
   {
-    "id": 119,
-    "available": true,
     "category": "Desserts",
     "name": "Mango Icecream",
     "prices": {
@@ -1503,8 +1265,6 @@ export default [
     "image_url": "/assets/products/desserts/mango-icecream.webp"
   },
   {
-    "id": 120,
-    "available": true,
     "category": "Desserts",
     "name": "Vanilla Icecream",
     "prices": {

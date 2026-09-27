@@ -6,6 +6,7 @@ const timestampOptions = {
   versionKey: false
 };
 
+
 export const defaultSiteSettings = {
   site_id: 'main',
   menu_version: 'grand-cafe-pdf-2026-09-v2-pizza-webp',
@@ -158,6 +159,7 @@ const reservationSchema = new mongoose.Schema({
   }
 }, timestampOptions);
 
+
 const reviewSchema = new mongoose.Schema({
   customer_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Customer', required: true, index: true },
   order_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Order', required: true, unique: true, index: true },
@@ -206,6 +208,9 @@ export async function syncOfficialMenu() {
     row.description = item.description || '';
     row.prices = item.prices || {};
     row.badge = item.badge || '';
+    // v5 migration: place the complete optimized WebP product image set at each exact menu item.
+    // This migration runs once per menu version. Admin image edits made afterwards are preserved
+    // on normal restarts because syncOfficialMenu() is not rerun until the menu version changes.
     row.image_url = officialBundledImage || preservedImage;
     row.sort_order = sort_order;
     await row.save();
@@ -229,6 +234,8 @@ export async function initDb() {
     { upsert: true, new: true, setDefaultsOnInsert: true }
   );
 
+  // Reset the admin exactly once for each freshly deployed release.
+  // Customer accounts, orders, reservations, menu and website settings are preserved.
   const deploymentId = String(process.env.ADMIN_DEPLOYMENT_ID || '').trim();
   if (deploymentId) {
     const state = await DeploymentState.findOne({ key: 'admin-deployment' }).lean();
@@ -249,6 +256,7 @@ export async function initDb() {
     await SiteSettings.updateOne({ site_id: 'main' }, { $set: { menu_version: OFFICIAL_MENU_VERSION } });
   }
 
+  // Migrate only the previous built-in logo path. Custom admin-uploaded logos are preserved.
   await SiteSettings.updateOne(
     { site_id: 'main', $or: [{ logo_url: '/assets/grand-cafe-logo.svg' }, { logo_url: '' }, { logo_url: null }] },
     { $set: { logo_url: '/assets/grand-cafe-logo.png' } }
