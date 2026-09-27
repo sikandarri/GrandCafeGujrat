@@ -1,0 +1,3089 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#090a0b;--panel:#111315;--panel2:#181a1d;--ink:#f7f1e7;--muted:#a4a29d;--yellow:#ffb000;--orange:#ff7a00;--red:#f23b2e;--line:rgba(255,255,255,.1);--shadow:0 28px 80px rgba(0,0,0,.35)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif}button,input,textarea,select{font:inherit}button,a{touch-action:manipulation}a{color:inherit;text-decoration:none}button{cursor:pointer}.page-shell{width:min(1180px,calc(100% - 40px));margin:auto}.section-space{padding:100px 0}.kicker,.eyebrow{letter-spacing:.18em;font-size:12px;font-weight:800;color:var(--yellow)}.site-header{position:fixed;inset:0 0 auto;z-index:50;padding:14px 0;background:linear-gradient(180deg,rgba(4,5,6,.82),transparent);backdrop-filter:blur(6px)}.nav-shell{width:min(1240px,calc(100% - 28px));margin:auto;display:flex;align-items:center;justify-content:space-between;border:1px solid rgba(255,255,255,.08);background:rgba(12,13,14,.72);backdrop-filter:blur(20px);border-radius:20px;padding:10px 12px 10px 16px}.brand{display:flex;align-items:center}.brand img{width:96px;height:60px;object-fit:contain;object-position:left center;filter:drop-shadow(0 0 14px rgba(255,70,30,.18))}.brand.compact img{width:78px;height:48px}.nav-shell nav{display:flex;gap:28px;font-size:14px;color:#d6d2cb}.nav-shell nav a:hover{color:white}.nav-actions{display:flex;gap:8px}.cart-btn,.mobile-menu,.drawer-head button{border:0;background:#202327;color:white;border-radius:14px;height:42px;min-width:42px;display:flex;align-items:center;justify-content:center;gap:7px}.cart-btn span{font-size:12px;background:var(--yellow);color:#111;border-radius:50%;width:20px;height:20px;display:grid;place-items:center;font-weight:800}.mobile-menu{display:none}.hero{min-height:820px;position:relative;overflow:hidden;display:flex;align-items:center}.hero-photo{position:absolute;inset:0;background-image:url('/assets/grand-cafe-storefront.jpg');background-size:cover;background-position:center 53%;filter:saturate(.92) contrast(1.05)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,6,7,.97) 0%,rgba(5,6,7,.82) 45%,rgba(5,6,7,.25) 80%),linear-gradient(0deg,#090a0b 0%,transparent 35%)}.hero-glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.24}.g1{width:380px;height:380px;background:var(--red);left:-160px;top:260px}.g2{width:320px;height:320px;background:var(--yellow);right:6%;bottom:8%}.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .7fr;gap:60px;align-items:end;padding-top:125px}.hero-copy{padding:70px 0}.eyebrow{display:flex;align-items:center;gap:8px}.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(64px,8vw,118px);line-height:.82;letter-spacing:-.065em;margin:22px 0 28px;max-width:800px}.hero h1 span{color:var(--yellow)}.hero-copy>p{font-size:19px;line-height:1.7;color:#c9c6bf;max-width:650px}.hero-cta{display:flex;gap:12px;margin:34px 0}.primary,.secondary{border:0;border-radius:16px;padding:15px 20px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:9px}.primary{background:linear-gradient(135deg,var(--yellow),var(--orange));color:#17110a;box-shadow:0 12px 34px rgba(255,176,0,.17)}.primary:disabled{opacity:.6;cursor:not-allowed}.secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(12px)}.hero-meta{display:flex;gap:25px;color:#aeadab;font-size:13px}.hero-meta span{display:flex;align-items:center;gap:7px}.hero-meta svg{width:15px}.hero-card{margin-bottom:88px;background:rgba(14,15,17,.76);border:1px solid rgba(255,255,255,.12);border-radius:26px;padding:28px;backdrop-filter:blur(18px);box-shadow:var(--shadow)}.hero-card-top{display:flex;justify-content:space-between;color:#999;font-size:11px;letter-spacing:.15em}.pulse-dot{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 8px rgba(242,59,46,.12)}.hero-card-title{font-family:'Plus Jakarta Sans';font-size:28px;font-weight:800;margin:18px 0 22px}.hero-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero-card-grid>div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.06);padding:15px;border-radius:16px;display:grid;gap:5px}.hero-card-grid small{color:#9e9d99}.hero-card-grid strong{font-size:14px}.section-heading{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:34px}.section-heading h2,.experience h2,.reserve h2,.visit h2{font-family:'Plus Jakarta Sans';font-size:clamp(38px,5vw,64px);letter-spacing:-.045em;line-height:1;margin:10px 0 0}.section-heading>p{max-width:420px;color:var(--muted);line-height:1.6}.menu-toolbar{position:sticky;top:80px;z-index:10;background:rgba(9,10,11,.86);backdrop-filter:blur(18px);display:flex;gap:14px;padding:12px 0 18px;margin-bottom:18px}.category-scroll{display:flex;gap:7px;overflow-x:auto;flex:1;scrollbar-width:none}.category-scroll button{white-space:nowrap;border:1px solid var(--line);background:#121416;color:#b8b6b2;padding:10px 13px;border-radius:999px}.category-scroll button.active{background:var(--yellow);border-color:var(--yellow);color:#17110a;font-weight:800}.search{display:flex;align-items:center;gap:8px;background:#151719;border:1px solid var(--line);border-radius:14px;padding:0 12px;width:230px}.search input{border:0;outline:0;background:transparent;color:white;width:100%}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.menu-card{background:linear-gradient(180deg,#151719,#111315);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-height:310px}.menu-card-image{height:175px;background-size:cover;background-position:center}.menu-card-body{padding:20px;display:flex;flex-direction:column;height:100%}.card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.mini-cat{font-size:10px;letter-spacing:.12em;color:#92918e;text-transform:uppercase}.badge{background:rgba(255,176,0,.12);color:var(--yellow);border:1px solid rgba(255,176,0,.25);font-size:10px;padding:5px 8px;border-radius:999px;font-weight:800}.menu-card h3{font-family:'Plus Jakarta Sans';font-size:20px;margin:10px 0 7px}.menu-card p{color:#9b9995;font-size:13px;line-height:1.55;margin:0 0 18px}.variant-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.variant-row button{background:#0d0f10;color:#b9b7b3;border:1px solid var(--line);border-radius:10px;padding:7px 9px;display:grid;text-align:left;font-size:11px}.variant-row button small{font-size:10px;color:#777}.variant-row button.active{border-color:rgba(255,176,0,.65);background:rgba(255,176,0,.08);color:var(--yellow)}.variant-row button.active small{color:#e7d09d}.card-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:18px}.card-bottom strong{font-family:'Plus Jakarta Sans';font-size:21px}.card-bottom button{border:0;background:#f1eee8;color:#111;padding:10px 12px;border-radius:11px;display:flex;gap:5px;align-items:center;font-weight:800}.deals{background:linear-gradient(135deg,#261108 0%,#120d0b 48%,#111 100%);border-block:1px solid rgba(255,176,0,.13)}.section-heading.light p{color:#b9afa8}.deal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.deal-card{min-height:315px;border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 8%,rgba(255,176,0,.16),transparent 32%),#151311}.deal-card.d1{background:radial-gradient(circle at 85% 8%,rgba(242,59,46,.18),transparent 32%),#151311}.deal-card.d2{background:radial-gradient(circle at 85% 8%,rgba(255,122,0,.18),transparent 32%),#151311}.deal-index{position:absolute;right:18px;top:8px;font-family:'Plus Jakarta Sans';font-size:70px;font-weight:800;color:rgba(255,255,255,.035)}.deal-card small{color:var(--yellow);font-weight:800}.deal-card h3{font-family:'Plus Jakarta Sans';font-size:27px;margin:9px 0}.deal-card p{color:#aaa39c;line-height:1.55;font-size:13px}.deal-price{display:flex;justify-content:space-between;align-items:center}.deal-price strong{font-family:'Plus Jakarta Sans';font-size:25px}.deal-price button{border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;border-radius:12px;padding:9px 11px;display:flex;align-items:center;gap:5px}.experience{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.experience-image{position:relative}.experience-image img{width:100%;height:610px;object-fit:cover;border-radius:28px;filter:saturate(.85) contrast(1.06)}.floating-rating{position:absolute;right:-18px;bottom:32px;background:rgba(14,15,17,.88);border:1px solid var(--line);backdrop-filter:blur(16px);padding:16px 18px;border-radius:18px;display:grid;grid-template-columns:auto 1fr;column-gap:8px;box-shadow:var(--shadow)}.floating-rating svg{color:var(--yellow);grid-row:1/3}.floating-rating small{color:#999}.experience-copy>p{color:var(--muted);font-size:17px;line-height:1.7}.experience-points{display:grid;gap:12px;margin-top:30px}.experience-points>div{display:flex;gap:14px;align-items:flex-start;background:#121416;border:1px solid var(--line);border-radius:17px;padding:15px}.experience-points svg{color:var(--yellow)}.experience-points span{display:grid}.experience-points small{color:#8e8d8a;margin-top:4px}.reserve{background:#f3eee5;color:#171717}.reserve-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}.reserve .kicker{color:#aa5e00}.reserve p{color:#625d56;line-height:1.65}.reserve-note{display:flex;gap:13px;align-items:center;margin-top:28px}.reserve-note span{display:grid}.reserve-note small{color:#766f67}.reserve-form{background:white;border-radius:25px;padding:25px;box-shadow:0 25px 70px rgba(50,30,10,.12);display:grid;gap:12px}.reserve-form .two,.reserve-form .three{display:grid;gap:10px}.reserve-form .two{grid-template-columns:1fr 1fr}.reserve-form .three{grid-template-columns:.55fr 1fr 1fr}.reserve-form input,.reserve-form textarea,.checkout-form input,.checkout-form textarea,.auth-card input,.admin-form input,.admin-form textarea{width:100%;border:1px solid #ded9d1;background:#faf8f5;color:#1b1b1b;border-radius:13px;padding:13px 14px;outline:none}.form-msg{font-size:13px;background:rgba(38,156,85,.1);border:1px solid rgba(38,156,85,.2);color:#2b7d4c;padding:10px 12px;border-radius:10px}.form-msg.error{color:#b73a31;background:rgba(220,50,40,.08);border-color:rgba(220,50,40,.15)}.form-msg.setup-note{color:#d9b36a;background:rgba(255,176,0,.07);border-color:rgba(255,176,0,.18);line-height:1.45}.visit-card{border:1px solid var(--line);background:radial-gradient(circle at 90% 10%,rgba(255,176,0,.13),transparent 30%),#111315;border-radius:28px;padding:38px;display:flex;justify-content:space-between;align-items:flex-end;gap:30px}.visit-card h2{font-size:50px}.visit-card p{color:var(--muted)}.contact-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.contact-row a{display:flex;gap:8px;align-items:center;background:#191c1f;padding:11px 13px;border-radius:12px;color:#d8d4cd}.contact-row svg{width:17px}.map-button{min-width:320px;border-radius:20px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:#191109;padding:18px;display:flex;align-items:center;gap:12px;font-weight:800}.map-button span{display:grid;flex:1}.map-button small{font-weight:500;opacity:.65}.map-button>svg:last-child{width:18px}footer{border-top:1px solid var(--line);padding:55px 0 22px;background:#070809}.footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1.2fr .6fr;gap:30px}.footer-grid>div{display:flex;flex-direction:column;gap:10px}.footer-grid p,.footer-grid a{color:#858480;font-size:13px}.socials{display:flex;gap:12px;color:#888}.footer-bottom{border-top:1px solid var(--line);margin-top:35px;padding-top:20px;display:flex;justify-content:space-between;color:#61615f;font-size:12px}.drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:80;backdrop-filter:blur(4px)}.cart-drawer{position:fixed;right:0;top:0;bottom:0;width:min(470px,100%);background:#101214;z-index:90;display:flex;flex-direction:column;border-left:1px solid var(--line);box-shadow:-20px 0 70px rgba(0,0,0,.4)}.drawer-head{padding:24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.drawer-head small{color:var(--yellow);font-weight:800;letter-spacing:.12em}.drawer-head h2{font-family:'Plus Jakarta Sans';margin:4px 0 0}.cart-lines{padding:18px 24px;overflow:auto;flex:1}.cart-line{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid var(--line);gap:15px}.cart-line>div:first-child{display:grid}.cart-line small{color:#898986;margin-top:4px}.qty{display:flex;align-items:center;gap:9px}.qty button{width:28px;height:28px;border-radius:9px;border:1px solid var(--line);background:#191b1d;color:#fff;display:grid;place-items:center}.qty svg{width:13px}.cart-summary{padding:20px 24px;border-top:1px solid var(--line)}.cart-summary>div,.checkout-total{display:flex;justify-content:space-between;font-size:20px}.cart-summary small{display:block;color:#747471;margin:7px 0 16px}.full{width:100%}.cart-empty{text-align:center;color:#777;padding:80px 20px}.cart-empty svg{color:#454545}.cart-empty h3{color:#ddd}.checkout-form{padding:22px 24px;display:grid;gap:12px;overflow:auto}.checkout-form input,.checkout-form textarea{background:#181a1c;border-color:#292c2f;color:#fff}.back-link,.text-btn{background:transparent;border:0;color:#999;text-align:left;padding:4px 0}.segmented{display:grid;grid-template-columns:1fr 1fr;background:#181a1c;border-radius:13px;padding:4px}.segmented button{border:0;background:transparent;color:#888;border-radius:10px;padding:10px}.segmented button.active{background:#2a2d30;color:#fff}.admin-loading{min-height:100vh;display:grid;place-items:center}.admin-auth{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;background:#090a0b}.auth-art{padding:9vw 8vw;background:linear-gradient(120deg,rgba(6,7,8,.65),rgba(6,7,8,.96)),url('/assets/grand-cafe-storefront.jpg') center/cover;display:flex;flex-direction:column;justify-content:center}.auth-art h1{font-family:'Plus Jakarta Sans';font-size:64px;letter-spacing:-.06em;line-height:.95;margin:55px 0 20px}.auth-art p{color:#aaa;max-width:500px}.auth-card{align-self:center;margin:auto;width:min(410px,calc(100% - 40px));display:grid;gap:12px;background:#121416;border:1px solid var(--line);padding:30px;border-radius:24px}.auth-card h2{font-family:'Plus Jakarta Sans';font-size:31px;margin:3px 0 10px}.auth-card input{background:#181a1c;border-color:#292c2f;color:white}.admin-layout{min-height:100vh;display:grid;grid-template-columns:250px 1fr;background:#0b0c0e}.admin-sidebar{position:sticky;top:0;height:100vh;border-right:1px solid var(--line);padding:22px 17px;display:flex;flex-direction:column}.admin-nav{display:grid;gap:6px;margin-top:45px}.admin-nav button,.sidebar-bottom button{border:0;background:transparent;color:#8f8f8d;display:flex;align-items:center;gap:10px;padding:11px;border-radius:11px;text-align:left}.admin-nav button svg,.sidebar-bottom svg{width:18px}.admin-nav button.active{background:#1a1c1f;color:#fff}.admin-nav button span{margin-left:auto;background:var(--red);color:white;font-size:10px;border-radius:999px;padding:2px 6px}.sidebar-bottom{margin-top:auto;display:grid}.admin-main{padding:40px;max-width:1500px;width:100%}.admin-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.admin-head h1{font-family:'Plus Jakarta Sans';font-size:40px;margin:5px 0}.admin-split{display:grid;grid-template-columns:350px 1fr;gap:22px;align-items:start}.admin-form{position:sticky;top:25px;background:#131517;border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;gap:10px}.admin-form h3{margin:0 0 5px}.admin-form input,.admin-form textarea{background:#1b1d20;border-color:#292c2f;color:#fff}.upload-box{border:1px dashed #393c40;border-radius:13px;padding:15px;color:#999;display:flex;align-items:center;gap:8px;cursor:pointer}.upload-box input{display:none}.admin-list{display:grid;gap:8px}.admin-item{display:grid;grid-template-columns:56px 1fr auto auto;gap:12px;align-items:center;background:#121416;border:1px solid var(--line);border-radius:15px;padding:9px}.admin-item img,.admin-thumb{width:56px;height:56px;border-radius:11px;object-fit:cover;background:#1d2023;display:grid;place-items:center;color:#555}.admin-item-copy{display:grid;min-width:0}.admin-item-copy small{color:#70706e;font-size:10px}.admin-item-copy strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.admin-item-copy span{color:#888;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.visibility,.danger-icon{width:36px;height:36px;border:0;border-radius:10px;background:#1d2023;color:#777;display:grid;place-items:center}.visibility.on{color:#61c785}.danger-icon{color:#d86a60}.visibility svg,.danger-icon svg{width:16px}.order-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.order-card{background:#121416;border:1px solid var(--line);border-radius:18px;padding:18px}.order-top{display:flex;justify-content:space-between;gap:15px}.order-top small{color:var(--yellow)}.order-top h3{margin:3px 0}.order-top span{font-size:12px;color:#7d7d79}.order-top select,.reservation-card select{background:#1d2023;border:1px solid #303337;color:white;border-radius:10px;padding:8px}.order-items{border-block:1px solid var(--line);margin:15px 0;padding:10px 0}.order-items>div{display:flex;justify-content:space-between;padding:5px 0;font-size:13px}.order-items small{color:#73736f}.order-address{font-size:12px;color:#8b8b87;display:flex;gap:5px}.order-address svg{width:14px}.order-total{display:flex;justify-content:space-between;font-size:18px}.reservation-list{display:grid;gap:9px}.reservation-card{display:grid;grid-template-columns:130px 1fr auto;gap:18px;align-items:center;background:#121416;border:1px solid var(--line);border-radius:15px;padding:14px}.date-block{display:grid;border-right:1px solid var(--line)}.date-block span{color:var(--yellow)}.reservation-card h3{margin:0 0 4px}.reservation-card p{margin:0;color:#888}.reservation-card small{color:#777}.empty{text-align:center;padding:50px;color:#777;border:1px dashed #2b2d30;border-radius:18px}
+@media(max-width:900px){.nav-shell nav{display:none;position:absolute;top:72px;left:14px;right:14px;background:#121416;border:1px solid var(--line);border-radius:18px;padding:18px;flex-direction:column}.nav-shell nav.open{display:flex}.mobile-menu{display:grid}.hero{min-height:760px}.hero-content{grid-template-columns:1fr}.hero-card{display:none}.hero-copy{padding:90px 0 40px}.hero h1{font-size:72px}.menu-grid,.deal-grid{grid-template-columns:1fr 1fr}.experience{grid-template-columns:1fr}.experience-image img{height:500px}.reserve-grid{grid-template-columns:1fr;gap:35px}.visit-card{align-items:stretch;flex-direction:column}.map-button{min-width:0}.footer-grid{grid-template-columns:1fr 1fr}.admin-layout{grid-template-columns:80px 1fr}.admin-sidebar .brand span:last-child,.admin-nav button:not(.active){font-size:0}.admin-nav button{justify-content:center}.admin-nav button.active{font-size:0}.admin-nav button span{display:none}.sidebar-bottom button{font-size:0;justify-content:center}.admin-split{grid-template-columns:1fr}.admin-form{position:relative;top:auto}.order-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.page-shell{width:min(100% - 24px,1180px)}.section-space{padding:72px 0}.site-header{padding-top:8px}.nav-shell{width:calc(100% - 16px);border-radius:16px}.hero{min-height:730px}.hero-photo{background-position:58% center}.hero-overlay{background:linear-gradient(90deg,rgba(5,6,7,.95),rgba(5,6,7,.6)),linear-gradient(0deg,#090a0b,transparent 55%)}.hero h1{font-size:60px}.hero-copy>p{font-size:16px}.hero-cta{flex-direction:column;align-items:stretch}.hero-meta{flex-direction:column;gap:8px}.section-heading{align-items:start;flex-direction:column;gap:8px}.section-heading h2,.experience h2,.reserve h2,.visit h2{font-size:42px}.menu-toolbar{top:68px;display:block}.search{width:100%;height:44px;margin-top:8px}.menu-grid,.deal-grid{grid-template-columns:1fr}.menu-card{min-height:0}.experience{gap:28px}.experience-image img{height:420px}.floating-rating{right:10px;bottom:15px}.reserve-form .two,.reserve-form .three{grid-template-columns:1fr}.visit-card{padding:24px}.contact-row{flex-direction:column}.footer-grid{grid-template-columns:1fr 1fr}.admin-auth{grid-template-columns:1fr}.auth-art{min-height:300px;padding:40px 25px}.auth-art h1{font-size:43px;margin:35px 0 10px}.auth-card{margin:30px auto}.admin-layout{display:block}.admin-sidebar{position:sticky;top:0;z-index:20;width:100%;height:auto;flex-direction:row;align-items:center;background:#0b0c0e}.admin-nav{display:flex;margin:0 0 0 auto}.admin-nav button{padding:9px}.admin-nav button svg{width:19px}.sidebar-bottom{display:none}.admin-main{padding:22px 12px}.admin-item{grid-template-columns:48px 1fr auto auto}.admin-item img,.admin-thumb{width:48px;height:48px}.reservation-card{grid-template-columns:1fr;gap:8px}.date-block{border-right:0;border-bottom:1px solid var(--line);padding-bottom:8px}.order-top{flex-direction:column}.footer-bottom{gap:10px;flex-direction:column}}
+
+
+/* Refined menu browsing: replaces the old non-interactive feature strip */
+.menu-section{padding-top:78px}
+.menu-heading{margin-bottom:26px}
+.menu-browser{margin-bottom:24px}
+.category-groups{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:9px;margin-bottom:14px}
+.category-groups button{min-height:76px;border:1px solid var(--line);background:linear-gradient(180deg,#151719,#101214);color:#d7d3cc;border-radius:17px;padding:12px;display:flex;align-items:center;gap:10px;text-align:left;transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease}
+.category-groups button:hover{transform:translateY(-2px);border-color:rgba(255,176,0,.3);background:#17191b}
+.category-groups button.active{background:linear-gradient(135deg,var(--yellow),var(--orange));border-color:transparent;color:#17110a;box-shadow:0 12px 28px rgba(255,176,0,.14)}
+.group-icon{width:34px;height:34px;flex:0 0 34px;border-radius:11px;background:rgba(255,255,255,.06);display:grid;place-items:center}
+.category-groups button.active .group-icon{background:rgba(20,14,5,.12)}
+.group-copy{display:grid;gap:3px;min-width:0}
+.group-copy strong{font-size:13px;line-height:1.15}
+.group-copy small{font-size:10px;color:#7f7e7a}
+.category-groups button.active .group-copy small{color:rgba(23,17,10,.62)}
+.menu-controls{position:sticky;top:79px;z-index:12;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 12px;margin-inline:-12px;background:rgba(9,10,11,.9);border:1px solid rgba(255,255,255,.05);border-radius:17px;backdrop-filter:blur(18px)}
+.menu-context{display:flex;align-items:baseline;gap:9px;white-space:nowrap;padding-left:4px}
+.menu-context strong{font-family:'Plus Jakarta Sans';font-size:15px}
+.menu-context span{font-size:11px;color:#73736f}
+.menu-controls .search{width:min(360px,45vw);height:44px;background:#151719;border:1px solid var(--line);border-radius:13px;padding:0 12px}
+.menu-controls .search:focus-within{border-color:rgba(255,176,0,.45);box-shadow:0 0 0 3px rgba(255,176,0,.07)}
+.menu-controls .search input{font-size:13px}
+.subcategory-row{display:flex;gap:8px;overflow-x:auto;padding:11px 1px 3px;scrollbar-width:none}
+.subcategory-row::-webkit-scrollbar{display:none}
+.subcategory-row button{flex:0 0 auto;white-space:nowrap;border:1px solid var(--line);background:#111315;color:#aaa7a2;border-radius:999px;padding:9px 13px;font-size:12px}
+.subcategory-row button:hover{border-color:rgba(255,176,0,.3);color:#fff}
+.subcategory-row button.active{background:rgba(255,176,0,.11);border-color:rgba(255,176,0,.55);color:var(--yellow);font-weight:800}
+.menu-section .empty{display:grid;place-items:center;gap:7px;margin-top:20px}
+.menu-section .empty strong{color:#ccc}
+.menu-section .empty span{font-size:12px;color:#777}
+
+@media(max-width:1050px){
+  .category-groups{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:4px;scrollbar-width:none}
+  .category-groups::-webkit-scrollbar{display:none}
+  .category-groups button{flex:0 0 158px;scroll-snap-align:start}
+}
+@media(max-width:620px){
+  .menu-section{padding-top:58px}
+  .menu-heading{margin-bottom:20px}
+  .category-groups{margin-inline:-1px;gap:7px}
+  .category-groups button{flex-basis:145px;min-height:68px;padding:10px;border-radius:15px}
+  .group-icon{width:31px;height:31px;flex-basis:31px}
+  .group-copy strong{font-size:12px}
+  .menu-controls{top:67px;display:grid;grid-template-columns:1fr;padding:9px;margin-inline:-4px;gap:8px;border-radius:15px}
+  .menu-context{justify-content:space-between;padding:0 3px}
+  .menu-controls .search{width:100%;height:44px}
+  .subcategory-row{padding-top:9px}
+  .subcategory-row button{padding:8px 12px}
+}
+/* Premium typography refresh */
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-feature-settings:'kern' 1,'liga' 1;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.hero h1,.section-heading h2,.experience h2,.reserve h2,.visit h2,.customer-auth-brand h1,.account-welcome h1,.track-intro h1{font-family:'DM Serif Display',Georgia,serif;font-weight:400;letter-spacing:-.035em}
+.hero h1{letter-spacing:-.045em}.menu-card h3,.deal-card h3,.admin-head h1,.account-order-card h3{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em}
+
+/* Customer navigation */
+.account-nav-btn{height:42px;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:#17191c;color:#f2eee7;border-radius:14px;padding:0 13px;font-size:12px;font-weight:700;transition:.2s ease}
+.account-nav-btn:hover{border-color:rgba(255,176,0,.35);background:#1d2024}.account-nav-btn svg{color:var(--yellow)}
+
+/* Checkout account states */
+.checkout-account,.guest-account-note{display:flex;gap:12px;align-items:flex-start;border:1px solid rgba(255,176,0,.18);background:rgba(255,176,0,.06);border-radius:15px;padding:13px;margin-bottom:2px}
+.checkout-account>svg,.guest-account-note>svg{width:20px;flex:0 0 20px;color:var(--yellow);margin-top:2px}.checkout-account span,.guest-account-note span{display:grid;gap:3px}.checkout-account small{font-size:9px;letter-spacing:.14em;color:#8d8b86}.checkout-account strong,.guest-account-note strong{font-size:13px}.checkout-account em{font-size:10px;color:#7eaf8a;font-style:normal}.guest-account-note small{color:#8e8c88;line-height:1.45}.guest-account-note a{color:var(--yellow);font-weight:700}.checkout-success{display:grid;gap:15px;text-align:center;padding:42px 22px}.success-icon{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;margin:auto;background:rgba(87,190,120,.12);color:#6fd08d;border:1px solid rgba(111,208,141,.25)}.success-icon svg{width:30px;height:30px}.checkout-success h3{font-size:24px;margin:0}.checkout-success p{margin:0}.muted-copy{color:#8c8a86;font-size:13px;line-height:1.55}
+
+/* Customer authentication */
+.customer-auth-page{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;background:#090a0b}.customer-auth-brand{position:relative;overflow:hidden;min-height:100vh;padding:48px clamp(40px,7vw,110px);display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(90deg,rgba(5,6,7,.97),rgba(5,6,7,.6)),url('/assets/grand-cafe-storefront.jpg') center/cover}.customer-auth-brand:after{content:'';position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,122,0,.15);filter:blur(100px);right:-140px;bottom:-90px}.customer-auth-brand>.brand{position:relative;z-index:2}.customer-auth-brand>div{position:relative;z-index:2;max-width:650px;margin-bottom:10vh}.customer-auth-brand h1{font-size:clamp(55px,7vw,96px);line-height:.88;margin:17px 0 25px}.customer-auth-brand p{font-size:17px;line-height:1.7;color:#c9c4bc;max-width:570px}.auth-benefits{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}.auth-benefits span{display:flex;align-items:center;gap:7px;padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);font-size:11px;color:#dad5ce}.auth-benefits svg{width:15px;color:var(--yellow)}.customer-auth-card{width:min(480px,calc(100% - 50px));margin:auto;display:grid;gap:14px;padding:45px 0}.customer-auth-card .auth-home-link{font-size:12px;color:#92908b;margin-bottom:28px}.customer-auth-card h2{font-size:38px;margin:4px 0 12px;letter-spacing:-.04em}.customer-auth-card label{display:grid;gap:7px;font-size:11px;color:#aaa7a2;font-weight:700}.customer-auth-card input,.profile-form input,.profile-form textarea,.track-form input{width:100%;background:#141618;border:1px solid #2b2e31;color:#fff;border-radius:13px;padding:14px 15px;outline:0}.customer-auth-card input:focus,.profile-form input:focus,.profile-form textarea:focus,.track-form input:focus{border-color:rgba(255,176,0,.52);box-shadow:0 0 0 3px rgba(255,176,0,.08)}.input-icon{position:relative}.input-icon svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;color:#6f716f}.input-icon input{padding-left:43px}.auth-switch{text-align:center;color:#85837f;font-size:12px;margin:5px 0}.auth-switch a{color:var(--yellow);font-weight:800}
+
+/* Customer account */
+.account-page,.track-page{min-height:100vh;background:radial-gradient(circle at 80% -20%,rgba(255,176,0,.08),transparent 34%),#090a0b}.account-header{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07)}.account-header>div{display:flex;align-items:center;gap:18px}.account-header>div>a{font-size:12px;color:#aaa7a1}.account-header button{border:0;background:transparent;color:#aaa7a1;display:flex;align-items:center;gap:7px}.account-main{padding:62px 0 100px}.account-welcome{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}.account-welcome h1{font-size:66px;line-height:.95;margin:9px 0 10px}.account-welcome p{color:#999690;margin:0}.refresh-btn{display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:#141618;color:#ccc;border-radius:12px;padding:10px 13px;font-size:12px}.account-layout{display:grid;grid-template-columns:310px 1fr;gap:22px;align-items:start}.profile-card{position:sticky;top:24px;background:linear-gradient(180deg,#151719,#111315);border:1px solid var(--line);border-radius:23px;padding:23px;text-align:center;display:grid;gap:8px}.profile-avatar{width:68px;height:68px;border-radius:20px;display:grid;place-items:center;margin:0 auto 5px;background:linear-gradient(135deg,rgba(255,176,0,.18),rgba(242,59,46,.1));color:var(--yellow);border:1px solid rgba(255,176,0,.18)}.profile-avatar svg{width:28px;height:28px}.profile-card h3{margin:4px 0 0;font-size:20px}.profile-card>p,.profile-card>span{margin:0;color:#888681;font-size:12px}.profile-card>small{display:flex;gap:6px;align-items:flex-start;text-align:left;background:#0e1012;border-radius:12px;padding:10px;color:#777570;margin:7px 0}.profile-card>small svg{width:14px;flex:0 0 14px}.profile-form{display:grid;gap:8px;margin-top:8px}.profile-form input,.profile-form textarea{font-size:12px}.profile-security{display:flex;align-items:flex-start;text-align:left;gap:9px;border-top:1px solid var(--line);padding-top:15px;margin-top:8px}.profile-security>svg{width:18px;color:#68c98a}.profile-security span{display:grid}.profile-security strong{font-size:11px}.profile-security small{font-size:9px;color:#72716e;margin-top:2px}.orders-panel{display:grid;gap:13px}.orders-panel-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:5px}.orders-panel-head h2{font-size:31px;margin:5px 0 0}.live-refresh{font-size:10px;color:#7f7d79;display:flex;align-items:center;gap:7px}.live-refresh i{width:7px;height:7px;border-radius:50%;background:#65d189;box-shadow:0 0 0 5px rgba(101,209,137,.09)}.account-order-card{background:linear-gradient(180deg,#131517,#101214);border:1px solid var(--line);border-radius:22px;padding:20px}.account-order-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.order-number{font-size:11px;color:var(--yellow);font-weight:800;letter-spacing:.05em}.account-order-head h3{font-size:19px;margin:4px 0}.account-order-head small{color:#76746f}.status-pill{display:inline-flex;align-items:center;justify-content:center;min-height:32px;border-radius:999px;padding:6px 10px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;border:1px solid rgba(255,255,255,.09);background:#1d2023;color:#aaa}.status-new{color:#f4ba46;background:rgba(244,186,70,.08);border-color:rgba(244,186,70,.2)}.status-confirmed,.status-preparing{color:#75b9ff;background:rgba(70,145,244,.08);border-color:rgba(70,145,244,.2)}.status-ready,.status-out_for_delivery{color:#d9a7ff;background:rgba(171,91,230,.08);border-color:rgba(171,91,230,.2)}.status-completed{color:#70d292;background:rgba(87,190,120,.08);border-color:rgba(87,190,120,.2)}.status-cancelled{color:#ef7a72;background:rgba(242,59,46,.08);border-color:rgba(242,59,46,.2)}
+.order-tracker{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin:20px 0 18px;position:relative}.order-tracker:before{content:'';position:absolute;height:1px;background:#2b2e31;left:28px;right:28px;top:16px}.track-step{position:relative;z-index:1;display:grid;justify-items:center;gap:7px;text-align:center;color:#585a5b}.track-dot{width:33px;height:33px;border-radius:50%;display:grid;place-items:center;background:#17191c;border:1px solid #313438;font-size:10px}.track-copy{display:grid;gap:2px}.track-copy strong{font-size:9px;font-weight:700}.track-copy small{font-size:8px;color:#60615f}.track-step.done{color:#d5d1ca}.track-step.done .track-dot{background:#29220e;border-color:rgba(255,176,0,.45);color:var(--yellow)}.track-step.active .track-dot{background:var(--yellow);color:#151008;box-shadow:0 0 0 6px rgba(255,176,0,.08)}.track-step.active .track-copy strong{color:var(--yellow)}.tracking-cancelled{margin:18px 0;display:flex;align-items:center;gap:8px;padding:11px 13px;background:rgba(242,59,46,.08);border:1px solid rgba(242,59,46,.2);border-radius:12px;color:#e8847d;font-size:12px}.account-order-items{border-block:1px solid var(--line);padding:10px 0;margin-top:8px}.account-order-items>div{display:flex;justify-content:space-between;gap:15px;padding:6px 0;font-size:12px}.account-order-items span{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}.account-order-items small{color:#6f706d;font-size:9px}.account-order-address{display:flex;gap:7px;align-items:flex-start;color:#7e7d78;font-size:11px}.account-order-address svg{width:14px;flex:0 0 14px}.account-order-foot{display:flex;justify-content:space-between;align-items:end;margin-top:14px}.account-order-foot>div{display:grid}.account-order-foot small{color:#74736f}.account-order-foot strong{font-size:21px}.soft-danger{border:1px solid rgba(242,59,46,.2);background:rgba(242,59,46,.06);color:#d87a73;border-radius:10px;padding:9px 11px;font-size:10px}.account-empty{border:1px dashed #303338;border-radius:20px;padding:70px 25px;text-align:center;color:#777;display:grid;justify-items:center;gap:10px}.account-empty svg{width:34px;height:34px}.account-empty h3{margin:2px 0;color:#ccc}.account-empty p{margin:0 0 8px;font-size:12px}.customer-page-loading{min-height:100vh;display:grid;place-items:center;background:#090a0b;color:#888}
+
+/* Public order tracking */
+.track-shell{width:min(760px,calc(100% - 32px));margin:0 auto;padding:80px 0 110px}.track-intro{text-align:center;margin-bottom:30px}.track-intro h1{font-size:68px;line-height:.95;margin:10px 0}.track-intro p{color:#8c8984}.track-form{display:grid;grid-template-columns:1fr 1fr auto;gap:9px;align-items:end;background:#121416;border:1px solid var(--line);border-radius:20px;padding:15px;margin-bottom:14px}.track-form label{display:grid;gap:6px;font-size:9px;color:#84827e;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.track-form input{padding:12px 13px}.track-form .primary{height:44px;white-space:nowrap}.public-track-card{margin-top:22px;background:#121416;border:1px solid var(--line);border-radius:22px;padding:22px}.public-track-head{display:flex;justify-content:space-between;gap:20px}.public-track-head small{color:#777}.public-track-head h2{margin:3px 0;font-size:27px}.public-track-head span:not(.status-pill){font-size:11px;color:#888}.public-track-card>.secondary{margin-top:15px}
+
+/* Admin status controls: compact and text-sized */
+.order-top{align-items:flex-start}.order-status-select,.reservation-status-select{width:auto!important;min-width:0!important;max-width:180px;height:40px;align-self:flex-start;background:#1d2023!important;border:1px solid #303337!important;color:#f4f0e9!important;border-radius:11px!important;padding:0 34px 0 12px!important;font-size:12px!important;font-weight:700;text-transform:none}.reservation-status-select{max-width:150px}.order-card{padding:20px}.order-top h3{font-size:21px}
+
+@media(max-width:900px){
+  .customer-auth-page{grid-template-columns:1fr}.customer-auth-brand{min-height:410px;padding:35px}.customer-auth-brand>div{margin:60px 0 0}.customer-auth-brand h1{font-size:58px}.customer-auth-card{padding:55px 0 75px}.account-layout{grid-template-columns:1fr}.profile-card{position:relative;top:auto}.order-tracker{overflow-x:auto;grid-template-columns:repeat(6,minmax(95px,1fr));padding-bottom:5px}.track-form{grid-template-columns:1fr 1fr}.track-form .primary{grid-column:1/-1}.account-welcome h1{font-size:54px}
+}
+@media(max-width:620px){
+  .account-nav-btn{width:42px;padding:0;justify-content:center}.account-nav-btn span{display:none}.customer-auth-brand{min-height:330px;padding:25px}.customer-auth-brand .brand img{width:96px;height:72px}.customer-auth-brand>div{margin:45px 0 0}.customer-auth-brand h1{font-size:46px}.customer-auth-brand p{font-size:14px}.auth-benefits{display:none}.customer-auth-card{width:calc(100% - 32px);padding:38px 0 65px}.customer-auth-card h2{font-size:31px}.account-header{height:72px}.account-header>div{gap:11px}.account-header>div>a,.account-header button{font-size:10px}.account-main{padding:42px 0 75px}.account-welcome{align-items:flex-start;flex-direction:column}.account-welcome h1{font-size:48px}.account-layout{gap:15px}.orders-panel-head{align-items:flex-start;flex-direction:column;gap:8px}.account-order-card{padding:15px}.account-order-head{align-items:flex-start;flex-direction:column}.account-order-head .status-pill{order:-1}.order-tracker{margin:16px -3px 14px}.account-order-items>div{font-size:11px}.track-shell{padding:55px 0 80px}.track-intro h1{font-size:49px}.track-form{grid-template-columns:1fr;padding:12px}.track-form .primary{grid-column:auto}.public-track-card{padding:15px}.public-track-head{flex-direction:column}.order-status-select,.reservation-status-select{max-width:165px}.order-top{flex-direction:column;align-items:flex-start!important}
+}
+
+/* Admin customer directory */
+.customer-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.customer-admin-card{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;background:#121416;border:1px solid var(--line);border-radius:18px;padding:16px}.customer-admin-avatar{width:46px;height:46px;border-radius:14px;background:rgba(255,176,0,.08);border:1px solid rgba(255,176,0,.14);color:var(--yellow);display:grid;place-items:center}.customer-admin-avatar svg{width:20px}.customer-admin-copy{min-width:0;display:grid;gap:3px}.customer-admin-copy h3{margin:0;font-size:15px}.customer-admin-copy p,.customer-admin-copy span{margin:0;color:#85847f;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.customer-admin-copy small{display:flex;align-items:flex-start;gap:5px;color:#6f706d;font-size:9px;margin-top:3px}.customer-admin-copy small svg{width:12px;flex:0 0 12px}.customer-admin-stats{display:flex;gap:8px}.customer-admin-stats>div{min-width:88px;background:#0d0f10;border:1px solid #25282b;border-radius:12px;padding:9px 10px;display:grid}.customer-admin-stats strong{font-size:13px}.customer-admin-stats small{font-size:8px;color:#6f706d;text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:900px){.customer-admin-grid{grid-template-columns:1fr}}@media(max-width:620px){.customer-admin-card{grid-template-columns:auto 1fr}.customer-admin-stats{grid-column:1/-1}.customer-admin-stats>div{flex:1}}
+
+/* 2026 UX refinement: premium type, rounded navigation, pagination and website settings */
+body{font-family:'Manrope',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-optical-sizing:auto}
+button,input,textarea,select{font-family:'Manrope',system-ui,sans-serif}
+.hero h1,.section-heading h2,.experience h2,.reserve h2,.visit h2,.customer-auth-brand h1,.account-welcome h1,.track-intro h1,.admin-head h1,.auth-art h1,.auth-card h2,.customer-auth-card h2,.settings-panel-title h3{
+  font-family:'Nebies Retro','Bungee','Arial Black',sans-serif;
+  font-weight:400;
+  letter-spacing:.005em;
+}
+.hero h1{letter-spacing:-.015em;line-height:.9}
+.section-heading h2,.experience h2,.reserve h2,.visit h2{letter-spacing:0;line-height:1.05}
+.menu-card h3,.deal-card h3,.account-order-card h3,.hero-card-title{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:-.025em}
+
+/* Header navigation is now a distinct rounded control instead of plain text links. */
+.nav-shell nav{
+  gap:4px;
+  padding:5px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:999px;
+  background:rgba(255,255,255,.035);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 12px 40px rgba(0,0,0,.16);
+}
+.nav-shell nav a{
+  padding:9px 15px;
+  border-radius:999px;
+  color:#c9c5be;
+  font-size:13px;
+  font-weight:700;
+  transition:background .18s ease,color .18s ease,transform .18s ease;
+}
+.nav-shell nav a:hover{background:rgba(255,176,0,.11);color:#fff;transform:translateY(-1px)}
+
+/* Menu pagination */
+#menu-grid{scroll-margin-top:150px}
+.pagination-wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
+.pagination-summary{color:#85837e;font-size:12px}.pagination-summary strong{color:#e8e2d8}
+.pagination{display:flex;gap:7px;align-items:center;background:#111315;border:1px solid var(--line);border-radius:18px;padding:6px}
+.pagination button{min-width:38px;height:38px;border:0;border-radius:12px;background:transparent;color:#9a9893;font-weight:800;display:grid;place-items:center;transition:.18s ease}
+.pagination button:hover:not(:disabled){background:#1c1f22;color:#fff}.pagination button.active{background:linear-gradient(135deg,var(--yellow),var(--orange));color:#181108;box-shadow:0 8px 20px rgba(255,176,0,.14)}
+.pagination button:disabled{opacity:.3;cursor:not-allowed}.pagination .page-arrow{font-size:22px;font-weight:500}
+
+/* Website settings dashboard */
+.settings-admin{max-width:1180px}.admin-head p{max-width:720px;margin:8px 0 0;color:#7f7e79;line-height:1.6}
+.settings-form{display:grid;gap:15px;padding-bottom:100px}.settings-panel{background:linear-gradient(180deg,#131517,#101214);border:1px solid var(--line);border-radius:22px;padding:22px}
+.settings-panel-title{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}.settings-panel-title>span{width:38px;height:38px;border-radius:12px;background:rgba(255,176,0,.09);border:1px solid rgba(255,176,0,.16);color:var(--yellow);font-size:10px;font-weight:800;display:grid;place-items:center}.settings-panel-title h3{font-size:20px;margin:0 0 4px}.settings-panel-title p{margin:0;color:#777672;font-size:11px}.settings-fields{display:grid;gap:12px}.settings-fields.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}.settings-fields label{display:grid;gap:7px;color:#8f8e89;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.settings-fields input,.settings-fields textarea{width:100%;background:#0e1012;border:1px solid #292c2f;color:#f4f0e9;border-radius:13px;padding:12px 13px;outline:0;text-transform:none;letter-spacing:0;font-size:13px;font-weight:500}.settings-fields input:focus,.settings-fields textarea:focus{border-color:rgba(255,176,0,.55);box-shadow:0 0 0 3px rgba(255,176,0,.06)}.settings-fields .full-field{grid-column:1/-1}.settings-upload{align-content:end;position:relative}.settings-upload>input{position:absolute;opacity:0;pointer-events:none}.settings-upload>span{height:44px;border:1px dashed #3a3d41;border-radius:13px;display:flex;align-items:center;justify-content:center;gap:7px;color:#b5b1aa;background:#101214;cursor:pointer;text-transform:none;letter-spacing:0;font-size:12px;transition:.18s ease}.settings-upload>span:hover{border-color:rgba(255,176,0,.5);color:var(--yellow);background:rgba(255,176,0,.035)}
+.settings-savebar{position:sticky;bottom:18px;z-index:8;display:flex;align-items:center;justify-content:space-between;gap:20px;background:rgba(17,19,21,.92);border:1px solid var(--line);border-radius:18px;padding:12px 14px;backdrop-filter:blur(18px);box-shadow:0 22px 60px rgba(0,0,0,.3)}.settings-savebar .success-text{color:#76cf94;font-size:11px}.settings-savebar .error-text{color:#e67b73;font-size:11px}
+
+@media(max-width:900px){
+  .nav-shell nav{position:absolute;top:82px;left:14px;right:14px;display:none;flex-direction:column;gap:4px;padding:9px;border-radius:20px;background:#121416}
+  .nav-shell nav.open{display:flex}.nav-shell nav a{padding:12px 14px;border-radius:13px}
+  .settings-fields.two-col{grid-template-columns:1fr}.settings-fields .full-field{grid-column:auto}
+}
+@media(max-width:620px){
+  .pagination-wrap{align-items:flex-start;flex-direction:column}.pagination{width:100%;justify-content:center;overflow-x:auto}.pagination button{min-width:36px}
+  .settings-panel{padding:16px;border-radius:18px}.settings-savebar{bottom:10px;align-items:stretch;flex-direction:column}.settings-savebar .primary{width:100%}
+}
+
+/* Dense product catalogue + product detail customizer */
+.menu-section.page-shell{width:min(1320px,calc(100% - 56px))}
+.menu-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.menu-card.compact-product{min-height:0;border-radius:18px;cursor:pointer;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;contain:layout paint style;overflow:hidden}
+.menu-card.compact-product:hover{transform:translateY(-3px);border-color:rgba(255,176,0,.28);box-shadow:0 18px 38px rgba(0,0,0,.22)}
+.menu-card-image.square{aspect-ratio:1/1;height:auto;position:relative;overflow:hidden;background:linear-gradient(145deg,#17191c,#0d0f11)}.menu-card-image.square img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;contain:paint;transform:translateZ(0)}
+.view-chip{position:absolute;right:9px;top:9px;background:rgba(8,9,10,.76);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);border-radius:999px;padding:5px 8px;color:#fff;font-size:9px;font-weight:800;letter-spacing:.04em}
+.menu-card.compact-product .menu-card-body{padding:13px;gap:0}.menu-card.compact-product .mini-cat{font-size:8px}.menu-card.compact-product .badge{font-size:8px;padding:4px 6px}.menu-card.compact-product h3{font-size:14px;line-height:1.25;margin:7px 0 13px;min-height:35px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.compact-card-bottom{display:flex;align-items:end;justify-content:space-between;gap:7px;margin-top:auto}.compact-card-bottom>span{display:grid;font-size:8px;color:#777}.compact-card-bottom>span strong{font-size:14px;color:#fff}.compact-card-bottom button{border:0;background:#f2eee8;color:#101214;border-radius:9px;padding:8px 9px;font-size:9px;font-weight:800;display:flex;align-items:center;gap:4px;white-space:nowrap}
+
+.product-modal-backdrop{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.76);backdrop-filter:blur(9px);display:grid;place-items:center;padding:24px;overflow:auto}
+.product-modal{position:relative;width:min(1040px,100%);height:min(760px,calc(100vh - 48px));max-height:calc(100vh - 48px);display:grid;grid-template-columns:minmax(320px,.85fr) 1.15fr;background:#111315;border:1px solid rgba(255,255,255,.12);border-radius:28px;overflow:hidden;box-shadow:0 36px 120px rgba(0,0,0,.55)}
+.product-modal-close{position:absolute;z-index:3;right:14px;top:14px;width:40px;height:40px;border-radius:13px;border:1px solid rgba(255,255,255,.12);background:rgba(10,11,12,.82);color:#fff;display:grid;place-items:center}.product-modal-close svg{width:18px}
+.product-modal-image{background:#090a0b;padding:18px;display:flex;align-items:flex-start}.product-modal-image img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;position:sticky;top:18px}
+.product-modal-content{min-width:0;min-height:0;display:grid;grid-template-rows:minmax(0,1fr) auto;overflow:hidden}.product-modal-scroll{min-height:0;overflow-y:auto;padding:30px 30px 20px;scrollbar-gutter:stable}.product-modal-content h2{font-size:34px;line-height:1.05;margin:8px 0 10px}.product-description{color:#99968f;line-height:1.6;margin:0 0 22px}.product-option-block{padding:18px 0;border-top:1px solid var(--line)}.option-title{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:11px}.option-title strong{font-size:13px}.option-title span{font-size:9px;color:#777;text-transform:uppercase;letter-spacing:.08em}.modal-variants{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}.modal-variants button{border:1px solid #303338;background:#17191c;color:#bbb7b0;border-radius:12px;padding:10px;display:flex;justify-content:space-between;gap:8px}.modal-variants button.active{border-color:rgba(255,176,0,.58);background:rgba(255,176,0,.08);color:#fff}.modal-variants button strong{color:var(--yellow);font-size:11px}
+.addon-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.addon-grid button{display:flex;align-items:center;gap:9px;text-align:left;border:1px solid #2d3033;background:#151719;color:#c0bcb5;border-radius:12px;padding:10px}.addon-grid button.selected{border-color:rgba(255,176,0,.5);background:rgba(255,176,0,.07)}.addon-check{width:22px;height:22px;flex:0 0 22px;border-radius:7px;border:1px solid #41454a;display:grid;place-items:center;color:#777}.addon-grid button.selected .addon-check{background:var(--yellow);border-color:var(--yellow);color:#16100a}.addon-grid button>span:last-child{display:grid;gap:2px}.addon-grid strong{font-size:11px}.addon-grid small{font-size:9px;color:#8a8781}
+.product-modal-footer{position:relative;z-index:2;margin:0;padding:15px 30px 18px;background:rgba(17,19,21,.98);border-top:1px solid var(--line);display:flex;gap:12px;align-items:center;backdrop-filter:blur(18px);box-shadow:0 -14px 30px rgba(0,0,0,.18)}.modal-qty{height:48px;display:flex;align-items:center;border:1px solid #303338;border-radius:13px;overflow:hidden;background:#0e1012}.modal-qty button{width:42px;height:100%;border:0;background:transparent;color:#fff;display:grid;place-items:center}.modal-qty button svg{width:16px}.modal-qty span{min-width:32px;text-align:center;font-weight:800}.add-customized{flex:1;justify-content:space-between}.add-customized strong{margin-left:12px}
+
+/* Delivery and pickup checkout */
+.cart-line{gap:12px}.cart-line-copy{display:grid;gap:3px;min-width:0}.cart-line-copy em{font-style:normal;color:#7f7d78;font-size:9px;line-height:1.4}.cart-line-actions{display:flex;gap:8px;align-items:center}.remove-line{width:32px;height:32px;border:1px solid #332729;background:#1b1416;color:#d97872;border-radius:9px;display:grid;place-items:center}
+.fulfilment-picker{display:grid;grid-template-columns:1fr 1fr;gap:8px}.fulfilment-picker>button{border:1px solid #303338;background:#141618;color:#a7a49e;border-radius:15px;padding:12px;display:flex;align-items:flex-start;gap:9px;text-align:left}.fulfilment-picker>button.active{border-color:rgba(255,176,0,.55);background:rgba(255,176,0,.07);color:#fff}.fulfilment-picker svg{width:19px;color:var(--yellow);flex:0 0 19px}.fulfilment-picker span{display:grid;gap:3px}.fulfilment-picker strong{font-size:12px}.fulfilment-picker small{font-size:9px;color:#7e7b76;line-height:1.4}.delivery-fields{display:grid;gap:9px}.delivery-info,.pickup-box{display:flex;gap:10px;align-items:flex-start;background:#101214;border:1px solid #292c2f;border-radius:14px;padding:12px}.delivery-info svg,.pickup-box svg{width:18px;color:var(--yellow);flex:0 0 18px}.delivery-info span,.pickup-box span{display:grid;gap:3px}.delivery-info strong,.pickup-box strong{font-size:11px}.delivery-info small,.pickup-box small,.pickup-box em{font-size:9px;color:#797772;line-height:1.4;font-style:normal}.pickup-box em{color:#8dbc99}.delivery-warning{border:1px solid rgba(242,105,80,.25);background:rgba(242,105,80,.07);color:#e99a89;border-radius:12px;padding:10px;font-size:10px}.checkout-breakdown{display:grid;gap:7px;padding:12px 0;border-block:1px solid var(--line)}.checkout-breakdown>div{display:flex;justify-content:space-between;font-size:11px;color:#96938d}.checkout-breakdown>div strong{color:#ece7df}.checkout-breakdown .grand-total{font-size:15px;color:#fff;padding-top:5px}.checkout-breakdown .grand-total strong{font-size:20px;color:#fff}
+.toggle-field{display:flex!important;align-items:center;justify-content:space-between;grid-auto-flow:column;background:#0e1012;border:1px solid #292c2f;border-radius:13px;padding:12px 13px}.toggle-field input{width:18px!important;height:18px!important;accent-color:var(--yellow);box-shadow:none!important}
+.order-address{align-items:flex-start}.order-address small{display:block;color:#74726e;margin-top:3px}
+
+@media(max-width:1180px){.menu-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.product-modal{grid-template-columns:.8fr 1.2fr}}
+@media(max-width:880px){.menu-section.page-shell{width:min(100% - 32px,1320px)}.menu-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.product-modal{grid-template-columns:1fr;max-width:620px;height:min(760px,calc(100vh - 28px))}.product-modal-image{padding:14px}.product-modal-image img{max-height:300px;position:relative;top:auto}.product-modal-scroll{padding:22px 22px 16px}.product-modal-footer{padding:13px 22px 16px}}
+@media(max-width:620px){.menu-section.page-shell{width:min(100% - 20px,1320px)}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.menu-card.compact-product .menu-card-body{padding:10px}.menu-card.compact-product h3{font-size:12px;min-height:30px}.compact-card-bottom{align-items:flex-start;flex-direction:column}.compact-card-bottom button{width:100%;justify-content:center}.product-modal-backdrop{padding:8px;align-items:end}.product-modal{height:94vh;max-height:94vh;border-radius:24px 24px 0 0}.product-modal-image{display:none}.product-modal-content h2{font-size:27px;padding-right:35px}.product-modal-scroll{padding:20px 18px 14px}.addon-grid{grid-template-columns:1fr}.product-modal-footer{flex-direction:column;padding:12px 18px 16px}.modal-qty{width:100%;justify-content:space-between}.modal-qty button{flex:1}.add-customized{width:100%}.fulfilment-picker{grid-template-columns:1fr}}
+@media(max-width:620px){
+  html{scroll-behavior:auto}
+  .site-header{background:rgba(7,8,9,.96);backdrop-filter:none}
+  .nav-shell{background:#101214;backdrop-filter:none}
+  .hero-glow{display:none}
+  .menu-card.compact-product{transition:none;box-shadow:none}
+  .menu-card.compact-product:hover{transform:none;box-shadow:none}
+  .view-chip{backdrop-filter:none;background:rgba(8,9,10,.88)}
+  .product-modal-backdrop{backdrop-filter:none;background:rgba(0,0,0,.88)}
+  .product-modal-footer{backdrop-filter:none}
+  .menu-card-image.square img{transform:none}
+}
+@media(hover:none) and (pointer:coarse){
+  .menu-card.compact-product:hover{transform:none;box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+
+/* Admin menu editor + checkout input refinements */
+.order-notes-field{min-height:120px!important;resize:vertical;line-height:1.5}
+.menu-admin-head p{margin:6px 0 0;color:#777;font-size:12px;max-width:680px}.admin-sync-btn{padding:11px 14px;border-radius:12px;white-space:nowrap}.admin-menu-search{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;margin:-8px 0 18px;background:#111315;border:1px solid var(--line);border-radius:14px;padding:10px 13px;color:#777}.admin-menu-search input{border:0;outline:0;background:transparent;color:#fff;min-width:0}.admin-menu-search span{font-size:11px;color:#73736f}.admin-item{grid-template-columns:56px 1fr auto auto auto}.edit-icon{width:36px;height:36px;border:0;border-radius:10px;background:#1d2023;color:#d7b65c;display:grid;place-items:center}.edit-icon svg{width:16px}.edit-icon:hover{background:rgba(255,176,0,.12);color:var(--yellow)}
+.admin-edit-backdrop{position:fixed;inset:0;z-index:150;background:rgba(0,0,0,.74);backdrop-filter:blur(8px);padding:24px;display:grid;place-items:center;overflow:auto}.admin-edit-modal{width:min(920px,100%);max-height:calc(100vh - 48px);overflow:auto;background:#111315;border:1px solid #2d3034;border-radius:24px;box-shadow:0 35px 100px rgba(0,0,0,.55);padding:24px}.admin-edit-title{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;padding-bottom:18px;border-bottom:1px solid var(--line)}.admin-edit-title h2{margin:5px 0 0;font-size:30px;letter-spacing:-.035em}.modal-close{width:42px;height:42px;border-radius:13px;border:1px solid #303337;background:#191b1e;color:#fff;display:grid;place-items:center}.admin-edit-grid{display:grid;grid-template-columns:300px 1fr;gap:22px;padding:22px 0}.admin-edit-image{display:grid;align-content:start;gap:10px}.admin-edit-image>img,.admin-edit-image>div:first-child{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;background:#0b0d0f;border:1px solid var(--line)}.admin-edit-image>div:first-child{display:grid;place-items:center;color:#666}.admin-edit-image input,.admin-edit-fields input,.admin-edit-fields textarea{width:100%;background:#1a1c1f;border:1px solid #303337;border-radius:12px;color:#fff;padding:11px 12px;outline:0}.admin-edit-fields{display:grid;gap:12px}.admin-edit-fields label{display:grid;gap:6px;color:#8d8d89;font-size:11px;font-weight:700}.admin-availability{display:flex!important;align-items:center;gap:10px!important;background:#17191c;border:1px solid #292c2f;padding:12px;border-radius:12px}.admin-availability input{width:auto!important;accent-color:var(--yellow)}.admin-edit-actions{display:flex;justify-content:flex-end;gap:10px;padding-top:16px;border-top:1px solid var(--line)}
+@media(max-width:760px){.menu-admin-head{align-items:flex-start;flex-direction:column}.admin-sync-btn{width:100%}.admin-item{grid-template-columns:48px 1fr auto auto auto}.admin-edit-backdrop{padding:10px}.admin-edit-modal{padding:16px;max-height:calc(100vh - 20px)}.admin-edit-grid{grid-template-columns:1fr}.admin-edit-image>img,.admin-edit-image>div:first-child{max-width:280px}.admin-edit-title h2{font-size:24px}}
+
+
+/* Product card proportions + compact content */
+.menu-grid{align-items:start}
+.menu-card.compact-product{align-self:start;width:100%}
+.menu-card-image.square{
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:1/1!important;
+  flex:0 0 auto!important;
+}
+.menu-card-image.square img{
+  width:100%!important;
+  height:100%!important;
+  aspect-ratio:1/1!important;
+  object-fit:cover!important;
+}
+.menu-card.compact-product .menu-card-body{
+  height:auto!important;
+  min-height:0!important;
+  flex:0 0 auto!important;
+  padding:13px;
+}
+.menu-card.compact-product h3{margin-bottom:8px}
+.compact-card-bottom{margin-top:8px!important}
+
+/* View-site is a real link, so browser context menus can open it in a new tab. */
+.sidebar-bottom a,.sidebar-bottom button{
+  border:0;background:transparent;color:#8f8f8d;display:flex;align-items:center;gap:10px;padding:11px;border-radius:11px;text-align:left
+}
+.sidebar-bottom a:hover,.sidebar-bottom button:hover{background:#15181a;color:#fff}
+
+/* Reviews */
+.account-order-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.review-order-btn{padding:9px 12px;border-radius:11px;font-size:10px}
+.submitted-review{margin-top:14px;border:1px solid rgba(255,176,0,.16);background:rgba(255,176,0,.045);border-radius:14px;padding:12px}
+.submitted-review>div,.admin-review-stars,.public-review-stars{display:flex;gap:3px;color:var(--yellow)}
+.submitted-review p{margin:8px 0 4px;color:#c4c0b9;font-size:11px;line-height:1.5}
+.submitted-review small{color:#77736d;font-size:9px}
+.order-review-form{margin-top:14px;background:#0f1113;border:1px solid #292c2f;border-radius:15px;padding:14px;display:grid;gap:10px}
+.order-review-form>strong{font-size:12px}
+.order-review-form textarea{width:100%;background:#181a1d;border:1px solid #303338;color:#fff;border-radius:11px;padding:10px;resize:vertical}
+.review-stars{display:flex;gap:3px}
+.review-stars button{width:32px;height:32px;border:0;background:transparent;color:#555;display:grid;place-items:center;padding:0}
+.review-stars button.active{color:var(--yellow)}
+.review-stars svg{width:20px}
+.order-review-form .primary{justify-self:start;padding:10px 14px;border-radius:11px;font-size:11px}
+
+.admin-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.admin-review-card{background:#121416;border:1px solid var(--line);border-radius:18px;padding:17px;display:grid;gap:12px}
+.admin-review-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.admin-review-top>div{display:grid;gap:3px}.admin-review-top strong{font-size:14px}.admin-review-top small{font-size:9px;color:#777}
+.review-state{font-size:8px;text-transform:uppercase;letter-spacing:.07em;color:#d99b5d;background:rgba(255,176,0,.08);border:1px solid rgba(255,176,0,.17);border-radius:999px;padding:5px 7px}
+.review-state.approved{color:#74ce91;background:rgba(90,190,120,.07);border-color:rgba(90,190,120,.18)}
+.admin-review-card p{margin:0;color:#aaa7a1;font-size:12px;line-height:1.6}
+.admin-review-actions{display:flex;gap:8px;margin-top:auto}
+.admin-review-actions .secondary{padding:9px 11px;border-radius:10px;font-size:10px}
+.danger-review{border:1px solid rgba(242,59,46,.2);background:rgba(242,59,46,.06);color:#df7c74;border-radius:10px;padding:9px 11px;font-size:10px;display:flex;align-items:center;gap:6px}
+
+.reviews-section{background:#0c0e0f;border-block:1px solid var(--line)}
+.public-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.public-review-card{background:linear-gradient(180deg,#151719,#111315);border:1px solid var(--line);border-radius:18px;padding:18px;display:grid;gap:12px}
+.public-review-card p{margin:0;color:#c1bdb6;line-height:1.65;font-size:13px}
+.public-review-card>div:last-child{display:grid;gap:2px}.public-review-card strong{font-size:12px}.public-review-card small{font-size:9px;color:#716f6a}
+
+@media(max-width:900px){
+  .admin-review-grid{grid-template-columns:1fr}
+  .public-review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sidebar-bottom a{font-size:0;justify-content:center}
+}
+@media(max-width:620px){
+  .menu-card.compact-product .menu-card-body{padding:10px!important}
+  .compact-card-bottom{margin-top:7px!important}
+  .account-order-foot{align-items:flex-start;gap:10px;flex-direction:column}
+  .account-order-actions{width:100%;justify-content:flex-start}
+  .public-review-grid{grid-template-columns:1fr}
+}
+
+/* 4.6 UI polish: one-row categories, consistent type, 4-column cards, fixed admin fields, persistent cart CTA */
+.category-groups{
+  display:grid!important;
+  grid-template-columns:repeat(8,minmax(0,1fr))!important;
+  gap:10px!important;
+  align-items:stretch;
+}
+.category-groups button,
+.category-groups .group-copy strong,
+.category-groups .group-copy small,
+.menu-context strong,
+.menu-context span,
+.subcategory-row button,
+.menu-controls .search input{
+  font-family:'Manrope',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;
+}
+.category-groups button{min-height:82px!important;padding:13px!important}
+.group-copy strong{font-size:15px!important;font-weight:800;letter-spacing:-.015em}
+.group-copy small{font-size:11px!important}
+.menu-context strong{font-size:17px!important;font-weight:800!important;letter-spacing:-.01em}
+.menu-context span{font-size:12px!important}
+.subcategory-row button{font-size:13px!important;font-weight:700}
+.menu-controls .search input{font-size:14px!important}
+
+.menu-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  column-gap:20px!important;
+  row-gap:20px!important;
+  align-items:start;
+}
+.menu-card.compact-product .menu-card-body{padding:15px!important}
+.menu-card.compact-product .mini-cat{font-size:9px!important}
+.menu-card.compact-product h3{font-size:17px!important;line-height:1.28!important;min-height:44px!important;margin:8px 0 10px!important}
+.compact-card-bottom{margin-top:9px!important;gap:10px!important}
+.compact-card-bottom>span{font-size:9px!important}
+.compact-card-bottom>span strong{font-size:16px!important}
+.compact-card-bottom button{font-size:10.5px!important;padding:9px 11px!important;border-radius:10px!important}
+
+.product-modal-backdrop{overflow:hidden!important;padding:16px!important}
+.product-modal{
+  height:min(800px,calc(100dvh - 32px))!important;
+  max-height:calc(100dvh - 32px)!important;
+  overflow:hidden!important;
+}
+.product-modal-content{
+  display:flex!important;
+  flex-direction:column!important;
+  height:100%!important;
+  min-height:0!important;
+  overflow:hidden!important;
+}
+.product-modal-scroll{
+  flex:1 1 auto!important;
+  min-height:0!important;
+  overflow-y:auto!important;
+  overscroll-behavior:contain;
+  scrollbar-gutter:stable;
+}
+.product-modal-footer{
+  position:sticky!important;
+  bottom:0!important;
+  flex:0 0 auto!important;
+  z-index:30!important;
+  width:100%!important;
+  background:#111315!important;
+  border-top:1px solid rgba(255,255,255,.12)!important;
+  box-shadow:0 -18px 34px rgba(0,0,0,.34)!important;
+}
+.add-customized{min-height:52px!important;font-size:14px!important}
+.modal-qty{height:52px!important}
+.product-modal-content h2{font-size:36px!important}
+.option-title strong{font-size:14px!important}
+.addon-grid strong{font-size:12px!important}
+.addon-grid small{font-size:10px!important}
+
+.admin-form{grid-template-columns:minmax(0,1fr)!important}
+.admin-form h3{font-size:23px!important}
+.admin-form input,
+.admin-form textarea,
+.admin-form select,
+.admin-edit-fields input,
+.admin-edit-fields textarea,
+.admin-edit-fields select{
+  font-size:15px!important;
+  line-height:1.4;
+}
+.admin-category-select{
+  width:100%;
+  min-height:52px;
+  background:#1b1d20;
+  border:1px solid #292c2f;
+  color:#f7f1e7;
+  border-radius:13px;
+  padding:0 14px;
+  outline:none;
+  appearance:auto;
+}
+.admin-category-select:focus{border-color:rgba(255,176,0,.55);box-shadow:0 0 0 3px rgba(255,176,0,.06)}
+.admin-category-select option{background:#17191c;color:#fff}
+.admin-description-field{
+  width:100%!important;
+  height:96px!important;
+  min-height:96px!important;
+  max-height:96px!important;
+  resize:none!important;
+  overflow-y:auto!important;
+}
+.admin-edit-fields label{font-size:12px!important}
+.admin-item-copy strong{font-size:15px!important}
+.admin-item-copy span{font-size:12px!important}
+.admin-item-copy small{font-size:11px!important}
+
+@media(max-width:1180px){
+  .menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+}
+@media(max-width:1050px){
+  .category-groups{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    overflow-x:auto!important;
+    scroll-snap-type:x proximity;
+    scrollbar-width:none;
+    padding-bottom:4px;
+  }
+  .category-groups::-webkit-scrollbar{display:none}
+  .category-groups button{flex:0 0 164px!important;scroll-snap-align:start}
+}
+@media(max-width:760px){
+  .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+  .menu-card.compact-product h3{font-size:14px!important;min-height:36px!important}
+  .compact-card-bottom>span strong{font-size:15px!important}
+  .product-modal-backdrop{padding:8px!important;align-items:end!important}
+  .product-modal{height:94dvh!important;max-height:94dvh!important}
+  .product-modal-content{height:100%!important}
+  .product-modal-footer{position:sticky!important;bottom:0!important;padding-bottom:max(16px,env(safe-area-inset-bottom))!important}
+  .add-customized{width:100%!important}
+}
+@media(max-width:390px){
+  .menu-grid{grid-template-columns:1fr!important;gap:14px!important}
+}
+
+/* 2026-09 focused fixes: modal visibility, premium loader, image removal and review forms */
+.product-modal{
+  height:min(760px,calc(100svh - 64px))!important;
+  max-height:calc(100svh - 64px)!important;
+}
+.product-modal-content{min-height:0!important}
+.product-modal-scroll{padding-bottom:18px!important}
+.product-modal-footer{
+  position:relative!important;
+  bottom:auto!important;
+  min-height:74px;
+  padding:12px 24px 14px!important;
+}
+.add-customized{min-height:48px!important}
+@media(max-width:760px){
+  .product-modal{height:90svh!important;max-height:90svh!important}
+  .product-modal-footer{position:relative!important;bottom:auto!important;padding-bottom:max(14px,env(safe-area-inset-bottom))!important}
+}
+
+.admin-loading{min-height:100vh;background:#08090a;position:relative;overflow:hidden;padding:28px}
+.admin-loading:before,.admin-loading:after{content:'';position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+.admin-loading:before{width:360px;height:360px;background:rgba(255,176,0,.13);left:-110px;top:-90px}
+.admin-loading:after{width:320px;height:320px;background:rgba(242,59,46,.1);right:-100px;bottom:-80px}
+.grand-loader{position:relative;z-index:1;width:min(420px,100%);display:grid;justify-items:center;text-align:center;padding:34px 30px;border:1px solid rgba(255,255,255,.09);border-radius:28px;background:linear-gradient(180deg,rgba(22,24,26,.9),rgba(13,15,17,.88));box-shadow:0 30px 90px rgba(0,0,0,.42);backdrop-filter:blur(18px)}
+.grand-loader .brand{pointer-events:none;margin-bottom:16px}.grand-loader .brand img{width:118px;height:82px;object-position:center}.grand-loader h2{font-family:'Manrope',sans-serif;margin:8px 0 18px;font-size:27px;letter-spacing:-.035em}.grand-loader p{margin:13px 0 0;color:#77736e;font-size:12px}.grand-loader-track{width:min(280px,80%);height:5px;border-radius:999px;background:#222529;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.grand-loader-track i{display:block;width:42%;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--yellow),var(--orange),var(--red));animation:grandLoader 1.25s ease-in-out infinite;box-shadow:0 0 18px rgba(255,176,0,.35)}
+@keyframes grandLoader{0%{transform:translateX(-115%)}55%{transform:translateX(120%)}100%{transform:translateX(240%)}}
+@media(prefers-reduced-motion:reduce){.grand-loader-track i{animation:none;width:100%}}
+
+.remove-product-image{width:100%;border:1px solid rgba(242,59,46,.2);background:rgba(242,59,46,.06);color:#e58a82;border-radius:12px;padding:11px 13px;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:800}
+.remove-product-image:hover{background:rgba(242,59,46,.1);border-color:rgba(242,59,46,.3)}
+
+.reviews-layout{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(0,1.4fr);gap:24px;align-items:start}
+.public-review-form{background:linear-gradient(180deg,#141618,#101214);border:1px solid var(--line);border-radius:22px;padding:22px;display:grid;gap:13px;position:sticky;top:110px}
+.public-review-form h3{font-size:24px;margin:0 0 2px;letter-spacing:-.025em}.public-review-form label{display:grid;gap:7px;color:#aaa7a1;font-size:11px;font-weight:800}.public-review-form input,.public-review-form textarea{width:100%;background:#1a1c1f;border:1px solid #303338;color:#fff;border-radius:12px;padding:12px 13px;outline:0}.public-review-form textarea{resize:vertical;min-height:112px}.public-review-form input:focus,.public-review-form textarea:focus{border-color:rgba(255,176,0,.5);box-shadow:0 0 0 3px rgba(255,176,0,.06)}
+.public-review-picker{gap:5px}.public-review-picker button,.admin-review-picker button{width:38px;height:38px;border-radius:10px;border:1px solid #303338!important;background:#17191c!important}.public-review-picker button.active,.admin-review-picker button.active{border-color:rgba(255,176,0,.45)!important;background:rgba(255,176,0,.08)!important;color:var(--yellow)!important}
+.public-review-panel{min-width:0}.public-review-empty{min-height:300px;border:1px dashed #303338;border-radius:22px;display:grid;place-items:center;align-content:center;text-align:center;padding:36px;color:#777;gap:8px}.public-review-empty svg{width:34px;height:34px}.public-review-empty h3{margin:5px 0 0;color:#c7c2bb;font-size:20px}.public-review-empty p{margin:0;max-width:440px;line-height:1.6;font-size:12px}
+
+.admin-add-review-btn{white-space:nowrap}.admin-review-create{margin:-8px 0 24px;background:#121416;border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}.admin-review-create-head{grid-column:1/-1}.admin-review-create-head h3{margin:4px 0 0;font-size:22px}.admin-review-create input,.admin-review-create textarea{width:100%;background:#1a1c1f;border:1px solid #303338;color:#fff;border-radius:12px;padding:12px 13px;outline:0}.admin-review-create textarea{grid-column:1/-1;resize:vertical;min-height:100px}.admin-review-picker{display:flex;gap:5px}.admin-review-publish{grid-column:1/-1;display:flex;align-items:center;gap:9px;color:#aaa7a1;font-size:11px}.admin-review-publish input{width:17px;height:17px;accent-color:var(--yellow)}.admin-review-create>.primary{justify-self:start}
+@media(max-width:900px){.reviews-layout{grid-template-columns:1fr}.public-review-form{position:relative;top:auto}.admin-review-create{grid-template-columns:1fr}.admin-review-create textarea,.admin-review-publish{grid-column:auto}}
+
+/* 2026-09-26 cart action visibility hotfix
+   Keep the purchase action pinned inside the product modal at 100% browser zoom. */
+.product-modal-content{
+  position:relative!important;
+  min-height:0!important;
+  height:auto!important;
+  max-height:100%!important;
+  overflow:hidden!important;
+}
+.product-modal-scroll{
+  height:100%!important;
+  min-height:0!important;
+  overflow-y:auto!important;
+  padding-bottom:106px!important;
+  box-sizing:border-box!important;
+}
+.product-modal-footer{
+  position:absolute!important;
+  left:0!important;
+  right:0!important;
+  bottom:0!important;
+  z-index:50!important;
+  margin:0!important;
+  min-height:82px!important;
+  padding:14px 24px 16px!important;
+  background:#111315!important;
+  border-top:1px solid rgba(255,255,255,.12)!important;
+  box-shadow:0 -18px 38px rgba(0,0,0,.48)!important;
+}
+@media(max-width:760px){
+  .product-modal-scroll{padding-bottom:148px!important}
+  .product-modal-footer{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:0!important;
+    min-height:134px!important;
+    padding:12px 18px max(16px,env(safe-area-inset-bottom))!important;
+  }
+}
+
+/* =========================================================
+   GRAND CAFÉ PREMIUM SURFACE SYSTEM v4.8
+   Dark glassmorphism + soft-neumorphic depth.
+   Visual-only layer. No ordering, admin, database or routing logic changed.
+   ========================================================= */
+:root{
+  --bg:#070809;
+  --panel:#111315;
+  --panel2:#17191c;
+  --panel3:#1d2023;
+  --ink:#fbf7ef;
+  --muted:#aaa69e;
+  --yellow:#ffb000;
+  --orange:#ff7900;
+  --red:#f23b2e;
+  --gold-soft:#ffd56a;
+  --line:rgba(255,255,255,.095);
+  --line-strong:rgba(255,255,255,.145);
+  --glass:rgba(17,19,21,.78);
+  --shadow:0 24px 70px rgba(0,0,0,.42);
+  --shadow-soft:0 12px 34px rgba(0,0,0,.28);
+  --inner-hi:inset 0 1px 0 rgba(255,255,255,.07);
+}
+html{background:#070809}
+body{
+  background:
+    radial-gradient(circle at 10% 6%,rgba(255,176,0,.065),transparent 24rem),
+    radial-gradient(circle at 92% 28%,rgba(242,59,46,.055),transparent 28rem),
+    linear-gradient(180deg,#08090a 0%,#070809 48%,#090a0b 100%);
+  background-attachment:fixed;
+}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.28;
+  background-image:linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,black,transparent 78%);
+}
+::selection{background:rgba(255,176,0,.28);color:#fff}
+
+/* Navigation: floating smoked-glass capsule */
+.site-header{padding:16px 0;background:linear-gradient(180deg,rgba(4,5,6,.74),rgba(4,5,6,.12) 75%,transparent)}
+.nav-shell{
+  border-color:rgba(255,255,255,.11);
+  background:linear-gradient(180deg,rgba(24,26,28,.86),rgba(13,15,17,.76));
+  box-shadow:0 18px 50px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.06);
+  border-radius:24px;
+}
+.nav-shell nav{gap:7px;padding:5px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.055);border-radius:16px}
+.nav-shell nav a{padding:9px 14px;border-radius:11px;color:#c7c4bd;transition:background .2s ease,color .2s ease,transform .2s ease}
+.nav-shell nav a:hover{background:rgba(255,255,255,.07);color:#fff;transform:translateY(-1px)}
+.cart-btn,.account-nav-btn,.mobile-menu{box-shadow:var(--inner-hi),0 8px 20px rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.07)!important;background:linear-gradient(180deg,#25282b,#181a1d)!important}
+
+/* Hero: cinematic depth without hiding the real restaurant */
+.hero{min-height:850px}
+.hero-photo{filter:saturate(.9) contrast(1.08) brightness(.82);transform:scale(1.015)}
+.hero-overlay{background:linear-gradient(90deg,rgba(4,5,6,.98) 0%,rgba(4,5,6,.86) 42%,rgba(4,5,6,.36) 76%,rgba(4,5,6,.5) 100%),linear-gradient(0deg,#070809 0%,rgba(7,8,9,.28) 42%,rgba(0,0,0,.05) 100%)}
+.hero-copy>p{color:#d0ccc4;text-shadow:0 2px 18px rgba(0,0,0,.3)}
+.hero h1{font-weight:800;text-wrap:balance;text-shadow:0 10px 34px rgba(0,0,0,.28)}
+.hero h1 span{background:linear-gradient(135deg,#ffd56a 0%,#ffb000 55%,#ff7900 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 28px rgba(255,176,0,.12))}
+.hero-card{
+  background:linear-gradient(145deg,rgba(28,30,33,.79),rgba(10,12,14,.8));
+  border-color:rgba(255,255,255,.14);
+  box-shadow:0 32px 90px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.075),inset 0 -1px 0 rgba(0,0,0,.35);
+  border-radius:30px;
+}
+.hero-card-grid>div{background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));box-shadow:inset 0 1px 0 rgba(255,255,255,.045);border-radius:18px}
+
+/* Premium controls */
+.primary{
+  background:linear-gradient(135deg,#ffd05b 0%,#ffb000 44%,#ff7900 100%);
+  box-shadow:0 12px 30px rgba(255,137,0,.2),inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(128,50,0,.18);
+  border:1px solid rgba(255,194,65,.42);
+  transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;
+}
+.primary:hover{transform:translateY(-2px);box-shadow:0 17px 40px rgba(255,137,0,.26),inset 0 1px 0 rgba(255,255,255,.42);filter:saturate(1.05)}
+.secondary{
+  background:linear-gradient(180deg,rgba(255,255,255,.095),rgba(255,255,255,.045));
+  border-color:rgba(255,255,255,.13);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 9px 22px rgba(0,0,0,.18);
+}
+
+/* Section rhythm */
+.section-space{padding:108px 0}
+.section-heading h2,.experience h2,.reserve h2,.visit h2{color:#fbf7ef;text-shadow:0 7px 30px rgba(0,0,0,.16)}
+.kicker,.eyebrow{color:#ffc037;text-shadow:0 0 24px rgba(255,176,0,.16)}
+
+/* Menu browser: soft neumorphic surface */
+.menu-browser{
+  border:1px solid rgba(255,255,255,.085);
+  background:linear-gradient(145deg,rgba(21,23,25,.92),rgba(11,13,15,.9));
+  box-shadow:18px 18px 46px rgba(0,0,0,.27),-8px -8px 28px rgba(255,255,255,.012),inset 0 1px 0 rgba(255,255,255,.04);
+  border-radius:26px;
+  padding:15px;
+}
+.category-groups button{
+  background:linear-gradient(145deg,#17191c,#111315)!important;
+  border:1px solid rgba(255,255,255,.085)!important;
+  box-shadow:7px 7px 18px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.035);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease;
+}
+.category-groups button:hover{transform:translateY(-2px);border-color:rgba(255,176,0,.2)!important;box-shadow:10px 12px 24px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.05)}
+.category-groups button.active{
+  color:#1a1206!important;
+  background:linear-gradient(135deg,#ffd35d,#ffad00 52%,#ff7900)!important;
+  border-color:rgba(255,188,50,.5)!important;
+  box-shadow:0 10px 28px rgba(255,137,0,.2),inset 0 1px 0 rgba(255,255,255,.38)!important;
+}
+.category-groups button.active .group-copy span,.category-groups button.active .group-copy small{color:#1a1206!important}
+.group-icon{border-radius:14px!important;background:rgba(255,255,255,.055)!important;border:1px solid rgba(255,255,255,.045)}
+.menu-controls,.menu-context,.subcategory-row{border-color:rgba(255,255,255,.075)!important}
+.search{background:linear-gradient(145deg,#181a1d,#111315);box-shadow:inset 0 1px 0 rgba(255,255,255,.035);border-radius:16px}
+.subcategory-row button{box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
+
+/* Product cards: restaurant-luxury rather than flat boxes */
+.menu-grid{gap:20px!important}
+.menu-card{
+  background:linear-gradient(160deg,#181a1d 0%,#111315 58%,#0e1012 100%);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:24px!important;
+  box-shadow:0 16px 38px rgba(0,0,0,.27),inset 0 1px 0 rgba(255,255,255,.045);
+  isolation:isolate;
+  transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+}
+.menu-card:before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.04),transparent 24%,transparent 70%,rgba(255,176,0,.025));z-index:2}
+.menu-card{position:relative}
+.menu-card-image.square{overflow:hidden;border-bottom:1px solid rgba(255,255,255,.075)}
+.menu-card-image.square img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .3s ease;filter:saturate(.96) contrast(1.03)}
+.menu-card:hover{transform:translateY(-5px);border-color:rgba(255,176,0,.22);box-shadow:0 24px 56px rgba(0,0,0,.36),0 0 0 1px rgba(255,176,0,.035),inset 0 1px 0 rgba(255,255,255,.055)}
+.menu-card:hover .menu-card-image.square img{transform:scale(1.035);filter:saturate(1.04) contrast(1.04)}
+.view-chip{background:rgba(8,9,10,.78)!important;border:1px solid rgba(255,255,255,.15)!important;box-shadow:0 8px 25px rgba(0,0,0,.26),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(8px)}
+.badge{background:linear-gradient(180deg,rgba(255,176,0,.14),rgba(255,122,0,.08));box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.compact-card-bottom button,.card-bottom button{background:linear-gradient(180deg,#fffaf0,#eee8dd);box-shadow:0 8px 20px rgba(0,0,0,.2),inset 0 1px 0 #fff;border:1px solid rgba(255,255,255,.7);transition:transform .18s ease,box-shadow .18s ease}
+.compact-card-bottom button:hover,.card-bottom button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.26),inset 0 1px 0 #fff}
+
+/* Pagination */
+.pagination-wrap{margin-top:34px;padding:14px 16px;border:1px solid rgba(255,255,255,.075);border-radius:18px;background:linear-gradient(145deg,rgba(20,22,24,.72),rgba(12,14,16,.72));box-shadow:var(--inner-hi)}
+.pagination button{box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+
+/* Product modal: high-end ordering drawer */
+.product-modal-backdrop{background:rgba(0,0,0,.76)!important;backdrop-filter:blur(12px) saturate(.8)!important}
+.product-modal{
+  border:1px solid rgba(255,255,255,.14)!important;
+  background:linear-gradient(145deg,#17191c,#0e1012)!important;
+  box-shadow:0 42px 130px rgba(0,0,0,.66),0 0 0 1px rgba(255,176,0,.025),inset 0 1px 0 rgba(255,255,255,.055)!important;
+  border-radius:30px!important;
+}
+.product-modal-image{background:#08090a;border-right:1px solid rgba(255,255,255,.075)}
+.product-modal-close{background:linear-gradient(145deg,#202327,#111315)!important;border:1px solid rgba(255,255,255,.12)!important;box-shadow:0 8px 20px rgba(0,0,0,.26),inset 0 1px 0 rgba(255,255,255,.055)}
+.product-option-block{border-color:rgba(255,255,255,.085)!important}
+.modal-variants button,.addon-check{
+  background:linear-gradient(145deg,#191b1e,#121416)!important;
+  border-color:rgba(255,255,255,.11)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 8px 20px rgba(0,0,0,.12);
+}
+.modal-variants button.active,.addon-check.active,.addon-check:has(input:checked){border-color:rgba(255,176,0,.58)!important;background:linear-gradient(145deg,rgba(255,176,0,.12),rgba(255,122,0,.055))!important;box-shadow:0 0 0 1px rgba(255,176,0,.05),inset 0 1px 0 rgba(255,210,100,.08)}
+.product-modal-footer{background:linear-gradient(180deg,rgba(18,20,22,.97),rgba(11,13,15,.99))!important;box-shadow:0 -18px 45px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.055)!important}
+
+/* Deals + experience */
+.deals{background:radial-gradient(circle at 18% 20%,rgba(255,176,0,.08),transparent 28rem),radial-gradient(circle at 85% 55%,rgba(242,59,46,.06),transparent 30rem),linear-gradient(135deg,#160e0a,#090a0b 62%)}
+.deal-card,.experience-points>div,.public-review-card{
+  border-color:rgba(255,255,255,.09)!important;
+  box-shadow:0 14px 34px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.04);
+}
+.deal-card{background:radial-gradient(circle at 84% 10%,rgba(255,176,0,.14),transparent 32%),linear-gradient(145deg,#191715,#101214)!important;transition:transform .2s ease,border-color .2s ease}
+.deal-card:hover{transform:translateY(-4px);border-color:rgba(255,176,0,.2)!important}
+.experience-image img{box-shadow:0 28px 70px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.085)}
+.experience-points>div{background:linear-gradient(145deg,#17191c,#101214)}
+.floating-rating{background:linear-gradient(145deg,rgba(28,30,33,.9),rgba(12,14,16,.9));border-color:rgba(255,255,255,.13)}
+
+/* Review + forms */
+.reviews-section{background:radial-gradient(circle at 85% 18%,rgba(255,176,0,.045),transparent 26rem),#0a0c0d}
+.public-review-form,.public-review-card,.reserve-form,.visit-card,.account-order-card,.order-card{
+  box-shadow:0 18px 44px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.045);
+}
+.public-review-form{background:linear-gradient(145deg,#181a1d,#101214)!important;border-color:rgba(255,255,255,.1)!important}
+.public-review-form input,.public-review-form textarea,.reserve-form input,.reserve-form textarea,.reserve-form select{
+  background:linear-gradient(145deg,#1b1e21,#151719)!important;
+  border-color:rgba(255,255,255,.1)!important;
+  box-shadow:inset 2px 2px 8px rgba(0,0,0,.18),inset -1px -1px 4px rgba(255,255,255,.018);
+}
+.reserve{background:linear-gradient(145deg,#f6f1e8,#e8e0d4)!important}
+.reserve-form{border:1px solid rgba(38,27,15,.07)}
+.visit-card{background:linear-gradient(145deg,#181a1d,#101214)!important;border-color:rgba(255,255,255,.095)!important}
+
+/* Footer */
+footer{border-top:1px solid rgba(255,255,255,.075);background:linear-gradient(180deg,#0a0b0c,#060708)}
+
+/* Admin: same premium design language, still functional-first */
+.admin-layout{background:radial-gradient(circle at 15% 5%,rgba(255,176,0,.045),transparent 24rem),#08090a}
+.admin-sidebar{background:linear-gradient(180deg,#121416,#0b0d0f)!important;border-right:1px solid rgba(255,255,255,.075)!important;box-shadow:18px 0 50px rgba(0,0,0,.18)}
+.admin-nav button,.sidebar-bottom a,.sidebar-bottom button{border-radius:13px!important}
+.admin-nav button.active{background:linear-gradient(135deg,rgba(255,176,0,.16),rgba(255,122,0,.07))!important;color:#ffc13d!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.035)}
+.admin-main{background:transparent!important}
+.admin-form,.orders-panel,.settings-panel,.admin-review-card,.customer-admin-card,.admin-edit-modal{
+  background:linear-gradient(145deg,#17191c,#101214)!important;
+  border-color:rgba(255,255,255,.09)!important;
+  box-shadow:0 16px 42px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.04);
+}
+.admin-form input,.admin-form textarea,.admin-form select,.admin-edit-fields input,.admin-edit-fields textarea,.admin-edit-fields select,.settings-form input,.settings-form textarea,.settings-form select{
+  background:linear-gradient(145deg,#1c1f22,#151719)!important;
+  border-color:rgba(255,255,255,.105)!important;
+  box-shadow:inset 2px 2px 8px rgba(0,0,0,.17),inset -1px -1px 4px rgba(255,255,255,.018);
+}
+.admin-item{background:linear-gradient(145deg,#151719,#0f1113)!important;border-color:rgba(255,255,255,.07)!important;transition:border-color .18s ease,transform .18s ease}
+.admin-item:hover{border-color:rgba(255,176,0,.15)!important;transform:translateY(-1px)}
+
+/* Keep expensive effects away from mobile scrolling. */
+@media(max-width:760px){
+  body{background-attachment:scroll}
+  body:before{display:none}
+  .site-header,.nav-shell,.hero-card,.view-chip,.product-modal-backdrop,.floating-rating,.grand-loader{backdrop-filter:none!important}
+  .menu-card,.menu-card:hover{transform:none!important;box-shadow:0 9px 22px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.035)!important}
+  .menu-card:hover .menu-card-image.square img{transform:none!important}
+  .menu-browser{box-shadow:0 12px 28px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.03)}
+  .category-groups button:hover,.primary:hover,.deal-card:hover{transform:none!important}
+  .section-space{padding:78px 0}
+  .hero{min-height:760px}
+  .nav-shell{border-radius:20px}
+  .product-modal{border-radius:24px!important}
+}
+
+/* =========================================================
+   GRAND CAFÉ v4.9 — compact product modal + hidden scrollbar
+   + persistent dark / light appearance switch.
+   ========================================================= */
+
+/* Theme switch */
+.theme-toggle{
+  min-height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  padding:0 12px;
+  border-radius:13px;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(180deg,#25282b,#181a1d);
+  color:var(--ink);
+  box-shadow:var(--inner-hi),0 8px 20px rgba(0,0,0,.18);
+  font-size:11px;
+  font-weight:800;
+  white-space:nowrap;
+}
+.theme-toggle.compact{width:42px;padding:0}
+.theme-toggle svg{flex:0 0 auto}
+.sidebar-bottom .theme-toggle{width:100%;justify-content:flex-start;padding:11px 13px;height:auto}
+.account-header .theme-toggle{width:40px;height:40px;min-height:40px;padding:0}
+
+/* Keep the complete order action visible at normal 100% browser zoom. */
+@media(min-width:761px){
+  .product-modal-backdrop{padding:28px!important}
+  .product-modal{
+    width:min(960px,calc(100vw - 96px))!important;
+    height:min(670px,calc(100svh - 88px))!important;
+    max-height:calc(100svh - 88px)!important;
+    grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr)!important;
+    border-radius:26px!important;
+  }
+  .product-modal-image{padding:14px!important}
+  .product-modal-image img{top:14px!important;border-radius:17px!important}
+  .product-modal-scroll{
+    padding:22px 24px 100px!important;
+  }
+  .product-modal-content h2{font-size:30px!important}
+  .product-description{font-size:13px!important;line-height:1.5!important;margin-bottom:17px!important}
+  .product-option-block{padding:14px 0!important}
+  .modal-variants button,.addon-grid button{padding:9px!important}
+  .product-modal-footer{
+    min-height:72px!important;
+    padding:11px 20px 13px!important;
+  }
+  .modal-qty,.add-customized{min-height:46px!important;height:46px!important}
+}
+
+/* Hide the visual scrollbar, but preserve wheel, touch, trackpad and keyboard scrolling. */
+.product-modal-scroll{
+  scrollbar-width:none!important;
+  -ms-overflow-style:none!important;
+  scrollbar-gutter:auto!important;
+}
+.product-modal-scroll::-webkit-scrollbar{width:0!important;height:0!important;display:none!important}
+
+@media(max-width:760px){
+  .theme-toggle:not(.compact) span{display:none}
+  .theme-toggle:not(.compact){width:42px;padding:0}
+  .product-modal-scroll{
+    padding-bottom:142px!important;
+  }
+}
+
+/* Light palette */
+html[data-theme="light"]{
+  --bg:#f3efe8;
+  --panel:#fffdf9;
+  --panel2:#f5f0e8;
+  --panel3:#eee7dc;
+  --ink:#211c17;
+  --muted:#746d65;
+  --line:rgba(48,38,28,.11);
+  --line-strong:rgba(48,38,28,.17);
+  --glass:rgba(255,253,249,.82);
+  --shadow:0 24px 70px rgba(71,50,28,.12);
+  --shadow-soft:0 12px 34px rgba(71,50,28,.1);
+  --inner-hi:inset 0 1px 0 rgba(255,255,255,.9);
+  background:#f3efe8;
+}
+html[data-theme="light"] body{
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 9% 8%,rgba(255,176,0,.12),transparent 24rem),
+    radial-gradient(circle at 92% 30%,rgba(242,59,46,.07),transparent 27rem),
+    linear-gradient(180deg,#f7f3ec 0%,#f0eae1 58%,#f7f3ec 100%);
+}
+html[data-theme="light"] body:before{
+  opacity:.22;
+  background-image:linear-gradient(rgba(66,49,31,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(66,49,31,.03) 1px,transparent 1px);
+}
+html[data-theme="light"] ::selection{color:#20170a}
+
+/* Navigation */
+html[data-theme="light"] .site-header{background:linear-gradient(180deg,rgba(245,239,230,.9),rgba(245,239,230,.2) 75%,transparent)}
+html[data-theme="light"] .nav-shell{
+  background:linear-gradient(180deg,rgba(255,253,249,.94),rgba(244,238,229,.88));
+  border-color:rgba(59,43,28,.11);
+  box-shadow:0 18px 48px rgba(70,49,29,.13),inset 0 1px 0 rgba(255,255,255,.95);
+}
+html[data-theme="light"] .nav-shell nav{background:rgba(85,60,34,.045);border-color:rgba(64,45,27,.08)}
+html[data-theme="light"] .nav-shell nav a{color:#5d554e}
+html[data-theme="light"] .nav-shell nav a:hover{background:#fff;color:#201c18}
+html[data-theme="light"] .cart-btn,
+html[data-theme="light"] .account-nav-btn,
+html[data-theme="light"] .mobile-menu,
+html[data-theme="light"] .theme-toggle{
+  color:#332b24!important;
+  background:linear-gradient(180deg,#fffdf9,#ece5da)!important;
+  border-color:rgba(53,38,24,.11)!important;
+  box-shadow:inset 0 1px 0 #fff,0 8px 20px rgba(73,52,31,.1)!important;
+}
+
+/* Main content surfaces */
+html[data-theme="light"] .menu-browser,
+html[data-theme="light"] .menu-card,
+html[data-theme="light"] .experience-points>div,
+html[data-theme="light"] .visit-card,
+html[data-theme="light"] .public-review-form,
+html[data-theme="light"] .public-review-card,
+html[data-theme="light"] .account-order-card,
+html[data-theme="light"] .public-track-card,
+html[data-theme="light"] .track-form,
+html[data-theme="light"] .customer-auth-card,
+html[data-theme="light"] .cart-drawer{
+  color:#262019;
+  background:linear-gradient(145deg,#fffdf9,#f0e9df)!important;
+  border-color:rgba(57,40,25,.11)!important;
+  box-shadow:0 18px 44px rgba(71,50,29,.11),inset 0 1px 0 #fff!important;
+}
+html[data-theme="light"] .category-groups button,
+html[data-theme="light"] .subcategory-row button,
+html[data-theme="light"] .search,
+html[data-theme="light"] .modal-variants button,
+html[data-theme="light"] .addon-grid button,
+html[data-theme="light"] .addon-check,
+html[data-theme="light"] .modal-qty{
+  color:#4f473f!important;
+  background:linear-gradient(145deg,#fffdf9,#eae3d9)!important;
+  border-color:rgba(61,43,27,.12)!important;
+  box-shadow:inset 0 1px 0 #fff,0 7px 18px rgba(71,50,29,.06)!important;
+}
+html[data-theme="light"] .category-groups button.active,
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .addon-grid button.selected{
+  color:#21170a!important;
+}
+html[data-theme="light"] .group-icon{background:rgba(83,59,35,.055)!important;border-color:rgba(61,43,27,.08)!important}
+html[data-theme="light"] .menu-card:before{background:linear-gradient(135deg,rgba(255,255,255,.8),transparent 24%,transparent 70%,rgba(255,176,0,.055))}
+html[data-theme="light"] .menu-card-image.square{border-color:rgba(57,40,25,.08)}
+html[data-theme="light"] .compact-card-bottom>span strong{color:#241e19!important}
+html[data-theme="light"] .view-chip{background:rgba(255,253,249,.88)!important;color:#27211b!important;border-color:rgba(55,39,25,.12)!important}
+html[data-theme="light"] .pagination-wrap{background:rgba(255,253,249,.75);border-color:rgba(57,40,25,.1)}
+
+/* Modal */
+html[data-theme="light"] .product-modal-backdrop{background:rgba(59,42,26,.34)!important}
+html[data-theme="light"] .product-modal{
+  color:#262019;
+  background:linear-gradient(145deg,#fffdf9,#eee6db)!important;
+  border-color:rgba(57,40,25,.14)!important;
+  box-shadow:0 42px 110px rgba(60,40,22,.24),inset 0 1px 0 #fff!important;
+}
+html[data-theme="light"] .product-modal-image{background:#eee7dc;border-color:rgba(57,40,25,.1)}
+html[data-theme="light"] .product-modal-close{color:#332b24;background:linear-gradient(145deg,#fff,#e8e0d5)!important;border-color:rgba(57,40,25,.12)!important}
+html[data-theme="light"] .product-description,
+html[data-theme="light"] .addon-grid small,
+html[data-theme="light"] .option-title span{color:#756d64!important}
+html[data-theme="light"] .product-option-block{border-color:rgba(57,40,25,.1)!important}
+html[data-theme="light"] .product-modal-footer{
+  background:linear-gradient(180deg,rgba(255,253,249,.98),rgba(238,231,220,.99))!important;
+  border-color:rgba(57,40,25,.12)!important;
+  box-shadow:0 -14px 34px rgba(73,51,29,.11)!important;
+}
+html[data-theme="light"] .modal-qty button{color:#2b241e}
+
+/* Secondary sections */
+html[data-theme="light"] .deals{background:radial-gradient(circle at 15% 18%,rgba(255,176,0,.14),transparent 28rem),linear-gradient(135deg,#f8efe2,#f2e8dc 62%)}
+html[data-theme="light"] .deal-card{color:#28211b;background:linear-gradient(145deg,#fffaf2,#eee4d7)!important;border-color:rgba(57,40,25,.1)!important;box-shadow:0 14px 34px rgba(73,51,29,.1),inset 0 1px 0 #fff!important}
+html[data-theme="light"] .reviews-section{background:radial-gradient(circle at 85% 18%,rgba(255,176,0,.08),transparent 26rem),#f5f0e9}
+html[data-theme="light"] footer{background:linear-gradient(180deg,#ece5dc,#ded4c8);border-color:rgba(57,40,25,.1);color:#3b332c}
+
+/* Inputs / checkout */
+html[data-theme="light"] input,
+html[data-theme="light"] textarea,
+html[data-theme="light"] select{
+  color:#2b251f;
+}
+html[data-theme="light"] .public-review-form input,
+html[data-theme="light"] .public-review-form textarea,
+html[data-theme="light"] .reserve-form input,
+html[data-theme="light"] .reserve-form textarea,
+html[data-theme="light"] .reserve-form select,
+html[data-theme="light"] .checkout-form input,
+html[data-theme="light"] .checkout-form textarea,
+html[data-theme="light"] .checkout-form select,
+html[data-theme="light"] .track-form input,
+html[data-theme="light"] .customer-auth-card input{
+  color:#2a241e!important;
+  background:linear-gradient(145deg,#fffdf9,#ebe4da)!important;
+  border-color:rgba(57,40,25,.12)!important;
+  box-shadow:inset 2px 2px 7px rgba(92,65,38,.06),inset -1px -1px 4px #fff!important;
+}
+html[data-theme="light"] input::placeholder,
+html[data-theme="light"] textarea::placeholder{color:#948a80}
+
+/* Admin and account pages */
+html[data-theme="light"] .admin-layout,
+html[data-theme="light"] .track-page,
+html[data-theme="light"] .account-page,
+html[data-theme="light"] .customer-auth-page,
+html[data-theme="light"] .admin-loading{background:radial-gradient(circle at 12% 5%,rgba(255,176,0,.1),transparent 24rem),#f3eee7!important;color:#29231d}
+html[data-theme="light"] .admin-sidebar{
+  color:#2d261f;
+  background:linear-gradient(180deg,#fffdf9,#e8e0d5)!important;
+  border-color:rgba(57,40,25,.11)!important;
+  box-shadow:18px 0 46px rgba(70,48,28,.09)!important;
+}
+html[data-theme="light"] .admin-nav button,
+html[data-theme="light"] .sidebar-bottom a,
+html[data-theme="light"] .sidebar-bottom button{color:#5b5148}
+html[data-theme="light"] .admin-nav button.active{color:#8a5600!important;background:linear-gradient(135deg,rgba(255,176,0,.2),rgba(255,122,0,.08))!important}
+html[data-theme="light"] .admin-form,
+html[data-theme="light"] .orders-panel,
+html[data-theme="light"] .settings-panel,
+html[data-theme="light"] .admin-review-card,
+html[data-theme="light"] .customer-admin-card,
+html[data-theme="light"] .admin-edit-modal,
+html[data-theme="light"] .admin-item{
+  color:#2b241e;
+  background:linear-gradient(145deg,#fffdf9,#ede5da)!important;
+  border-color:rgba(57,40,25,.1)!important;
+  box-shadow:0 15px 36px rgba(71,50,29,.08),inset 0 1px 0 #fff!important;
+}
+html[data-theme="light"] .admin-form input,
+html[data-theme="light"] .admin-form textarea,
+html[data-theme="light"] .admin-form select,
+html[data-theme="light"] .admin-edit-fields input,
+html[data-theme="light"] .admin-edit-fields textarea,
+html[data-theme="light"] .admin-edit-fields select,
+html[data-theme="light"] .settings-form input,
+html[data-theme="light"] .settings-form textarea,
+html[data-theme="light"] .settings-form select{
+  color:#2b241e!important;
+  background:linear-gradient(145deg,#fffdf9,#e9e1d6)!important;
+  border-color:rgba(57,40,25,.12)!important;
+  box-shadow:inset 2px 2px 7px rgba(91,64,38,.055),inset -1px -1px 4px #fff!important;
+}
+html[data-theme="light"] .grand-loader{color:#2b241e;background:linear-gradient(180deg,rgba(255,253,249,.94),rgba(235,228,217,.92));border-color:rgba(57,40,25,.1);box-shadow:0 30px 80px rgba(70,48,28,.14)}
+
+@media(max-width:760px){
+  html[data-theme="light"] .site-header{background:rgba(246,240,231,.94)}
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.0 — light-mode brand red + modal fit fix
+   Focused UI patch only.
+   ========================================================= */
+:root{--logo-red:#df2029}
+
+/* Desktop/tablet product customizer: guaranteed visible purchase row and true square image. */
+@media(min-width:761px){
+  .product-modal-backdrop{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:20px!important;
+    overflow:hidden!important;
+  }
+  .product-modal{
+    width:min(900px,calc(100vw - 48px))!important;
+    height:min(620px,calc(100dvh - 40px))!important;
+    max-height:calc(100dvh - 40px)!important;
+    grid-template-columns:minmax(280px,380px) minmax(0,1fr)!important;
+    align-items:stretch!important;
+    overflow:hidden!important;
+  }
+  .product-modal-image{
+    width:100%!important;
+    height:auto!important;
+    aspect-ratio:1/1!important;
+    align-self:start!important;
+    padding:16px!important;
+    display:block!important;
+    overflow:hidden!important;
+    background:#08090a!important;
+  }
+  .product-modal-image img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-height:none!important;
+    aspect-ratio:1/1!important;
+    object-fit:cover!important;
+    object-position:center!important;
+    position:relative!important;
+    top:auto!important;
+    border-radius:18px!important;
+  }
+  .product-modal-content{
+    position:relative!important;
+    display:grid!important;
+    grid-template-rows:minmax(0,1fr) auto!important;
+    height:100%!important;
+    max-height:100%!important;
+    min-height:0!important;
+    overflow:hidden!important;
+  }
+  .product-modal-scroll{
+    height:auto!important;
+    min-height:0!important;
+    overflow-y:auto!important;
+    padding:22px 22px 18px!important;
+    scrollbar-width:none!important;
+    -ms-overflow-style:none!important;
+  }
+  .product-modal-scroll::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+  .product-modal-footer{
+    position:relative!important;
+    left:auto!important;
+    right:auto!important;
+    bottom:auto!important;
+    width:100%!important;
+    min-height:70px!important;
+    padding:10px 18px 12px!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    flex:0 0 auto!important;
+    z-index:60!important;
+  }
+  .modal-qty,.add-customized{height:46px!important;min-height:46px!important}
+}
+
+/* Light appearance: text that is white/high-emphasis in dark mode follows Grand Café logo red. */
+html[data-theme="light"]{--ink:var(--logo-red)}
+html[data-theme="light"] body,
+html[data-theme="light"] .nav-shell nav a,
+html[data-theme="light"] .hero h1,
+html[data-theme="light"] .hero-card-title,
+html[data-theme="light"] .hero-card-grid strong,
+html[data-theme="light"] .section-heading h2,
+html[data-theme="light"] .experience h2,
+html[data-theme="light"] .reserve h2,
+html[data-theme="light"] .visit h2,
+html[data-theme="light"] .menu-card h3,
+html[data-theme="light"] .compact-card-bottom>span strong,
+html[data-theme="light"] .deal-card h3,
+html[data-theme="light"] .deal-price strong,
+html[data-theme="light"] .product-modal,
+html[data-theme="light"] .product-modal h2,
+html[data-theme="light"] .option-title strong,
+html[data-theme="light"] .modal-variants button span,
+html[data-theme="light"] .addon-grid strong,
+html[data-theme="light"] .modal-qty,
+html[data-theme="light"] .public-review-card strong,
+html[data-theme="light"] .public-review-empty h3,
+html[data-theme="light"] .account-welcome h1,
+html[data-theme="light"] .account-order-card h3,
+html[data-theme="light"] .track-intro h1,
+html[data-theme="light"] .customer-auth-card h2,
+html[data-theme="light"] .admin-main h1,
+html[data-theme="light"] .admin-main h2,
+html[data-theme="light"] .admin-main h3,
+html[data-theme="light"] .admin-item-copy strong,
+html[data-theme="light"] .order-card h3,
+html[data-theme="light"] .reservation-card h3{
+  color:var(--logo-red)!important;
+}
+
+/* Keep supporting copy neutral for legibility, and preserve brand price/accent colors. */
+html[data-theme="light"] .product-description,
+html[data-theme="light"] .menu-card p,
+html[data-theme="light"] .section-heading>p,
+html[data-theme="light"] .experience-copy>p,
+html[data-theme="light"] .addon-grid small,
+html[data-theme="light"] .option-title span,
+html[data-theme="light"] .mini-cat,
+html[data-theme="light"] small{
+  color:#756d64;
+}
+html[data-theme="light"] .modal-variants button strong,
+html[data-theme="light"] .add-customized strong,
+html[data-theme="light"] .badge,
+html[data-theme="light"] .kicker,
+html[data-theme="light"] .eyebrow{
+  color:var(--yellow)!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.1 — Light-mode selected-state clarity
+   Selected tabs/options use Grand Café red + white text.
+   ========================================================= */
+html[data-theme="light"] .nav-shell nav a{
+  padding:9px 13px;
+  border-radius:12px;
+  transition:background .18s ease,color .18s ease,box-shadow .18s ease;
+}
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .nav-shell nav a:active{
+  color:#fff!important;
+  background:linear-gradient(135deg,var(--logo-red),#b91520)!important;
+  box-shadow:0 8px 20px rgba(223,32,41,.22)!important;
+}
+
+html[data-theme="light"] .category-groups button.active,
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active,
+html[data-theme="light"] .admin-nav button.active{
+  color:#fff!important;
+  background:linear-gradient(135deg,var(--logo-red),#b91520)!important;
+  border-color:var(--logo-red)!important;
+  box-shadow:0 10px 24px rgba(223,32,41,.2),inset 0 1px 0 rgba(255,255,255,.18)!important;
+}
+html[data-theme="light"] .category-groups button.active strong,
+html[data-theme="light"] .category-groups button.active small,
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active strong,
+html[data-theme="light"] .fulfilment-picker button.active small,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .admin-nav button.active span{
+  color:#fff!important;
+}
+html[data-theme="light"] .category-groups button.active .group-icon{
+  color:#fff!important;
+  background:rgba(255,255,255,.16)!important;
+  border-color:rgba(255,255,255,.22)!important;
+}
+
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .addon-grid button.selected{
+  color:#fff!important;
+  background:linear-gradient(135deg,var(--logo-red),#b91520)!important;
+  border-color:var(--logo-red)!important;
+  box-shadow:0 9px 22px rgba(223,32,41,.19),inset 0 1px 0 rgba(255,255,255,.15)!important;
+}
+html[data-theme="light"] .modal-variants button.active span,
+html[data-theme="light"] .modal-variants button.active strong,
+html[data-theme="light"] .addon-grid button.selected strong,
+html[data-theme="light"] .addon-grid button.selected small{
+  color:#fff!important;
+}
+html[data-theme="light"] .addon-grid button.selected .addon-check{
+  color:var(--logo-red)!important;
+  background:#fff!important;
+  border-color:#fff!important;
+  box-shadow:none!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.2 — selected-state + dark reservation polish
+   Focused visual patch only.
+   ========================================================= */
+
+/* DARK MODE: reservation section now belongs to the dark visual system. */
+html:not([data-theme="light"]) .reserve{
+  color:#f7f1e7!important;
+  background:
+    radial-gradient(circle at 15% 18%,rgba(242,59,46,.10),transparent 28rem),
+    radial-gradient(circle at 88% 25%,rgba(255,176,0,.08),transparent 30rem),
+    linear-gradient(145deg,#101214,#08090a 72%)!important;
+  border-block:1px solid rgba(255,255,255,.07);
+}
+html:not([data-theme="light"]) .reserve h2{
+  color:#fbf7ef!important;
+  text-shadow:0 10px 34px rgba(0,0,0,.30)!important;
+}
+html:not([data-theme="light"]) .reserve-grid>div>p{color:#aaa7a1!important}
+html:not([data-theme="light"]) .reserve-note strong{color:#f6f0e8!important}
+html:not([data-theme="light"]) .reserve-note small{color:#8e8b85!important}
+html:not([data-theme="light"]) .reserve-note svg{color:var(--yellow)!important}
+html:not([data-theme="light"]) .reserve-form{
+  background:linear-gradient(145deg,#181a1d,#101214)!important;
+  border:1px solid rgba(255,255,255,.085)!important;
+  box-shadow:0 24px 68px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.035)!important;
+}
+html:not([data-theme="light"]) .reserve-form input,
+html:not([data-theme="light"]) .reserve-form textarea,
+html:not([data-theme="light"]) .reserve-form select{
+  color:#f5efe7!important;
+  background:linear-gradient(145deg,#111315,#17191c)!important;
+  border-color:rgba(255,255,255,.10)!important;
+  box-shadow:inset 1px 1px 5px rgba(0,0,0,.20),inset 0 1px 0 rgba(255,255,255,.025)!important;
+}
+html:not([data-theme="light"]) .reserve-form input::placeholder,
+html:not([data-theme="light"]) .reserve-form textarea::placeholder{color:#7f7d78!important}
+
+/* LIGHT MODE: active navigation is a full red pill, never red text on a pale pill. */
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .nav-shell nav a.active:hover,
+html[data-theme="light"] .nav-shell nav a.active:focus-visible{
+  color:#fff!important;
+  background-color:var(--logo-red)!important;
+  background-image:linear-gradient(135deg,#e52631,#b91520)!important;
+  border-color:#b91520!important;
+  box-shadow:0 9px 22px rgba(223,32,41,.24),inset 0 1px 0 rgba(255,255,255,.20)!important;
+}
+
+/* LIGHT MODE: selected menu group fills the whole card red. */
+html[data-theme="light"] .menu-browser .category-groups button.active,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"],
+html[data-theme="light"] .menu-browser .category-groups button.active:hover{
+  color:#fff!important;
+  background-color:var(--logo-red)!important;
+  background-image:linear-gradient(135deg,#e52631,#b91520)!important;
+  border-color:#b91520!important;
+  box-shadow:0 12px 28px rgba(223,32,41,.22),inset 0 1px 0 rgba(255,255,255,.20)!important;
+}
+html[data-theme="light"] .menu-browser .category-groups button.active .group-copy,
+html[data-theme="light"] .menu-browser .category-groups button.active .group-copy strong,
+html[data-theme="light"] .menu-browser .category-groups button.active .group-copy small,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"] .group-copy,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"] .group-copy strong,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"] .group-copy small{
+  color:#fff!important;
+}
+html[data-theme="light"] .menu-browser .category-groups button.active .group-icon,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"] .group-icon{
+  color:#fff!important;
+  background:rgba(255,255,255,.14)!important;
+  border-color:rgba(255,255,255,.24)!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] .menu-browser .category-groups button.active .group-icon svg,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"] .group-icon svg{
+  color:#fff!important;
+  stroke:#fff!important;
+}
+
+/* Apply the same light-theme selection language to subcategories and ordering choices. */
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .fulfilment-picker>button.active,
+html[data-theme="light"] .pagination button.active{
+  color:#fff!important;
+  background-color:var(--logo-red)!important;
+  background-image:linear-gradient(135deg,#e52631,#b91520)!important;
+  border-color:#b91520!important;
+}
+html[data-theme="light"] .modal-variants button.active span,
+html[data-theme="light"] .modal-variants button.active strong,
+html[data-theme="light"] .fulfilment-picker>button.active span,
+html[data-theme="light"] .fulfilment-picker>button.active strong,
+html[data-theme="light"] .fulfilment-picker>button.active small,
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active{
+  color:#fff!important;
+}
+
+/* Light reservation heading should use the brand red, not white. */
+html[data-theme="light"] .reserve h2{color:var(--logo-red)!important;text-shadow:none!important}
+
+/* =========================================================
+   GRAND CAFÉ v5.3 — light-theme red action language
+   Yellow/orange actions and icons become brand red in Light Mode.
+   ========================================================= */
+html[data-theme="light"]{
+  --light-action-red:#e3232d;
+  --light-action-red-deep:#b80f19;
+  --light-on-red:#fff1df;
+}
+
+/* All primary yellow/orange CTA buttons become Grand Café red gradient in Light Mode. */
+html[data-theme="light"] .primary,
+html[data-theme="light"] .map-button{
+  color:var(--light-on-red)!important;
+  background-color:var(--light-action-red)!important;
+  background-image:linear-gradient(135deg,#ee3540 0%,var(--light-action-red) 48%,var(--light-action-red-deep) 100%)!important;
+  border-color:rgba(161,11,20,.5)!important;
+  box-shadow:0 12px 30px rgba(201,26,36,.22),inset 0 1px 0 rgba(255,244,229,.26)!important;
+}
+html[data-theme="light"] .primary:hover,
+html[data-theme="light"] .map-button:hover{
+  color:var(--light-on-red)!important;
+  background-image:linear-gradient(135deg,#f03a45 0%,#d81d28 48%,#a90c16 100%)!important;
+  box-shadow:0 16px 34px rgba(190,22,32,.27),inset 0 1px 0 rgba(255,244,229,.3)!important;
+}
+html[data-theme="light"] .primary svg,
+html[data-theme="light"] .map-button svg,
+html[data-theme="light"] .primary span,
+html[data-theme="light"] .primary strong,
+html[data-theme="light"] .map-button span,
+html[data-theme="light"] .map-button small{
+  color:var(--light-on-red)!important;
+  stroke:currentColor;
+}
+
+/* Existing selected controls use warm ivory instead of stark white on red. */
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .nav-shell nav a.active:hover,
+html[data-theme="light"] .nav-shell nav a.active:focus-visible,
+html[data-theme="light"] .category-groups button.active,
+html[data-theme="light"] .category-groups button[aria-selected="true"],
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .addon-grid button.selected{
+  color:var(--light-on-red)!important;
+}
+html[data-theme="light"] .category-groups button.active strong,
+html[data-theme="light"] .category-groups button.active small,
+html[data-theme="light"] .category-groups button[aria-selected="true"] strong,
+html[data-theme="light"] .category-groups button[aria-selected="true"] small,
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active strong,
+html[data-theme="light"] .fulfilment-picker button.active small,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .admin-nav button.active span,
+html[data-theme="light"] .modal-variants button.active span,
+html[data-theme="light"] .modal-variants button.active strong,
+html[data-theme="light"] .addon-grid button.selected strong,
+html[data-theme="light"] .addon-grid button.selected small{
+  color:var(--light-on-red)!important;
+}
+html[data-theme="light"] .category-groups button.active .group-icon,
+html[data-theme="light"] .category-groups button[aria-selected="true"] .group-icon,
+html[data-theme="light"] .category-groups button.active .group-icon svg,
+html[data-theme="light"] .category-groups button[aria-selected="true"] .group-icon svg{
+  color:var(--light-on-red)!important;
+  stroke:var(--light-on-red)!important;
+}
+html[data-theme="light"] .addon-grid button.selected .addon-check{
+  color:var(--light-action-red)!important;
+  background:var(--light-on-red)!important;
+  border-color:var(--light-on-red)!important;
+}
+
+/* Yellow/gold interface accents become brand red in Light Mode. */
+html[data-theme="light"] .kicker,
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .reserve .kicker,
+html[data-theme="light"] .floating-rating svg,
+html[data-theme="light"] .experience-points svg,
+html[data-theme="light"] .reserve-note svg,
+html[data-theme="light"] .fulfilment-picker svg,
+html[data-theme="light"] .delivery-info svg,
+html[data-theme="light"] .pickup-box svg,
+html[data-theme="light"] .public-review-stars,
+html[data-theme="light"] .admin-review-stars,
+html[data-theme="light"] .review-stars button.active,
+html[data-theme="light"] .public-review-picker button.active,
+html[data-theme="light"] .admin-review-picker button.active,
+html[data-theme="light"] .edit-icon,
+html[data-theme="light"] .order-top small,
+html[data-theme="light"] .date-block span{
+  color:var(--light-action-red)!important;
+}
+html[data-theme="light"] .floating-rating svg,
+html[data-theme="light"] .experience-points svg,
+html[data-theme="light"] .reserve-note svg,
+html[data-theme="light"] .fulfilment-picker svg,
+html[data-theme="light"] .delivery-info svg,
+html[data-theme="light"] .pickup-box svg,
+html[data-theme="light"] .edit-icon svg{
+  stroke:currentColor!important;
+}
+
+/* Yellow badges/toggles that act as controls also follow the red light-theme accent. */
+html[data-theme="light"] .cart-btn span{
+  color:var(--light-on-red)!important;
+  background:var(--light-action-red)!important;
+}
+html[data-theme="light"] .toggle-field input,
+html[data-theme="light"] .admin-availability input,
+html[data-theme="light"] .admin-review-publish input{
+  accent-color:var(--light-action-red)!important;
+}
+html[data-theme="light"] .badge{
+  color:var(--light-action-red)!important;
+  background:rgba(227,35,45,.08)!important;
+  border-color:rgba(227,35,45,.22)!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.4 — product-modal media surface theme match
+   The image pane uses the modal surface itself instead of a
+   separate black/light block, so the square image sits cleanly
+   inside both Dark and Light themes.
+   ========================================================= */
+.product-modal-image{
+  background:transparent!important;
+}
+html[data-theme="light"] .product-modal-image{
+  background:transparent!important;
+  border-color:rgba(57,40,25,.10)!important;
+}
+html:not([data-theme="light"]) .product-modal-image{
+  background:transparent!important;
+  border-color:rgba(255,255,255,.075)!important;
+}
+
+/* v5.5 — Mobile navigation glass panel
+   Keep the 3-bar menu readable over page content while preserving a premium,
+   translucent look in both themes. */
+@media (max-width:900px){
+  .nav-shell nav,
+  .nav-shell nav.open{
+    top:78px!important;
+    left:14px!important;
+    right:14px!important;
+    padding:12px!important;
+    gap:7px!important;
+    border-radius:22px!important;
+    border:1px solid rgba(255,255,255,.16)!important;
+    background:linear-gradient(145deg,rgba(29,31,34,.91),rgba(12,14,16,.82))!important;
+    -webkit-backdrop-filter:blur(28px) saturate(1.45)!important;
+    backdrop-filter:blur(28px) saturate(1.45)!important;
+    box-shadow:
+      0 24px 60px rgba(0,0,0,.5),
+      inset 0 1px 0 rgba(255,255,255,.14),
+      inset 0 -1px 0 rgba(255,255,255,.035)!important;
+    overflow:hidden;
+    isolation:isolate;
+  }
+  .nav-shell nav{display:none!important}
+  .nav-shell nav.open{display:flex!important}
+  .nav-shell nav.open::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+    background:
+      radial-gradient(circle at 12% -18%,rgba(255,255,255,.22),transparent 36%),
+      linear-gradient(115deg,rgba(255,255,255,.055),transparent 38%,rgba(242,59,46,.045));
+  }
+  .nav-shell nav a{
+    position:relative;
+    z-index:1;
+    width:100%;
+    padding:13px 15px!important;
+    border-radius:14px!important;
+    border:1px solid rgba(255,255,255,.055);
+    background:rgba(255,255,255,.035)!important;
+    color:#f3efe8!important;
+    font-weight:750;
+  }
+  .nav-shell nav a:hover{
+    background:rgba(255,255,255,.08)!important;
+  }
+  .nav-shell nav a.active{
+    background:linear-gradient(135deg,#d71920,#a80d14)!important;
+    border-color:rgba(255,96,96,.35)!important;
+    color:#fff8ef!important;
+    box-shadow:0 10px 28px rgba(159,10,18,.28),inset 0 1px 0 rgba(255,255,255,.2)!important;
+  }
+
+  html[data-theme="light"] .nav-shell nav,
+  html[data-theme="light"] .nav-shell nav.open{
+    border-color:rgba(104,69,42,.18)!important;
+    background:linear-gradient(145deg,rgba(255,252,247,.91),rgba(237,227,216,.84))!important;
+    -webkit-backdrop-filter:blur(28px) saturate(1.32)!important;
+    backdrop-filter:blur(28px) saturate(1.32)!important;
+    box-shadow:
+      0 24px 58px rgba(73,49,28,.22),
+      inset 0 1px 0 rgba(255,255,255,.92),
+      inset 0 -1px 0 rgba(92,58,33,.05)!important;
+  }
+  html[data-theme="light"] .nav-shell nav.open::before{
+    background:
+      radial-gradient(circle at 10% -14%,rgba(255,255,255,.92),transparent 38%),
+      linear-gradient(115deg,rgba(255,255,255,.28),transparent 40%,rgba(192,24,32,.045));
+  }
+  html[data-theme="light"] .nav-shell nav a{
+    color:#6f1015!important;
+    border-color:rgba(111,72,42,.09)!important;
+    background:rgba(255,255,255,.42)!important;
+  }
+  html[data-theme="light"] .nav-shell nav a:hover{
+    background:rgba(255,255,255,.68)!important;
+  }
+  html[data-theme="light"] .nav-shell nav a.active{
+    background:linear-gradient(135deg,#d71920,#a80d14)!important;
+    border-color:rgba(156,8,16,.2)!important;
+    color:#fff8ef!important;
+    box-shadow:0 10px 26px rgba(150,10,17,.2),inset 0 1px 0 rgba(255,255,255,.24)!important;
+  }
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.6 — focused visual cleanup from QA screenshots
+   1) remove product-modal media divider
+   2) remove product-card vignette overlay
+   3) light-theme menu control bar
+   4) light-theme pagination bar
+   5) normalize reservation notes height
+   ========================================================= */
+
+/* 1. Product customizer: image and content should read as one surface. */
+.product-modal-image{
+  border-right:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] .product-modal-image,
+html:not([data-theme="light"]) .product-modal-image{
+  border-right:0!important;
+}
+
+/* 2. Remove the glossy/white vignette painted over every product card. */
+.menu-card::before,
+html[data-theme="light"] .menu-card::before{
+  content:none!important;
+  display:none!important;
+  background:none!important;
+}
+
+/* 3. Light theme: the context/search bar should belong to the light surface. */
+html[data-theme="light"] .menu-controls{
+  color:#332a22!important;
+  background:linear-gradient(145deg,#fffdf9 0%,#f1e9df 100%)!important;
+  border-color:rgba(65,45,28,.11)!important;
+  box-shadow:0 10px 28px rgba(79,54,31,.08),inset 0 1px 0 rgba(255,255,255,.95)!important;
+}
+html[data-theme="light"] .menu-context strong{
+  color:var(--logo-red,#d71920)!important;
+}
+html[data-theme="light"] .menu-context span{
+  color:#8a7e73!important;
+}
+html[data-theme="light"] .menu-controls .search{
+  color:#3c332b!important;
+  background:linear-gradient(145deg,#fffaf3,#ece4d9)!important;
+  border-color:rgba(65,45,28,.12)!important;
+  box-shadow:inset 1px 1px 4px rgba(95,65,38,.045),inset -1px -1px 3px rgba(255,255,255,.9)!important;
+}
+html[data-theme="light"] .menu-controls .search input{
+  color:#3c332b!important;
+}
+html[data-theme="light"] .menu-controls .search svg{
+  color:#6f6257!important;
+  stroke:currentColor!important;
+}
+
+/* 4. Light theme: pagination is a light control, while the active page stays red. */
+html[data-theme="light"] .pagination{
+  background:linear-gradient(145deg,#fffdf9,#eee7dd)!important;
+  border-color:rgba(65,45,28,.11)!important;
+  box-shadow:0 8px 22px rgba(79,54,31,.07),inset 0 1px 0 rgba(255,255,255,.95)!important;
+}
+html[data-theme="light"] .pagination button:not(.active){
+  color:#65594f!important;
+  background:transparent!important;
+}
+html[data-theme="light"] .pagination button:hover:not(:disabled):not(.active){
+  color:var(--logo-red,#d71920)!important;
+  background:rgba(215,25,32,.07)!important;
+}
+html[data-theme="light"] .pagination-summary{
+  color:#877b70!important;
+}
+html[data-theme="light"] .pagination-summary strong{
+  color:#4b4037!important;
+}
+
+/* 5. Reservation notes: compact, intentional textarea instead of an oversized panel. */
+.reserve-form textarea{
+  height:118px!important;
+  min-height:118px!important;
+  max-height:180px!important;
+  resize:vertical!important;
+  align-self:start!important;
+}
+@media(max-width:620px){
+  .reserve-form textarea{
+    height:108px!important;
+    min-height:108px!important;
+    max-height:160px!important;
+  }
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.7 — light hero card + crisp light navbar
+   Focused visual patch only.
+   ========================================================= */
+
+/* Light mode: the Grand Café Signature hero card uses the same warm light surface language. */
+html[data-theme="light"] .hero-card{
+  background:linear-gradient(145deg,#fffaf4 0%,#f2e8dc 100%)!important;
+  border-color:rgba(111,72,42,.14)!important;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+  box-shadow:0 18px 42px rgba(74,48,26,.14),inset 0 1px 0 rgba(255,255,255,.94)!important;
+}
+html[data-theme="light"] .hero-card-top{
+  color:#84766a!important;
+}
+html[data-theme="light"] .hero-card-title{
+  color:var(--logo-red)!important;
+}
+html[data-theme="light"] .hero-card-grid>div{
+  background:linear-gradient(145deg,#faf3ea,#eee3d7)!important;
+  border-color:rgba(111,72,42,.12)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 7px 18px rgba(78,52,29,.07)!important;
+}
+html[data-theme="light"] .hero-card-grid small{
+  color:#87786b!important;
+}
+html[data-theme="light"] .hero-card-grid strong{
+  color:var(--logo-red)!important;
+}
+
+/* Light mode navbar: fully opaque and crisp, with no frosted/blur halo behind it. */
+html[data-theme="light"] .site-header{
+  background:transparent!important;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+}
+html[data-theme="light"] .nav-shell{
+  background:linear-gradient(180deg,#fffaf4 0%,#f1e8dc 100%)!important;
+  border-color:rgba(92,59,33,.13)!important;
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+  box-shadow:0 8px 24px rgba(63,43,26,.12),inset 0 1px 0 rgba(255,255,255,.96)!important;
+}
+html[data-theme="light"] .nav-shell nav,
+html[data-theme="light"] .nav-actions,
+html[data-theme="light"] .brand{
+  -webkit-backdrop-filter:none!important;
+  backdrop-filter:none!important;
+}
+
+@media(max-width:760px){
+  html[data-theme="light"] .site-header{
+    background:transparent!important;
+    -webkit-backdrop-filter:none!important;
+    backdrop-filter:none!important;
+  }
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.8 — Visit actions + sign-in icon theme polish
+   Dark: phone/maps use the signature yellow→orange gradient.
+   Light: phone/maps use the Grand Café red gradient.
+   ========================================================= */
+
+/* Dark theme: make every Visit action read as a branded CTA. */
+html:not([data-theme="light"]) .visit-card .contact-row a,
+html:not([data-theme="light"]) .visit-card .map-button{
+  color:#17110a!important;
+  background-color:var(--yellow)!important;
+  background-image:linear-gradient(135deg,#ffd05a 0%,var(--yellow) 48%,var(--orange) 100%)!important;
+  border:1px solid rgba(255,190,45,.42)!important;
+  box-shadow:0 12px 28px rgba(255,150,0,.18),inset 0 1px 0 rgba(255,255,255,.26)!important;
+}
+html:not([data-theme="light"]) .visit-card .contact-row a:hover,
+html:not([data-theme="light"]) .visit-card .map-button:hover{
+  background-image:linear-gradient(135deg,#ffdb73 0%,#ffb70d 48%,#f56b00 100%)!important;
+  box-shadow:0 15px 32px rgba(255,150,0,.24),inset 0 1px 0 rgba(255,255,255,.3)!important;
+  transform:translateY(-1px);
+}
+html:not([data-theme="light"]) .visit-card .contact-row a svg,
+html:not([data-theme="light"]) .visit-card .map-button svg,
+html:not([data-theme="light"]) .visit-card .map-button span,
+html:not([data-theme="light"]) .visit-card .map-button small{
+  color:#17110a!important;
+  stroke:currentColor;
+}
+
+/* Light theme: phone, Google Maps and Get directions all use the red brand treatment. */
+html[data-theme="light"] .visit-card .contact-row a,
+html[data-theme="light"] .visit-card .map-button{
+  color:var(--light-on-red)!important;
+  background-color:var(--light-action-red)!important;
+  background-image:linear-gradient(135deg,#f23d47 0%,var(--light-action-red) 48%,var(--light-action-red-deep) 100%)!important;
+  border:1px solid rgba(161,11,20,.48)!important;
+  box-shadow:0 12px 28px rgba(201,26,36,.2),inset 0 1px 0 rgba(255,244,229,.25)!important;
+}
+html[data-theme="light"] .visit-card .contact-row a:hover,
+html[data-theme="light"] .visit-card .map-button:hover{
+  color:var(--light-on-red)!important;
+  background-image:linear-gradient(135deg,#f44953 0%,#d91e29 48%,#a90c16 100%)!important;
+  box-shadow:0 15px 32px rgba(190,22,32,.25),inset 0 1px 0 rgba(255,244,229,.3)!important;
+  transform:translateY(-1px);
+}
+html[data-theme="light"] .visit-card .contact-row a svg,
+html[data-theme="light"] .visit-card .map-button svg,
+html[data-theme="light"] .visit-card .map-button span,
+html[data-theme="light"] .visit-card .map-button small{
+  color:var(--light-on-red)!important;
+  stroke:currentColor;
+}
+
+/* Sign-in / account icon follows the red brand accent in Light Mode. */
+html[data-theme="light"] .account-nav-btn svg{
+  color:var(--logo-red)!important;
+  stroke:currentColor!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v5.9 — light deals + typography + logo polish
+   Focused patch only.
+   ========================================================= */
+
+/* Keep Hot Deal pricing in the same clean family used across the rest of the UI. */
+.deal-price strong{
+  font-family:'Manrope','Plus Jakarta Sans',sans-serif!important;
+  font-weight:800!important;
+  letter-spacing:-.025em!important;
+  line-height:1!important;
+}
+
+/* Light theme: deal CTAs become proper red brand buttons instead of pale outline buttons. */
+html[data-theme="light"] .deal-price button{
+  color:var(--light-on-red,#fff4e8)!important;
+  background-color:var(--light-action-red,#d71920)!important;
+  background-image:linear-gradient(135deg,#f23d47 0%,var(--light-action-red,#d71920) 48%,var(--light-action-red-deep,#a90c16) 100%)!important;
+  border-color:rgba(161,11,20,.42)!important;
+  box-shadow:0 10px 24px rgba(201,26,36,.18),inset 0 1px 0 rgba(255,244,229,.25)!important;
+  font-weight:800!important;
+}
+html[data-theme="light"] .deal-price button:hover{
+  color:var(--light-on-red,#fff4e8)!important;
+  background-image:linear-gradient(135deg,#f44b55 0%,#d91e29 48%,#a90c16 100%)!important;
+  box-shadow:0 13px 28px rgba(190,22,32,.24),inset 0 1px 0 rgba(255,244,229,.3)!important;
+  transform:translateY(-1px);
+}
+html[data-theme="light"] .deal-price button svg{
+  color:var(--light-on-red,#fff4e8)!important;
+  stroke:currentColor!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v6.0 — dark heading palette + cart typography
+   Focused visual patch only.
+   ========================================================= */
+
+/* Keep the cart title in the same modern UI family as the rest of the site. */
+.drawer-head h2{
+  font-family:'Manrope','Plus Jakarta Sans',system-ui,sans-serif!important;
+  font-weight:800!important;
+  letter-spacing:-.025em!important;
+}
+
+/* Dark theme: replace high-emphasis white headings with the signature warm yellow. */
+html:not([data-theme="light"]) .hero h1,
+html:not([data-theme="light"]) .section-heading h2,
+html:not([data-theme="light"]) .experience h2,
+html:not([data-theme="light"]) .reserve h2,
+html:not([data-theme="light"]) .visit h2,
+html:not([data-theme="light"]) .hero-card-title,
+html:not([data-theme="light"]) .product-modal-content h2,
+html:not([data-theme="light"]) .drawer-head h2,
+html:not([data-theme="light"]) .customer-auth-card h2,
+html:not([data-theme="light"]) .account-welcome h1,
+html:not([data-theme="light"]) .track-intro h1{
+  color:#ffc037!important;
+  text-shadow:0 8px 28px rgba(255,176,0,.10)!important;
+}
+
+/* The hero highlight now uses a deeper amber/orange so it stays distinct from the other yellow headings. */
+html:not([data-theme="light"]) .hero h1 span{
+  background:linear-gradient(135deg,#e7a10a 0%,#d98500 52%,#bd6500 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  filter:drop-shadow(0 8px 26px rgba(210,125,0,.16))!important;
+}
+
+/* Keep the cart empty-state title aligned with the new dark heading palette. */
+html:not([data-theme="light"]) .cart-empty h3{
+  color:#ffc037!important;
+  font-family:'Manrope','Plus Jakarta Sans',system-ui,sans-serif!important;
+  font-weight:800!important;
+}
+
+
+/* =========================================================
+   GRAND CAFÉ v6.1 — customer auth + review theme polish
+   Focused visual patch only.
+   ========================================================= */
+
+/* Give the sign-in/register form a deliberate premium card treatment
+   instead of leaving it as a flat column on the auth page. */
+.customer-auth-card{
+  width:min(560px,calc(100% - 64px))!important;
+  padding:38px!important;
+  border:1px solid rgba(255,255,255,.09)!important;
+  border-radius:28px!important;
+  background:
+    radial-gradient(circle at 92% 7%,rgba(242,59,46,.07),transparent 15rem),
+    linear-gradient(145deg,rgba(24,26,29,.98),rgba(10,11,13,.98))!important;
+  box-shadow:0 28px 80px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.035)!important;
+  align-self:center;
+}
+.customer-auth-card .auth-home-link{margin-bottom:20px!important}
+.customer-auth-card h2{margin-top:2px!important;margin-bottom:14px!important}
+.customer-auth-card .primary.full{min-height:56px;border-radius:16px!important}
+.customer-auth-card label{font-size:12px!important}
+.customer-auth-card input{min-height:54px!important}
+.customer-auth-card .auth-switch{margin-top:8px!important}
+
+/* Dark theme auth hero: registration gets the signature yellow/orange
+   treatment, while login gets a confident brand-red welcome. */
+html:not([data-theme="light"]) .customer-auth-page.register-mode .customer-auth-brand h1{
+  background:linear-gradient(135deg,#ffd15a 0%,#ffb000 48%,#e88700 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  text-shadow:none!important;
+  filter:drop-shadow(0 10px 28px rgba(255,176,0,.13));
+}
+html:not([data-theme="light"]) .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:linear-gradient(135deg,#ff514c 0%,#f23b2e 48%,#c8171e 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  text-shadow:none!important;
+  filter:drop-shadow(0 10px 28px rgba(242,59,46,.14));
+}
+
+/* Light theme auth hero: both account messages follow the red brand language. */
+html[data-theme="light"] .customer-auth-page.register-mode .customer-auth-brand h1,
+html[data-theme="light"] .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:linear-gradient(135deg,#f43b45 0%,#d71920 52%,#a90c16 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  text-shadow:none!important;
+  filter:drop-shadow(0 8px 24px rgba(201,26,36,.11));
+}
+
+/* Light auth card: warm cream glass, rounded edges and tighter spacing. */
+html[data-theme="light"] .customer-auth-card{
+  color:#2a231d!important;
+  background:
+    radial-gradient(circle at 90% 8%,rgba(215,25,32,.055),transparent 14rem),
+    linear-gradient(145deg,#fffdf8,#efe7db)!important;
+  border-color:rgba(73,48,28,.12)!important;
+  box-shadow:0 28px 72px rgba(74,52,30,.14),inset 0 1px 0 rgba(255,255,255,.96)!important;
+}
+html[data-theme="light"] .customer-auth-card .kicker,
+html[data-theme="light"] .customer-auth-card h2{color:#d71920!important;text-shadow:none!important}
+html[data-theme="light"] .customer-auth-card .auth-home-link{color:#756b62!important}
+html[data-theme="light"] .customer-auth-card label{color:#776e65!important}
+html[data-theme="light"] .customer-auth-card .auth-switch{color:#82776e!important}
+html[data-theme="light"] .customer-auth-card .auth-switch a{color:#d71920!important}
+html[data-theme="light"] .customer-auth-card .input-icon svg{color:#a01820!important}
+
+/* Keep browser autofill from painting the premium inputs blue. */
+.customer-auth-card input:-webkit-autofill,
+.customer-auth-card input:-webkit-autofill:hover,
+.customer-auth-card input:-webkit-autofill:focus{
+  -webkit-text-fill-color:#f6f0e7!important;
+  caret-color:#f6f0e7!important;
+  -webkit-box-shadow:0 0 0 1000px #17191c inset!important;
+  box-shadow:0 0 0 1000px #17191c inset!important;
+  transition:background-color 9999s ease-out 0s;
+}
+html[data-theme="light"] .customer-auth-card input:-webkit-autofill,
+html[data-theme="light"] .customer-auth-card input:-webkit-autofill:hover,
+html[data-theme="light"] .customer-auth-card input:-webkit-autofill:focus{
+  -webkit-text-fill-color:#2a241e!important;
+  caret-color:#2a241e!important;
+  -webkit-box-shadow:0 0 0 1000px #f5eee4 inset!important;
+  box-shadow:0 0 0 1000px #f5eee4 inset!important;
+}
+
+/* Light mode review stars: remove the heavy black tiles. */
+html[data-theme="light"] .public-review-picker button,
+html[data-theme="light"] .order-review-form .review-stars button,
+html[data-theme="light"] .admin-review-picker button{
+  color:#9b8f84!important;
+  background:linear-gradient(145deg,#fffaf3,#ece3d8)!important;
+  border:1px solid rgba(74,51,31,.14)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 7px 16px rgba(74,51,31,.06)!important;
+}
+html[data-theme="light"] .public-review-picker button:hover,
+html[data-theme="light"] .order-review-form .review-stars button:hover,
+html[data-theme="light"] .admin-review-picker button:hover{
+  color:#d71920!important;
+  border-color:rgba(215,25,32,.28)!important;
+  background:linear-gradient(145deg,#fff8f3,#f4dfdc)!important;
+}
+html[data-theme="light"] .public-review-picker button.active,
+html[data-theme="light"] .order-review-form .review-stars button.active,
+html[data-theme="light"] .admin-review-picker button.active{
+  color:#fff3e6!important;
+  background:linear-gradient(135deg,#f33b46 0%,#d71920 52%,#a90c16 100%)!important;
+  border-color:#c9151d!important;
+  box-shadow:0 9px 20px rgba(190,22,32,.17),inset 0 1px 0 rgba(255,255,255,.22)!important;
+}
+html[data-theme="light"] .public-review-picker button svg,
+html[data-theme="light"] .order-review-form .review-stars button svg,
+html[data-theme="light"] .admin-review-picker button svg{stroke:currentColor!important}
+
+@media(max-width:900px){
+  .customer-auth-card{width:min(620px,calc(100% - 40px))!important;margin:44px auto 70px!important}
+}
+@media(max-width:620px){
+  .customer-auth-card{width:calc(100% - 24px)!important;padding:26px 20px!important;border-radius:22px!important;margin:28px auto 48px!important}
+  .customer-auth-card h2{font-size:34px!important}
+}
+
+/* =========================================================
+   GRAND CAFÉ v6.2 — auth hero color + long-heading fit
+   Focused patch only.
+   ========================================================= */
+
+/* Dark login hero should follow the same warm yellow language as the rest
+   of the dark theme rather than using the red treatment. */
+html:not([data-theme="light"]) .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:linear-gradient(135deg,#ffd15a 0%,#ffb000 48%,#e88700 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  text-shadow:none!important;
+  filter:drop-shadow(0 10px 28px rgba(255,176,0,.13))!important;
+}
+
+/* Keep the long registration headline fully inside the visual column.
+   The previous size could clip the final "d" in REMEMBERED on some viewport widths. */
+.customer-auth-page.register-mode .customer-auth-brand>div{
+  max-width:min(760px,100%)!important;
+}
+.customer-auth-page.register-mode .customer-auth-brand h1{
+  font-size:clamp(52px,6.1vw,88px)!important;
+  line-height:.9!important;
+  letter-spacing:-.02em!important;
+  max-width:100%!important;
+  padding-right:.14em!important;
+  overflow:visible!important;
+  text-wrap:balance;
+}
+
+@media(max-width:1100px){
+  .customer-auth-page.register-mode .customer-auth-brand h1{
+    font-size:clamp(50px,7.2vw,78px)!important;
+  }
+}
+
+@media(max-width:620px){
+  .customer-auth-page.register-mode .customer-auth-brand h1{
+    font-size:clamp(42px,12vw,58px)!important;
+    line-height:.92!important;
+    padding-right:.08em!important;
+  }
+}
+
+/* =========================================================
+   GRAND CAFÉ v6.7 — hero highlight + light typography cleanup
+   Dark: "Go Grand." uses Grand Café red.
+   Light: "Go Grand." is white; ordinary red text becomes near-black,
+   while primary page/section headings remain Grand Café red.
+   ========================================================= */
+
+/* Hero highlight requested palette. */
+html:not([data-theme="light"]) .hero h1 span{
+  background:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+  color:var(--logo-red,#df2029)!important;
+  filter:none!important;
+  text-shadow:0 8px 28px rgba(223,32,41,.18)!important;
+}
+html[data-theme="light"] .hero h1 span{
+  background:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+  color:#fff!important;
+  filter:none!important;
+  text-shadow:0 3px 18px rgba(54,35,20,.28)!important;
+}
+
+/* Restore a dark neutral text system in Light Mode. */
+html[data-theme="light"]{
+  --ink:#211c17!important;
+  --light-text:#211c17;
+  --light-text-soft:#5f564d;
+}
+html[data-theme="light"] body{
+  color:var(--light-text)!important;
+}
+
+/* Text that was previously forced to brand red now uses near-black.
+   Active red controls are intentionally excluded so their text stays light. */
+html[data-theme="light"] .nav-shell nav a:not(.active),
+html[data-theme="light"] .hero-card-title,
+html[data-theme="light"] .hero-card-grid strong,
+html[data-theme="light"] .menu-card h3,
+html[data-theme="light"] .compact-card-bottom>span strong,
+html[data-theme="light"] .deal-card h3,
+html[data-theme="light"] .deal-price strong,
+html[data-theme="light"] .option-title strong,
+html[data-theme="light"] .modal-variants button:not(.active) span,
+html[data-theme="light"] .addon-grid button:not(.selected) strong,
+html[data-theme="light"] .modal-qty,
+html[data-theme="light"] .public-review-card strong,
+html[data-theme="light"] .public-review-empty h3,
+html[data-theme="light"] .account-order-card h3,
+html[data-theme="light"] .admin-main h3,
+html[data-theme="light"] .admin-item-copy strong,
+html[data-theme="light"] .order-card h3,
+html[data-theme="light"] .reservation-card h3,
+html[data-theme="light"] .menu-context strong,
+html[data-theme="light"] .customer-auth-card .auth-switch a,
+html[data-theme="light"] .badge,
+html[data-theme="light"] .date-block span{
+  color:var(--light-text)!important;
+}
+
+/* Small text labels should be black in Light Mode, while their icons may
+   continue using the red brand accent. */
+html[data-theme="light"] .kicker,
+html[data-theme="light"] .eyebrow{
+  color:var(--light-text)!important;
+}
+html[data-theme="light"] .eyebrow svg{
+  color:var(--light-action-red,var(--logo-red,#df2029))!important;
+  stroke:currentColor!important;
+}
+
+/* Hover text should not turn red in the Light theme. */
+html[data-theme="light"] .nav-shell nav a:not(.active):hover,
+html[data-theme="light"] .pagination button:hover:not(:disabled):not(.active),
+html[data-theme="light"] .public-review-picker button:hover:not(.active),
+html[data-theme="light"] .order-review-form .review-stars button:hover:not(.active),
+html[data-theme="light"] .admin-review-picker button:hover:not(.active){
+  color:var(--light-text)!important;
+}
+
+/* Primary/main headings retain the Grand Café red identity in Light Mode. */
+html[data-theme="light"] .hero h1,
+html[data-theme="light"] .section-heading h2,
+html[data-theme="light"] .experience h2,
+html[data-theme="light"] .reserve h2,
+html[data-theme="light"] .visit h2,
+html[data-theme="light"] .product-modal-content h2,
+html[data-theme="light"] .drawer-head h2,
+html[data-theme="light"] .account-welcome h1,
+html[data-theme="light"] .track-intro h1,
+html[data-theme="light"] .customer-auth-card h2,
+html[data-theme="light"] .admin-main h1,
+html[data-theme="light"] .admin-main h2{
+  color:var(--logo-red,#df2029)!important;
+  text-shadow:none!important;
+}
+
+/* Auth-page hero headings are gradient text, so explicitly preserve their
+   red Light Mode treatment after the typography cleanup. */
+html[data-theme="light"] .customer-auth-page.register-mode .customer-auth-brand h1,
+html[data-theme="light"] .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:linear-gradient(135deg,#f43b45 0%,#d71920 52%,#a90c16 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+}
+
+
+/* =========================================================
+   GRAND CAFÉ v6.8.1 — olive light-theme identity + mobile modal/deals
+   + desktop scroll performance
+   ========================================================= */
+
+/* Light theme accent uses the supplied #36452A swatch.
+   Dark theme remains unchanged. */
+html[data-theme="light"]{
+  --light-accent:#36452A;
+  --light-accent-soft:#506346;
+  --light-accent-deep:#273520;
+  --logo-red:var(--light-accent)!important;
+  --light-action-red:var(--light-accent)!important;
+  --light-action-red-deep:var(--light-accent-deep)!important;
+  --light-on-red:#fff!important;
+}
+
+/* Keep only the hero word “Hungry?” in the original Grand Café red.
+   “Go Grand.” stays white as requested previously. */
+html[data-theme="light"] .hero h1{color:#df2029!important}
+html[data-theme="light"] .hero h1 span{
+  color:#fff!important;
+  background:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+}
+
+/* All other former red headings/text accents become the supplied olive #36452A. */
+html[data-theme="light"] .section-heading h2,
+html[data-theme="light"] .experience h2,
+html[data-theme="light"] .reserve h2,
+html[data-theme="light"] .visit h2,
+html[data-theme="light"] .product-modal-content h2,
+html[data-theme="light"] .drawer-head h2,
+html[data-theme="light"] .account-welcome h1,
+html[data-theme="light"] .track-intro h1,
+html[data-theme="light"] .customer-auth-card h2,
+html[data-theme="light"] .admin-main h1,
+html[data-theme="light"] .admin-main h2,
+html[data-theme="light"] .customer-auth-card .kicker,
+html[data-theme="light"] .customer-auth-card .auth-switch a,
+html[data-theme="light"] .customer-auth-card .input-icon svg,
+html[data-theme="light"] .account-nav-btn svg,
+html[data-theme="light"] .kicker,
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .floating-rating svg,
+html[data-theme="light"] .experience-points svg,
+html[data-theme="light"] .reserve-note svg,
+html[data-theme="light"] .fulfilment-picker svg,
+html[data-theme="light"] .delivery-info svg,
+html[data-theme="light"] .pickup-box svg,
+html[data-theme="light"] .public-review-stars,
+html[data-theme="light"] .admin-review-stars,
+html[data-theme="light"] .edit-icon,
+html[data-theme="light"] .order-top small{
+  color:var(--light-accent)!important;
+  stroke:currentColor!important;
+}
+
+/* Buttons, active tabs, selected sizes/options and light-theme CTAs. */
+html[data-theme="light"] .primary,
+html[data-theme="light"] .map-button,
+html[data-theme="light"] .visit-card .contact-row a,
+html[data-theme="light"] .visit-card .map-button,
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .category-groups button.active,
+html[data-theme="light"] .category-groups button[aria-selected="true"],
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .addon-grid button.selected,
+html[data-theme="light"] .public-review-picker button.active,
+html[data-theme="light"] .order-review-form .review-stars button.active,
+html[data-theme="light"] .admin-review-picker button.active{
+  color:#fff!important;
+  background-color:var(--light-accent)!important;
+  background-image:linear-gradient(135deg,var(--light-accent-soft) 0%,var(--light-accent) 52%,var(--light-accent-deep) 100%)!important;
+  border-color:rgba(54,69,42,.42)!important;
+  box-shadow:0 10px 26px rgba(54,69,42,.18),inset 0 1px 0 rgba(255,255,255,.42)!important;
+}
+html[data-theme="light"] .primary:hover,
+html[data-theme="light"] .map-button:hover,
+html[data-theme="light"] .visit-card .contact-row a:hover,
+html[data-theme="light"] .visit-card .map-button:hover{
+  color:#fff!important;
+  background-image:linear-gradient(135deg,#506346 0%,#36452A 52%,#273520 100%)!important;
+}
+html[data-theme="light"] .primary svg,
+html[data-theme="light"] .primary span,
+html[data-theme="light"] .primary strong,
+html[data-theme="light"] .map-button svg,
+html[data-theme="light"] .map-button span,
+html[data-theme="light"] .map-button small,
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .category-groups button.active strong,
+html[data-theme="light"] .category-groups button.active small,
+html[data-theme="light"] .category-groups button[aria-selected="true"] strong,
+html[data-theme="light"] .category-groups button[aria-selected="true"] small,
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active strong,
+html[data-theme="light"] .fulfilment-picker button.active small,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .admin-nav button.active span,
+html[data-theme="light"] .modal-variants button.active span,
+html[data-theme="light"] .modal-variants button.active strong,
+html[data-theme="light"] .addon-grid button.selected strong,
+html[data-theme="light"] .addon-grid button.selected small{
+  color:#fff!important;
+  stroke:currentColor!important;
+}
+html[data-theme="light"] .cart-btn span{background:var(--light-accent)!important;color:#fff!important}
+html[data-theme="light"] .toggle-field input,
+html[data-theme="light"] .admin-availability input,
+html[data-theme="light"] .admin-review-publish input{accent-color:var(--light-accent)!important}
+html[data-theme="light"] .badge{
+  color:var(--light-accent)!important;
+  background:rgba(54,69,42,.10)!important;
+  border-color:rgba(54,69,42,.24)!important;
+}
+html[data-theme="light"] .addon-grid button.selected .addon-check{
+  color:#fff!important;
+  background:var(--light-accent-deep)!important;
+  border-color:var(--light-accent-deep)!important;
+}
+
+/* Auth hero text used to have hard-coded red gradients. */
+html[data-theme="light"] .customer-auth-page.register-mode .customer-auth-brand h1,
+html[data-theme="light"] .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:linear-gradient(135deg,#506346 0%,var(--light-accent) 52%,var(--light-accent-deep) 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  filter:drop-shadow(0 8px 22px rgba(54,69,42,.16))!important;
+}
+
+/* Mobile product customizer: restore the product image instead of hiding it. */
+@media(max-width:620px){
+  .product-modal{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    grid-template-rows:auto minmax(0,1fr)!important;
+    height:94dvh!important;
+    max-height:94dvh!important;
+  }
+  .product-modal-image{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:100%!important;
+    height:210px!important;
+    padding:12px 54px 8px 14px!important;
+    overflow:hidden!important;
+    flex:0 0 auto!important;
+  }
+  .product-modal-image img{
+    width:186px!important;
+    height:186px!important;
+    max-height:186px!important;
+    aspect-ratio:1/1!important;
+    object-fit:cover!important;
+    object-position:center!important;
+    position:relative!important;
+    top:auto!important;
+    border-radius:18px!important;
+  }
+  .product-modal-content{min-height:0!important;height:100%!important}
+  .product-modal-scroll{padding-top:14px!important}
+}
+
+/* Hot Deals are now real product cards with images and the same detail modal. */
+.deal-card{cursor:pointer}
+.deal-card:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.deal-card-image{
+  width:100%;
+  aspect-ratio:16/10;
+  overflow:hidden;
+  border-radius:17px;
+  margin-bottom:17px;
+  background:#0d0f10;
+  border:1px solid rgba(255,255,255,.08);
+}
+.deal-card-image img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .25s ease}
+.deal-card:hover .deal-card-image img{transform:scale(1.025)}
+.deal-copy{position:relative;z-index:1}
+.deal-price{position:relative;z-index:1;margin-top:14px}
+html[data-theme="light"] .deal-card-image{background:#eef0ea;border-color:rgba(73,48,28,.1)}
+html[data-theme="light"] .deal-price button{
+  color:#fff!important;
+  background:linear-gradient(135deg,var(--light-accent-soft),var(--light-accent))!important;
+  border-color:rgba(54,69,42,.32)!important;
+}
+@media(max-width:760px){
+  .deal-card-image{aspect-ratio:16/10;margin-bottom:14px}
+  .deal-card:hover .deal-card-image img{transform:none}
+}
+
+/* Desktop/laptop scroll performance. Fixed blurred layers were forcing large
+   repaints on every wheel/trackpad frame. Keep the look but avoid those costs. */
+@media(min-width:761px){
+  html{scroll-behavior:smooth}
+  body{background-attachment:scroll!important}
+  body::before{display:none!important}
+  .site-header,
+  .nav-shell,
+  .menu-toolbar,
+  .menu-controls,
+  .hero-card,
+  .floating-rating,
+  .settings-savebar{
+    -webkit-backdrop-filter:none!important;
+    backdrop-filter:none!important;
+  }
+  .nav-shell{background:rgba(12,13,14,.96)!important}
+  .menu-toolbar,.menu-controls{background:rgba(9,10,11,.97)!important}
+  .hero-card{background:rgba(14,15,17,.94)!important}
+  .floating-rating{background:rgba(14,15,17,.96)!important}
+  html[data-theme="light"] .nav-shell{background:#f7efe5!important}
+  html[data-theme="light"] .menu-toolbar,
+  html[data-theme="light"] .menu-controls{background:#f6efe6!important}
+  .hero-photo,.hero-overlay,.hero-glow{will-change:auto!important;transform:translateZ(0)}
+  .menu-card,.deal-card{contain:layout paint style}
+}
+
+
+/* =========================================================
+   GRAND CAFÉ v6.8.2 — charcoal + graphite light-theme accent
+   Replaces the previous olive accent with a premium gradient:
+   Charcoal #181B1F → Graphite #292D32.
+   ========================================================= */
+html[data-theme="light"]{
+  --light-accent:#181B1F!important;
+  --light-accent-mid:#23272C!important;
+  --light-accent-soft:#292D32!important;
+  --light-accent-deep:#0F1113!important;
+  --light-accent-gradient:linear-gradient(135deg,#181B1F 0%,#23272C 48%,#292D32 100%);
+  --logo-red:#181B1F!important;
+  --light-action-red:#181B1F!important;
+  --light-action-red-deep:#0F1113!important;
+}
+
+/* Keep the hero exception exactly as requested. */
+html[data-theme="light"] .hero h1{color:#df2029!important}
+html[data-theme="light"] .hero h1 span{
+  color:#fff!important;
+  background:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+  -webkit-text-fill-color:#fff!important;
+  text-shadow:0 3px 18px rgba(15,17,19,.24)!important;
+}
+
+/* Main accent headings use the charcoal-to-graphite gradient. */
+html[data-theme="light"] .section-heading h2,
+html[data-theme="light"] .experience h2,
+html[data-theme="light"] .reserve h2,
+html[data-theme="light"] .visit h2,
+html[data-theme="light"] .product-modal-content h2,
+html[data-theme="light"] .drawer-head h2,
+html[data-theme="light"] .account-welcome h1,
+html[data-theme="light"] .track-intro h1,
+html[data-theme="light"] .customer-auth-card h2,
+html[data-theme="light"] .admin-main h1,
+html[data-theme="light"] .admin-main h2{
+  background:var(--light-accent-gradient)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  text-shadow:none!important;
+}
+
+/* Smaller accent text and icons stay solid graphite for crisp readability. */
+html[data-theme="light"] .customer-auth-card .kicker,
+html[data-theme="light"] .customer-auth-card .auth-switch a,
+html[data-theme="light"] .customer-auth-card .input-icon svg,
+html[data-theme="light"] .account-nav-btn svg,
+html[data-theme="light"] .kicker,
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .floating-rating svg,
+html[data-theme="light"] .experience-points svg,
+html[data-theme="light"] .reserve-note svg,
+html[data-theme="light"] .fulfilment-picker svg,
+html[data-theme="light"] .delivery-info svg,
+html[data-theme="light"] .pickup-box svg,
+html[data-theme="light"] .public-review-stars,
+html[data-theme="light"] .admin-review-stars,
+html[data-theme="light"] .edit-icon,
+html[data-theme="light"] .order-top small{
+  color:#23272C!important;
+  stroke:currentColor!important;
+}
+
+/* All interactive accent surfaces use the new dark premium gradient. */
+html[data-theme="light"] .primary,
+html[data-theme="light"] .map-button,
+html[data-theme="light"] .visit-card .contact-row a,
+html[data-theme="light"] .visit-card .map-button,
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .category-groups button.active,
+html[data-theme="light"] .category-groups button[aria-selected="true"],
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .addon-grid button.selected,
+html[data-theme="light"] .public-review-picker button.active,
+html[data-theme="light"] .order-review-form .review-stars button.active,
+html[data-theme="light"] .admin-review-picker button.active,
+html[data-theme="light"] .deal-price button{
+  color:#fff!important;
+  background-color:#181B1F!important;
+  background-image:var(--light-accent-gradient)!important;
+  border-color:rgba(24,27,31,.48)!important;
+  box-shadow:0 10px 26px rgba(24,27,31,.18),inset 0 1px 0 rgba(255,255,255,.20)!important;
+}
+
+html[data-theme="light"] .primary:hover,
+html[data-theme="light"] .map-button:hover,
+html[data-theme="light"] .visit-card .contact-row a:hover,
+html[data-theme="light"] .visit-card .map-button:hover,
+html[data-theme="light"] .deal-price button:hover{
+  color:#fff!important;
+  background-image:linear-gradient(135deg,#0F1113 0%,#181B1F 48%,#292D32 100%)!important;
+  transform:translateY(-1px);
+}
+
+html[data-theme="light"] .cart-btn span{
+  background:var(--light-accent-gradient)!important;
+  color:#fff!important;
+}
+html[data-theme="light"] .toggle-field input,
+html[data-theme="light"] .admin-availability input,
+html[data-theme="light"] .admin-review-publish input{
+  accent-color:#181B1F!important;
+}
+html[data-theme="light"] .badge{
+  color:#181B1F!important;
+  background:rgba(24,27,31,.08)!important;
+  border-color:rgba(24,27,31,.20)!important;
+}
+html[data-theme="light"] .addon-grid button.selected .addon-check{
+  color:#fff!important;
+  background:#181B1F!important;
+  border-color:#181B1F!important;
+}
+
+/* Auth hero gradient also follows the new charcoal/graphite identity. */
+html[data-theme="light"] .customer-auth-page.register-mode .customer-auth-brand h1,
+html[data-theme="light"] .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:var(--light-accent-gradient)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  filter:drop-shadow(0 8px 22px rgba(24,27,31,.14))!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v6.8.3 — smoked slate light-theme accent
+   Replaces the previous charcoal/graphite combination with a
+   softer premium slate gradient and removes leftover red hover glow.
+   ========================================================= */
+html[data-theme="light"]{
+  --light-accent:#2B3138!important;
+  --light-accent-mid:#414A54!important;
+  --light-accent-soft:#68737D!important;
+  --light-accent-deep:#20252B!important;
+  --light-accent-gradient:linear-gradient(135deg,#20252B 0%,#343B44 34%,#4A5560 68%,#68737D 100%)!important;
+  --light-accent-hover:linear-gradient(135deg,#171B20 0%,#303740 38%,#4E5964 72%,#74808B 100%)!important;
+  --light-accent-glow:rgba(65,74,84,.26)!important;
+  --logo-red:#2B3138!important;
+  --light-action-red:#2B3138!important;
+  --light-action-red-deep:#20252B!important;
+}
+
+/* Keep the hero exception exactly as requested. */
+html[data-theme="light"] .hero h1{color:#df2029!important}
+html[data-theme="light"] .hero h1 span{
+  color:#fff!important;
+  background:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+/* Navbar/menu labels must not remain red in light mode. */
+html[data-theme="light"] .nav-shell nav a,
+html[data-theme="light"] .nav-shell nav a:visited,
+html[data-theme="light"] .menu-context strong,
+html[data-theme="light"] .menu-card h3,
+html[data-theme="light"] .category-groups button,
+html[data-theme="light"] .subcategory-row button,
+html[data-theme="light"] .pagination button{
+  color:#2B3138!important;
+}
+
+/* Active menu/nav controls use the slate gradient with white copy. */
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .category-groups button.active,
+html[data-theme="light"] .category-groups button[aria-selected="true"],
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .addon-grid button.selected,
+html[data-theme="light"] .public-review-picker button.active,
+html[data-theme="light"] .order-review-form .review-stars button.active,
+html[data-theme="light"] .admin-review-picker button.active,
+html[data-theme="light"] .primary,
+html[data-theme="light"] .map-button,
+html[data-theme="light"] .visit-card .contact-row a,
+html[data-theme="light"] .visit-card .map-button,
+html[data-theme="light"] .deal-price button{
+  color:#fff!important;
+  background-color:#2B3138!important;
+  background-image:var(--light-accent-gradient)!important;
+  border-color:rgba(43,49,56,.34)!important;
+  box-shadow:0 10px 26px rgba(43,49,56,.16),inset 0 1px 0 rgba(255,255,255,.22)!important;
+}
+
+/* Remove every leftover red glow on hover in light mode. */
+html[data-theme="light"] .nav-shell nav a:hover,
+html[data-theme="light"] .nav-shell nav a.active:hover,
+html[data-theme="light"] .category-groups button:hover,
+html[data-theme="light"] .subcategory-row button:hover,
+html[data-theme="light"] .pagination button:hover,
+html[data-theme="light"] .primary:hover,
+html[data-theme="light"] .map-button:hover,
+html[data-theme="light"] .visit-card .contact-row a:hover,
+html[data-theme="light"] .visit-card .map-button:hover,
+html[data-theme="light"] .deal-price button:hover,
+html[data-theme="light"] .modal-variants button:hover,
+html[data-theme="light"] .addon-grid button:hover,
+html[data-theme="light"] .fulfilment-picker button:hover,
+html[data-theme="light"] .admin-nav button:hover,
+html[data-theme="light"] .account-nav-btn:hover,
+html[data-theme="light"] .cart-btn:hover{
+  background-color:#303740!important;
+  background-image:var(--light-accent-hover)!important;
+  color:#fff!important;
+  border-color:rgba(65,74,84,.44)!important;
+  box-shadow:0 12px 30px var(--light-accent-glow),0 0 0 1px rgba(104,115,125,.10),inset 0 1px 0 rgba(255,255,255,.24)!important;
+}
+
+/* Inactive navigation hover gets a soft grey surface, never red. */
+html[data-theme="light"] .nav-shell nav a:not(.active):hover,
+html[data-theme="light"] .category-groups button:not(.active):hover,
+html[data-theme="light"] .subcategory-row button:not(.active):hover,
+html[data-theme="light"] .pagination button:not(.active):hover{
+  color:#20252B!important;
+  background:linear-gradient(135deg,rgba(43,49,56,.08),rgba(104,115,125,.15))!important;
+  box-shadow:0 8px 22px rgba(65,74,84,.12)!important;
+}
+
+/* Main headings follow the new premium slate gradient. */
+html[data-theme="light"] .section-heading h2,
+html[data-theme="light"] .experience h2,
+html[data-theme="light"] .reserve h2,
+html[data-theme="light"] .visit h2,
+html[data-theme="light"] .product-modal-content h2,
+html[data-theme="light"] .drawer-head h2,
+html[data-theme="light"] .account-welcome h1,
+html[data-theme="light"] .track-intro h1,
+html[data-theme="light"] .customer-auth-card h2,
+html[data-theme="light"] .admin-main h1,
+html[data-theme="light"] .admin-main h2,
+html[data-theme="light"] .customer-auth-page.register-mode .customer-auth-brand h1,
+html[data-theme="light"] .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:var(--light-accent-gradient)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  filter:none!important;
+}
+
+/* Small accent icons/text use the middle slate tone. */
+html[data-theme="light"] .kicker,
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .customer-auth-card .kicker,
+html[data-theme="light"] .customer-auth-card .auth-switch a,
+html[data-theme="light"] .customer-auth-card .input-icon svg,
+html[data-theme="light"] .account-nav-btn svg,
+html[data-theme="light"] .floating-rating svg,
+html[data-theme="light"] .experience-points svg,
+html[data-theme="light"] .reserve-note svg,
+html[data-theme="light"] .fulfilment-picker svg,
+html[data-theme="light"] .delivery-info svg,
+html[data-theme="light"] .pickup-box svg,
+html[data-theme="light"] .edit-icon{
+  color:#414A54!important;
+  stroke:currentColor!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v6.8.4 — obsidian espresso gradient + action parity
+   Light theme: replaces the smoked-slate accent with a deeper
+   premium graphite-to-espresso gradient and removes legacy red
+   menu/hover states. Dark theme: deal and product card actions
+   now use the same yellow/orange CTA language as primary buttons.
+   ========================================================= */
+html[data-theme="light"]{
+  --light-accent:#171A1E!important;
+  --light-accent-mid:#292E34!important;
+  --light-accent-soft:#4A3A30!important;
+  --light-accent-deep:#0E1012!important;
+  --light-accent-gradient:linear-gradient(135deg,#0E1012 0%,#20252A 36%,#382F29 70%,#5A4332 100%)!important;
+  --light-accent-hover:linear-gradient(135deg,#080A0C 0%,#1A1F24 34%,#44362D 70%,#6A4B35 100%)!important;
+  --light-accent-glow:rgba(45,38,32,.24)!important;
+  --logo-red:#171A1E!important;
+  --light-action-red:#171A1E!important;
+  --light-action-red-deep:#0E1012!important;
+}
+
+/* Menu identity: remove the final red remnants in both desktop and mobile light mode. */
+html[data-theme="light"] .nav-shell nav a,
+html[data-theme="light"] .nav-shell nav a:visited,
+html[data-theme="light"] .menu-heading .kicker,
+html[data-theme="light"] .menu-context strong,
+html[data-theme="light"] .category-groups button,
+html[data-theme="light"] .subcategory-row button,
+html[data-theme="light"] .pagination button{
+  color:#252A2F!important;
+}
+html[data-theme="light"] .menu-heading h2{
+  background:var(--light-accent-gradient)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  text-shadow:none!important;
+}
+
+/* Light-theme active/primary actions: one consistent premium dark gradient. */
+html[data-theme="light"] .nav-shell nav a.active,
+html[data-theme="light"] .nav-shell nav a.active:hover,
+html[data-theme="light"] .nav-shell nav a.active:focus-visible,
+html[data-theme="light"] .menu-browser .category-groups button.active,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"],
+html[data-theme="light"] .subcategory-row button.active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .fulfilment-picker button.active,
+html[data-theme="light"] .admin-nav button.active,
+html[data-theme="light"] .modal-variants button.active,
+html[data-theme="light"] .addon-grid button.selected,
+html[data-theme="light"] .public-review-picker button.active,
+html[data-theme="light"] .order-review-form .review-stars button.active,
+html[data-theme="light"] .admin-review-picker button.active,
+html[data-theme="light"] .primary,
+html[data-theme="light"] .map-button,
+html[data-theme="light"] .visit-card .contact-row a,
+html[data-theme="light"] .visit-card .map-button,
+html[data-theme="light"] .deal-price button,
+html[data-theme="light"] .compact-card-bottom button,
+html[data-theme="light"] .card-bottom button{
+  color:#fff!important;
+  background-color:#171A1E!important;
+  background-image:var(--light-accent-gradient)!important;
+  border-color:rgba(32,29,26,.42)!important;
+  box-shadow:0 10px 26px rgba(32,29,26,.18),inset 0 1px 0 rgba(255,255,255,.19)!important;
+}
+html[data-theme="light"] .compact-card-bottom button svg,
+html[data-theme="light"] .card-bottom button svg,
+html[data-theme="light"] .deal-price button svg,
+html[data-theme="light"] .primary svg,
+html[data-theme="light"] .map-button svg{
+  color:#fff!important;
+  stroke:currentColor!important;
+}
+
+/* Light-theme hover/focus glow: graphite/espresso only, never red. */
+html[data-theme="light"] .primary:hover,
+html[data-theme="light"] .primary:focus-visible,
+html[data-theme="light"] .map-button:hover,
+html[data-theme="light"] .map-button:focus-visible,
+html[data-theme="light"] .visit-card .contact-row a:hover,
+html[data-theme="light"] .visit-card .contact-row a:focus-visible,
+html[data-theme="light"] .visit-card .map-button:hover,
+html[data-theme="light"] .visit-card .map-button:focus-visible,
+html[data-theme="light"] .deal-price button:hover,
+html[data-theme="light"] .deal-price button:focus-visible,
+html[data-theme="light"] .compact-card-bottom button:hover,
+html[data-theme="light"] .compact-card-bottom button:focus-visible,
+html[data-theme="light"] .card-bottom button:hover,
+html[data-theme="light"] .card-bottom button:focus-visible,
+html[data-theme="light"] .nav-shell nav a.active:hover,
+html[data-theme="light"] .category-groups button.active:hover,
+html[data-theme="light"] .subcategory-row button.active:hover,
+html[data-theme="light"] .pagination button.active:hover,
+html[data-theme="light"] .modal-variants button.active:hover,
+html[data-theme="light"] .addon-grid button.selected:hover,
+html[data-theme="light"] .fulfilment-picker button.active:hover,
+html[data-theme="light"] .admin-nav button.active:hover{
+  color:#fff!important;
+  background-color:#111417!important;
+  background-image:var(--light-accent-hover)!important;
+  border-color:rgba(75,58,46,.48)!important;
+  box-shadow:0 14px 32px var(--light-accent-glow),0 0 0 1px rgba(90,67,50,.09),inset 0 1px 0 rgba(255,255,255,.22)!important;
+}
+
+/* Inactive light-theme controls get a neutral warm-grey hover rather than inheriting old red rules. */
+html[data-theme="light"] .nav-shell nav a:not(.active):hover,
+html[data-theme="light"] .category-groups button:not(.active):hover,
+html[data-theme="light"] .subcategory-row button:not(.active):hover,
+html[data-theme="light"] .pagination button:not(.active):hover,
+html[data-theme="light"] .public-review-picker button:not(.active):hover,
+html[data-theme="light"] .order-review-form .review-stars button:not(.active):hover,
+html[data-theme="light"] .admin-review-picker button:not(.active):hover{
+  color:#171A1E!important;
+  background:linear-gradient(135deg,rgba(23,26,30,.07),rgba(90,67,50,.12))!important;
+  border-color:rgba(45,39,34,.18)!important;
+  box-shadow:0 8px 22px rgba(45,38,32,.10)!important;
+}
+
+/* Light-theme high-emphasis headings now share the richer gradient. */
+html[data-theme="light"] .section-heading h2,
+html[data-theme="light"] .experience h2,
+html[data-theme="light"] .reserve h2,
+html[data-theme="light"] .visit h2,
+html[data-theme="light"] .product-modal-content h2,
+html[data-theme="light"] .drawer-head h2,
+html[data-theme="light"] .account-welcome h1,
+html[data-theme="light"] .track-intro h1,
+html[data-theme="light"] .customer-auth-card h2,
+html[data-theme="light"] .admin-main h1,
+html[data-theme="light"] .admin-main h2,
+html[data-theme="light"] .customer-auth-page.register-mode .customer-auth-brand h1,
+html[data-theme="light"] .customer-auth-page.login-mode .customer-auth-brand h1{
+  background:var(--light-accent-gradient)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+  filter:none!important;
+}
+
+/* Small light-theme accents use graphite instead of any older brand-red value. */
+html[data-theme="light"] .kicker,
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .customer-auth-card .kicker,
+html[data-theme="light"] .customer-auth-card .auth-switch a,
+html[data-theme="light"] .customer-auth-card .input-icon svg,
+html[data-theme="light"] .account-nav-btn svg,
+html[data-theme="light"] .floating-rating svg,
+html[data-theme="light"] .experience-points svg,
+html[data-theme="light"] .reserve-note svg,
+html[data-theme="light"] .fulfilment-picker svg,
+html[data-theme="light"] .delivery-info svg,
+html[data-theme="light"] .pickup-box svg,
+html[data-theme="light"] .edit-icon,
+html[data-theme="light"] .public-review-stars,
+html[data-theme="light"] .admin-review-stars{
+  color:#292E34!important;
+  stroke:currentColor!important;
+}
+html[data-theme="light"] .cart-btn span{
+  color:#fff!important;
+  background:var(--light-accent-gradient)!important;
+}
+html[data-theme="light"] .toggle-field input,
+html[data-theme="light"] .admin-availability input,
+html[data-theme="light"] .admin-review-publish input{
+  accent-color:#20252A!important;
+}
+html[data-theme="light"] .badge{
+  color:#252A2F!important;
+  background:rgba(37,42,47,.075)!important;
+  border-color:rgba(37,42,47,.18)!important;
+}
+
+/* Dark-theme card/deal actions now match the established yellow CTA system. */
+html:not([data-theme="light"]) .deal-price button,
+html:not([data-theme="light"]) .compact-card-bottom button,
+html:not([data-theme="light"]) .card-bottom button{
+  color:#17110A!important;
+  background-color:var(--yellow)!important;
+  background-image:linear-gradient(135deg,#FFD45E 0%,#FFB000 50%,#F37A00 100%)!important;
+  border:1px solid rgba(255,193,55,.42)!important;
+  box-shadow:0 11px 27px rgba(255,150,0,.19),inset 0 1px 0 rgba(255,255,255,.42)!important;
+  font-weight:800!important;
+}
+html:not([data-theme="light"]) .deal-price button:hover,
+html:not([data-theme="light"]) .deal-price button:focus-visible,
+html:not([data-theme="light"]) .compact-card-bottom button:hover,
+html:not([data-theme="light"]) .compact-card-bottom button:focus-visible,
+html:not([data-theme="light"]) .card-bottom button:hover,
+html:not([data-theme="light"]) .card-bottom button:focus-visible{
+  color:#17110A!important;
+  background-image:linear-gradient(135deg,#FFE07C 0%,#FFB914 48%,#ED6D00 100%)!important;
+  border-color:rgba(255,199,70,.58)!important;
+  box-shadow:0 15px 34px rgba(255,150,0,.26),0 0 0 1px rgba(255,190,55,.07),inset 0 1px 0 rgba(255,255,255,.46)!important;
+  transform:translateY(-1px);
+}
+html:not([data-theme="light"]) .deal-price button svg,
+html:not([data-theme="light"]) .compact-card-bottom button svg,
+html:not([data-theme="light"]) .card-bottom button svg{
+  color:#17110A!important;
+  stroke:currentColor!important;
+}
+
+/* Ensure the mobile menu uses the same non-red light-theme treatment. */
+@media(max-width:900px){
+  html[data-theme="light"] .nav-shell nav a{
+    color:#252A2F!important;
+  }
+  html[data-theme="light"] .nav-shell nav a.active,
+  html[data-theme="light"] .nav-shell nav a.active:hover{
+    color:#fff!important;
+    background:var(--light-accent-gradient)!important;
+    border-color:rgba(32,29,26,.36)!important;
+    box-shadow:0 10px 26px rgba(32,29,26,.18),inset 0 1px 0 rgba(255,255,255,.2)!important;
+  }
+}
+
+/* v6.8.4 finishing pass: remove ambient red tint from light menu/page surfaces. */
+html[data-theme="light"] body{
+  background:
+    radial-gradient(circle at 9% 8%,rgba(90,67,50,.10),transparent 24rem),
+    radial-gradient(circle at 92% 30%,rgba(32,37,42,.075),transparent 27rem),
+    linear-gradient(180deg,#F7F3EC 0%,#F0EAE1 58%,#F7F3EC 100%)!important;
+}
+@media(max-width:900px){
+  html[data-theme="light"] .nav-shell nav.open::before{
+    background:
+      radial-gradient(circle at 10% -14%,rgba(255,255,255,.92),transparent 38%),
+      linear-gradient(115deg,rgba(255,255,255,.28),transparent 40%,rgba(90,67,50,.07))!important;
+  }
+}
+
+/* =========================================================
+   GRAND CAFÉ v6.8.5 — precise hover + navigation-state fixes
+   - Product add-ons never invert/fill on hover: border only.
+   - Header nav uses press feedback only, no persistent active pill.
+   - Selected menu category keeps the graphite/espresso treatment
+     on hover and can no longer fall back to legacy red styles.
+   ========================================================= */
+
+/* Header navigation: visual feedback exists only while the pointer is pressed. */
+.nav-shell nav a.active{
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] .nav-shell nav a.active{
+  color:#252A2F!important;
+  background:transparent!important;
+  background-image:none!important;
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] .nav-shell nav a:active{
+  color:#fff!important;
+  background-color:#171A1E!important;
+  background-image:var(--light-accent-gradient)!important;
+  border-color:rgba(32,29,26,.38)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18)!important;
+  transform:translateY(0)!important;
+}
+html:not([data-theme="light"]) .nav-shell nav a:active{
+  color:#fff!important;
+  background:rgba(255,255,255,.11)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06)!important;
+  transform:translateY(0)!important;
+}
+
+/* Light theme add-ons: retain the pale card surface and copy; border is the only hover cue. */
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):hover,
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):focus-visible{
+  color:#4F473F!important;
+  background-color:#FFFDF9!important;
+  background-image:linear-gradient(145deg,#FFFDF9,#EAE3D9)!important;
+  border-color:rgba(90,67,50,.58)!important;
+  box-shadow:inset 0 1px 0 #fff,0 7px 18px rgba(71,50,29,.06)!important;
+  transform:none!important;
+  filter:none!important;
+}
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):hover strong,
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):focus-visible strong{
+  color:#2E2924!important;
+}
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):hover small,
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):focus-visible small{
+  color:#7C746C!important;
+}
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):hover .addon-check,
+html[data-theme="light"] .product-modal .addon-grid button:not(.selected):focus-visible .addon-check{
+  color:#4F473F!important;
+  background:linear-gradient(145deg,#FFFDF9,#EAE3D9)!important;
+  border-color:rgba(90,67,50,.58)!important;
+  box-shadow:none!important;
+}
+
+/* Selected light add-ons keep their selected fill; hover only strengthens the outline. */
+html[data-theme="light"] .product-modal .addon-grid button.selected:hover,
+html[data-theme="light"] .product-modal .addon-grid button.selected:focus-visible{
+  color:#fff!important;
+  background-color:#171A1E!important;
+  background-image:var(--light-accent-gradient)!important;
+  border-color:rgba(106,75,53,.78)!important;
+  box-shadow:0 10px 26px rgba(32,29,26,.18),inset 0 1px 0 rgba(255,255,255,.19)!important;
+  transform:none!important;
+  filter:none!important;
+}
+html[data-theme="light"] .product-modal .addon-grid button.selected:hover strong,
+html[data-theme="light"] .product-modal .addon-grid button.selected:hover small,
+html[data-theme="light"] .product-modal .addon-grid button.selected:focus-visible strong,
+html[data-theme="light"] .product-modal .addon-grid button.selected:focus-visible small{
+  color:#fff!important;
+}
+
+/* Dark theme add-ons: no fill/color shift on hover, only a gold outline. */
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):hover,
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):focus-visible{
+  color:#C0BCB5!important;
+  background:#151719!important;
+  border-color:rgba(255,176,0,.58)!important;
+  box-shadow:none!important;
+  transform:none!important;
+  filter:none!important;
+}
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):hover strong,
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):focus-visible strong{
+  color:inherit!important;
+}
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):hover small,
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):focus-visible small{
+  color:#8A8781!important;
+}
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):hover .addon-check,
+html:not([data-theme="light"]) .product-modal .addon-grid button:not(.selected):focus-visible .addon-check{
+  color:#777!important;
+  background:transparent!important;
+  border-color:rgba(255,176,0,.58)!important;
+  box-shadow:none!important;
+}
+html:not([data-theme="light"]) .product-modal .addon-grid button.selected:hover,
+html:not([data-theme="light"]) .product-modal .addon-grid button.selected:focus-visible{
+  background:rgba(255,176,0,.07)!important;
+  border-color:rgba(255,176,0,.78)!important;
+  box-shadow:none!important;
+  transform:none!important;
+  filter:none!important;
+}
+
+/* Selected menu group in light mode: preserve the selected dark gradient on hover, never legacy red. */
+html[data-theme="light"] .menu-browser .category-groups button.active:hover,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"]:hover,
+html[data-theme="light"] .menu-browser .category-groups button.active:focus-visible,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"]:focus-visible{
+  color:#fff!important;
+  background-color:#171A1E!important;
+  background-image:var(--light-accent-gradient)!important;
+  border-color:rgba(90,67,50,.58)!important;
+  box-shadow:0 10px 26px rgba(32,29,26,.18),inset 0 1px 0 rgba(255,255,255,.19)!important;
+}
+html[data-theme="light"] .menu-browser .category-groups button.active:hover .group-copy,
+html[data-theme="light"] .menu-browser .category-groups button.active:hover .group-copy strong,
+html[data-theme="light"] .menu-browser .category-groups button.active:hover .group-copy small,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"]:hover .group-copy,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"]:hover .group-copy strong,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"]:hover .group-copy small{
+  color:#fff!important;
+}
+html[data-theme="light"] .menu-browser .category-groups button.active:hover .group-icon,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"]:hover .group-icon{
+  color:#fff!important;
+  background:rgba(255,255,255,.12)!important;
+  border-color:rgba(255,255,255,.22)!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] .menu-browser .category-groups button.active:hover .group-icon svg,
+html[data-theme="light"] .menu-browser .category-groups button[aria-selected="true"]:hover .group-icon svg{
+  color:#fff!important;
+  stroke:#fff!important;
+}
+
+/* =========================================================
+   GRAND CAFÉ v6.8.6 — product customizer selection polish
+   - Size options use the same border-only hover language as add-ons.
+   - Selected add-ons always show a high-contrast check mark.
+   - Light-theme selected sizes/add-ons use a warm tinted surface + border
+     instead of the heavy full-dark selected treatment.
+   ========================================================= */
+
+/* Dark theme: size/variant cards only gain a gold border on hover. */
+html:not([data-theme="light"]) .product-modal .modal-variants button:not(.active):hover,
+html:not([data-theme="light"]) .product-modal .modal-variants button:not(.active):focus-visible{
+  color:#BBB7B0!important;
+  background:linear-gradient(145deg,#191B1E,#121416)!important;
+  border-color:rgba(255,176,0,.62)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 0 0 1px rgba(255,176,0,.045)!important;
+  transform:none!important;
+  filter:none!important;
+}
+html:not([data-theme="light"]) .product-modal .modal-variants button:not(.active):hover strong,
+html:not([data-theme="light"]) .product-modal .modal-variants button:not(.active):focus-visible strong{
+  color:var(--yellow)!important;
+}
+
+/* Dark selected size: keep a warm translucent accent; hover strengthens border only. */
+html:not([data-theme="light"]) .product-modal .modal-variants button.active{
+  color:#FFF7E8!important;
+  background:linear-gradient(135deg,rgba(255,184,32,.20),rgba(213,113,22,.15))!important;
+  border-color:rgba(255,176,0,.66)!important;
+  box-shadow:inset 0 1px 0 rgba(255,219,139,.08),0 8px 20px rgba(0,0,0,.10)!important;
+}
+html:not([data-theme="light"]) .product-modal .modal-variants button.active:hover,
+html:not([data-theme="light"]) .product-modal .modal-variants button.active:focus-visible{
+  color:#FFF7E8!important;
+  background:linear-gradient(135deg,rgba(255,184,32,.20),rgba(213,113,22,.15))!important;
+  border-color:rgba(255,193,55,.92)!important;
+  box-shadow:inset 0 1px 0 rgba(255,219,139,.08),0 0 0 1px rgba(255,176,0,.08)!important;
+  transform:none!important;
+  filter:none!important;
+}
+
+/* Dark selected add-on: warm tint + outline, matching the selected size card. */
+html:not([data-theme="light"]) .product-modal .addon-grid button.selected{
+  color:#F8F1E7!important;
+  background:linear-gradient(135deg,rgba(255,184,32,.18),rgba(213,113,22,.13))!important;
+  border-color:rgba(255,176,0,.64)!important;
+  box-shadow:inset 0 1px 0 rgba(255,219,139,.07),0 8px 20px rgba(0,0,0,.08)!important;
+}
+html:not([data-theme="light"]) .product-modal .addon-grid button.selected:hover,
+html:not([data-theme="light"]) .product-modal .addon-grid button.selected:focus-visible{
+  color:#F8F1E7!important;
+  background:linear-gradient(135deg,rgba(255,184,32,.18),rgba(213,113,22,.13))!important;
+  border-color:rgba(255,193,55,.92)!important;
+  box-shadow:inset 0 1px 0 rgba(255,219,139,.07),0 0 0 1px rgba(255,176,0,.08)!important;
+  transform:none!important;
+  filter:none!important;
+}
+
+/* Selected add-on check is deliberately high contrast in both themes. */
+.product-modal .addon-grid button.selected .addon-check{
+  background:linear-gradient(135deg,#FFD45E,#FFB000)!important;
+  border-color:#FFC447!important;
+  color:#17110A!important;
+  box-shadow:0 0 0 1px rgba(255,176,0,.12),inset 0 1px 0 rgba(255,255,255,.48)!important;
+}
+.product-modal .addon-grid button.selected .addon-check svg{
+  display:block!important;
+  opacity:1!important;
+  visibility:visible!important;
+  color:#17110A!important;
+  stroke:#17110A!important;
+  stroke-width:3!important;
+}
+
+/* Light theme selected sizes/add-ons: warm premium tint instead of a full dark fill. */
+html[data-theme="light"] .product-modal .modal-variants button.active,
+html[data-theme="light"] .product-modal .addon-grid button.selected{
+  color:#2D271F!important;
+  background-color:#FFF6E8!important;
+  background-image:linear-gradient(135deg,rgba(255,190,67,.24),rgba(213,126,52,.15),rgba(117,80,55,.08))!important;
+  border-color:rgba(183,117,34,.72)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.86),0 8px 20px rgba(118,78,35,.09)!important;
+}
+html[data-theme="light"] .product-modal .modal-variants button.active span,
+html[data-theme="light"] .product-modal .addon-grid button.selected strong{
+  color:#2D271F!important;
+}
+html[data-theme="light"] .product-modal .modal-variants button.active strong{
+  color:#9A6100!important;
+}
+html[data-theme="light"] .product-modal .addon-grid button.selected small{
+  color:#7D5B35!important;
+}
+
+/* Selected hover/focus in light mode: preserve tint, strengthen border only. */
+html[data-theme="light"] .product-modal .modal-variants button.active:hover,
+html[data-theme="light"] .product-modal .modal-variants button.active:focus-visible,
+html[data-theme="light"] .product-modal .addon-grid button.selected:hover,
+html[data-theme="light"] .product-modal .addon-grid button.selected:focus-visible{
+  color:#2D271F!important;
+  background-color:#FFF6E8!important;
+  background-image:linear-gradient(135deg,rgba(255,190,67,.24),rgba(213,126,52,.15),rgba(117,80,55,.08))!important;
+  border-color:rgba(183,117,34,.94)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.86),0 0 0 1px rgba(183,117,34,.08),0 8px 20px rgba(118,78,35,.09)!important;
+  transform:none!important;
+  filter:none!important;
+}
+html[data-theme="light"] .product-modal .addon-grid button.selected:hover strong,
+html[data-theme="light"] .product-modal .addon-grid button.selected:focus-visible strong{
+  color:#2D271F!important;
+}
+html[data-theme="light"] .product-modal .addon-grid button.selected:hover small,
+html[data-theme="light"] .product-modal .addon-grid button.selected:focus-visible small{
+  color:#7D5B35!important;
+}
+
+/* Light unselected size cards: hover is border-only, matching add-ons. */
+html[data-theme="light"] .product-modal .modal-variants button:not(.active):hover,
+html[data-theme="light"] .product-modal .modal-variants button:not(.active):focus-visible{
+  color:#4F473F!important;
+  background-color:#FFFDF9!important;
+  background-image:linear-gradient(145deg,#FFFDF9,#EAE3D9)!important;
+  border-color:rgba(183,117,34,.66)!important;
+  box-shadow:inset 0 1px 0 #fff,0 7px 18px rgba(71,50,29,.06)!important;
+  transform:none!important;
+  filter:none!important;
+}
+html[data-theme="light"] .product-modal .modal-variants button:not(.active):hover strong,
+html[data-theme="light"] .product-modal .modal-variants button:not(.active):focus-visible strong{
+  color:#7A5A34!important;
+}
