@@ -28,6 +28,14 @@ jobs:
           cat source-bundle/source.zip.b64.part* > /tmp/grand-cafe-source.b64
           base64 --decode /tmp/grand-cafe-source.b64 > /tmp/grand-cafe-source.zip
           unzip -o /tmp/grand-cafe-source.zip -d .
+
+          if [ -f source-bundle/v686-customizer.css ]; then
+            cat source-bundle/v686-customizer.css >> client/src/styles.css
+          fi
+          if [ -f source-bundle/v686-notes.md ]; then
+            cat source-bundle/v686-notes.md >> UPDATE_NOTES.md
+          fi
+
           rm -rf source-bundle
 
       - name: Commit expanded project source
@@ -40,7 +48,7 @@ jobs:
             if git diff --cached --quiet; then
               echo "No source changes to commit."
             else
-              git commit -m "Expand complete Grand Cafe source code"
+              git commit -m "Deploy Grand Cafe v6.8.6"
               git push
             fi
           fi
